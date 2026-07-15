@@ -4,425 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Silly Answers Only</title>
-  <meta name="description" content="Enter a book title and receive a completely ridiculous synopsis." />
+  <meta name="description" content="Enter a book or series title and receive a recognizable but completely incorrect synopsis." />
   <style>
-    :root {
-      --ink: #2b2434;
-      --paper: #fffaf0;
-      --accent: #ff7a59;
-      --accent-dark: #df5638;
-      --purple: #7d5fff;
-      --gold: #ffd166;
-      --mint: #b8f2e6;
-      --shadow: 0 18px 45px rgba(43, 36, 52, 0.18);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Inter, ui-rounded, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 15% 15%, rgba(255, 209, 102, .58), transparent 28%),
-        radial-gradient(circle at 85% 25%, rgba(184, 242, 230, .65), transparent 25%),
-        linear-gradient(135deg, #fff7e6 0%, #f4ecff 100%);
-      overflow-x: hidden;
-    }
-
-    .floating-book {
-      position: fixed;
-      font-size: clamp(2rem, 5vw, 4rem);
-      opacity: .18;
-      user-select: none;
-      pointer-events: none;
-      animation: float 7s ease-in-out infinite;
-    }
-
-    .book-one { left: 3vw; top: 14vh; }
-    .book-two { right: 4vw; top: 18vh; animation-delay: -2s; }
-    .book-three { left: 8vw; bottom: 8vh; animation-delay: -4s; }
-    .book-four { right: 8vw; bottom: 7vh; animation-delay: -1s; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(-4deg); }
-      50% { transform: translateY(-18px) rotate(4deg); }
-    }
-
-    main {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 56px 0 44px;
-    }
-
-    .hero { text-align: center; margin-bottom: 30px; }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.82);
-      border: 2px solid rgba(43,36,52,.08);
-      font-weight: 800;
-      box-shadow: 0 8px 22px rgba(43,36,52,.08);
-    }
-
-    h1 {
-      margin: 18px 0 10px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(3rem, 9vw, 6.6rem);
-      line-height: .92;
-      letter-spacing: -0.055em;
-    }
-
-    h1 span { color: var(--accent); text-shadow: 4px 4px 0 var(--gold); }
-
-    .subtitle {
-      width: min(680px, 100%);
-      margin: 0 auto;
-      font-size: clamp(1rem, 2.4vw, 1.25rem);
-      line-height: 1.65;
-    }
-
-    .app-card {
-      position: relative;
-      background: rgba(255,250,240,.94);
-      border: 3px solid var(--ink);
-      border-radius: 28px;
-      padding: clamp(22px, 5vw, 42px);
-      box-shadow: var(--shadow), 10px 10px 0 var(--purple);
-    }
-
-    .app-card::before {
-      content: "ABSOLUTELY UNRELIABLE";
-      position: absolute;
-      top: -16px;
-      right: 22px;
-      background: var(--gold);
-      border: 2px solid var(--ink);
-      border-radius: 8px;
-      padding: 7px 10px;
-      font-size: .72rem;
-      font-weight: 900;
-      letter-spacing: .08em;
-      transform: rotate(3deg);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: 900;
-      font-size: 1.08rem;
-    }
-
-    .input-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 12px;
-    }
-
-    input {
-      width: 100%;
-      min-height: 56px;
-      border: 3px solid var(--ink);
-      border-radius: 14px;
-      padding: 0 18px;
-      font-size: 1rem;
-      color: var(--ink);
-      background: #fff;
-      outline: none;
-      transition: transform .15s ease, box-shadow .15s ease;
-    }
-
-    input:focus {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 0 rgba(125,95,255,.25);
-    }
-
-    button {
-      border: 3px solid var(--ink);
-      border-radius: 14px;
-      min-height: 56px;
-      padding: 0 20px;
-      font-size: 1rem;
-      font-weight: 900;
-      color: #fff;
-      background: var(--accent);
-      cursor: pointer;
-      box-shadow: 5px 5px 0 var(--ink);
-      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
-    }
-
-    button:hover { background: var(--accent-dark); transform: translate(-1px, -1px); box-shadow: 7px 7px 0 var(--ink); }
-    button:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 var(--ink); }
-
-    .examples {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
-    }
-
-    .example-btn {
-      min-height: auto;
-      padding: 8px 11px;
-      border-width: 2px;
-      border-radius: 999px;
-      background: #fff;
-      color: var(--ink);
-      box-shadow: none;
-      font-size: .84rem;
-    }
-
-    .example-btn:hover { background: var(--mint); box-shadow: none; transform: translateY(-1px); }
-
-    .result {
-      display: none;
-      margin-top: 28px;
-      border: 3px dashed var(--ink);
-      border-radius: 20px;
-      padding: 24px;
-      background: #fff;
-      animation: pop .3s ease both;
-    }
-
-    @keyframes pop {
-      from { opacity: 0; transform: scale(.97) rotate(-.5deg); }
-      to { opacity: 1; transform: scale(1) rotate(0); }
-    }
-
-    .result.show { display: block; }
-
-    .result-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: flex-start;
-      margin-bottom: 12px;
-    }
-
-    .result h2 {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.45rem, 4vw, 2.15rem);
-      line-height: 1.15;
-    }
-
-    .rating {
-      white-space: nowrap;
-      background: var(--mint);
-      border: 2px solid var(--ink);
-      border-radius: 999px;
-      padding: 7px 10px;
-      font-size: .78rem;
-      font-weight: 900;
-    }
-
-    #synopsis {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.08rem, 2.5vw, 1.3rem);
-      line-height: 1.75;
-    }
-
-    .result-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .secondary {
-      min-height: 44px;
-      padding: 0 14px;
-      font-size: .88rem;
-      color: var(--ink);
-      background: var(--gold);
-      box-shadow: 4px 4px 0 var(--ink);
-    }
-
-    .secondary:hover { background: #ffc43d; box-shadow: 5px 5px 0 var(--ink); }
-
-    .footer-note {
-      text-align: center;
-      margin-top: 32px;
-      font-size: .88rem;
-      opacity: .75;
-    }
-
-    @media (max-width: 650px) {
-      main { padding-top: 34px; }
-      .input-row { grid-template-columns: 1fr; }
-      .input-row > button { width: 100%; }
-      .result-top { flex-direction: column; }
-      .app-card { box-shadow: var(--shadow), 6px 6px 0 var(--purple); }
-      .app-card::before { right: 12px; font-size: .62rem; }
-    }
+    :root{--ink:#2b2434;--paper:#fffaf0;--accent:#ff7a59;--accent-dark:#df5638;--purple:#7d5fff;--gold:#ffd166;--mint:#b8f2e6;--blue:#d9efff;--shadow:0 18px 45px rgba(43,36,52,.18)}
+    *{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:Inter,ui-rounded,"Segoe UI",system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 15%,rgba(255,209,102,.58),transparent 28%),radial-gradient(circle at 85% 25%,rgba(184,242,230,.65),transparent 25%),linear-gradient(135deg,#fff7e6 0%,#f4ecff 100%);overflow-x:hidden}
+    .floating-book{position:fixed;font-size:clamp(2rem,5vw,4rem);opacity:.18;user-select:none;pointer-events:none;animation:float 7s ease-in-out infinite}.book-one{left:3vw;top:14vh}.book-two{right:4vw;top:18vh;animation-delay:-2s}.book-three{left:8vw;bottom:8vh;animation-delay:-4s}.book-four{right:8vw;bottom:7vh;animation-delay:-1s}@keyframes float{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(4deg)}}
+    main{width:min(960px,calc(100% - 32px));margin:0 auto;padding:48px 0 44px}.hero{text-align:center;margin-bottom:26px}.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.82);border:2px solid rgba(43,36,52,.08);font-weight:800;box-shadow:0 8px 22px rgba(43,36,52,.08)}h1{margin:18px 0 10px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(3rem,9vw,6.6rem);line-height:.92;letter-spacing:-.055em}h1 span{color:var(--accent);text-shadow:4px 4px 0 var(--gold)}.subtitle{width:min(720px,100%);margin:0 auto;font-size:clamp(1rem,2.4vw,1.22rem);line-height:1.6}
+    .rule{margin:22px auto 30px;width:min(800px,100%);display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:16px 20px;box-shadow:6px 6px 0 var(--gold);text-align:left}.rule-icon{font-size:2rem}.rule strong{display:block;margin-bottom:3px}.rule p{margin:0;line-height:1.45}
+    .app-card{position:relative;background:rgba(255,250,240,.96);border:3px solid var(--ink);border-radius:28px;padding:clamp(22px,5vw,42px);box-shadow:var(--shadow),10px 10px 0 var(--purple)}.app-card::before{content:"DELIBERATELY UNRELIABLE";position:absolute;top:-16px;right:22px;background:var(--gold);border:2px solid var(--ink);border-radius:8px;padding:7px 10px;font-size:.72rem;font-weight:900;letter-spacing:.08em;transform:rotate(3deg)}label{display:block;margin-bottom:10px;font-weight:900;font-size:1.08rem}.input-row{display:grid;grid-template-columns:1fr auto;gap:12px}input{width:100%;min-height:56px;border:3px solid var(--ink);border-radius:14px;padding:0 18px;font-size:1rem;color:var(--ink);background:#fff;outline:none;transition:.15s}input:focus{transform:translateY(-2px);box-shadow:0 8px 0 rgba(125,95,255,.25)}button{border:3px solid var(--ink);border-radius:14px;min-height:56px;padding:0 20px;font-size:1rem;font-weight:900;color:#fff;background:var(--accent);cursor:pointer;box-shadow:5px 5px 0 var(--ink);transition:.15s}button:hover{background:var(--accent-dark);transform:translate(-1px,-1px);box-shadow:7px 7px 0 var(--ink)}button:active{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--ink)}
+    .controls{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:16px}.controls label{margin:0;font-size:.9rem}.controls select{border:2px solid var(--ink);border-radius:10px;padding:8px 10px;background:#fff;font-weight:800;color:var(--ink)}.examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.example-btn,.book-chip{min-height:auto;padding:8px 11px;border-width:2px;border-radius:999px;background:#fff;color:var(--ink);box-shadow:none;font-size:.84rem}.example-btn:hover,.book-chip:hover{background:var(--mint);box-shadow:none;transform:translateY(-1px)}
+    .result{display:none;margin-top:28px;border:3px dashed var(--ink);border-radius:20px;padding:24px;background:#fff;animation:pop .3s ease both}@keyframes pop{from{opacity:0;transform:scale(.97) rotate(-.5deg)}to{opacity:1;transform:scale(1)}}.result.show{display:block}.result-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:12px}.result h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.45rem,4vw,2.15rem);line-height:1.15}.rating{white-space:nowrap;background:var(--mint);border:2px solid var(--ink);border-radius:999px;padding:7px 10px;font-size:.78rem;font-weight:900}#synopsis{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.08rem,2.5vw,1.3rem);line-height:1.75}.series-box{display:none;margin-top:20px;padding:16px;background:var(--blue);border:2px solid var(--ink);border-radius:14px}.series-box.show{display:block}.series-box h3{margin:0 0 5px;font-size:1rem}.series-box p{margin:0 0 12px;font-size:.9rem}.series-books{display:flex;flex-wrap:wrap;gap:8px}.result-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.secondary{min-height:44px;padding:0 14px;font-size:.88rem;color:var(--ink);background:var(--gold);box-shadow:4px 4px 0 var(--ink)}.secondary:hover{background:#ffc43d;box-shadow:5px 5px 0 var(--ink)}.footer-note{text-align:center;margin-top:32px;font-size:.88rem;opacity:.75}
+    @media(max-width:650px){main{padding-top:34px}.input-row{grid-template-columns:1fr}.input-row>button{width:100%}.result-top{flex-direction:column}.app-card{box-shadow:var(--shadow),6px 6px 0 var(--purple)}.app-card::before{right:12px;font-size:.6rem}.rule{grid-template-columns:1fr;text-align:center}.rule-icon{display:none}}
   </style>
 </head>
 <body>
-  <div class="floating-book book-one">📕</div>
-  <div class="floating-book book-two">📘</div>
-  <div class="floating-book book-three">📙</div>
-  <div class="floating-book book-four">📗</div>
-
+  <div class="floating-book book-one">📕</div><div class="floating-book book-two">📘</div><div class="floating-book book-three">📙</div><div class="floating-book book-four">📗</div>
   <main>
     <section class="hero">
       <div class="badge">📚 Literature, but incorrect</div>
       <h1>Silly <span>Answers</span> Only</h1>
-      <p class="subtitle">Type in any book title and receive a ridiculous, wildly inaccurate synopsis that no librarian would approve.</p>
+      <p class="subtitle">Enter a real book or series. You will get a synopsis that clearly belongs to it—but is confidently, creatively, and completely wrong.</p>
+      <div class="rule"><div class="rule-icon">🚫</div><div><strong>Our One Rule</strong><p>We may recognize the book, its characters, or its famous moments, but we may never explain the real plot.</p></div></div>
     </section>
 
     <section class="app-card">
-      <label for="bookTitle">What book are we misunderstanding today?</label>
+      <label for="bookTitle">What book—or entire series—should we misunderstand?</label>
       <div class="input-row">
-        <input id="bookTitle" type="text" placeholder="Example: The Fellowship of the Ring" autocomplete="off" maxlength="100" />
-        <button id="generateBtn" type="button">Make It Silly</button>
+        <input id="bookTitle" type="text" placeholder="Example: The Lord of the Rings Series" autocomplete="off" maxlength="120" />
+        <button id="generateBtn" type="button">Misunderstand This Book</button>
       </div>
-
-      <div class="examples" aria-label="Example book titles">
+      <div class="controls">
+        <label for="sillyLevel">Silliness level:</label>
+        <select id="sillyLevel"><option value="subtle">Plausibly Wrong</option><option value="silly" selected>Very Silly</option><option value="chaos">Library Emergency</option></select>
+      </div>
+      <div class="examples" aria-label="Example titles">
         <button class="example-btn" data-title="The Fellowship of the Ring">The Fellowship of the Ring</button>
+        <button class="example-btn" data-title="The Lord of the Rings Series">LOTR Series</button>
+        <button class="example-btn" data-title="The Hunger Games Series">Hunger Games Series</button>
+        <button class="example-btn" data-title="Harry Potter Series">Harry Potter Series</button>
         <button class="example-btn" data-title="Pride and Prejudice">Pride and Prejudice</button>
-        <button class="example-btn" data-title="The Great Gatsby">The Great Gatsby</button>
-        <button class="example-btn" data-title="Harry Potter and the Sorcerer's Stone">Harry Potter</button>
       </div>
 
       <article id="result" class="result" aria-live="polite">
-        <div class="result-top">
-          <h2 id="resultTitle"></h2>
-          <span id="rating" class="rating">Accuracy: 0%</span>
-        </div>
+        <div class="result-top"><h2 id="resultTitle"></h2><span id="rating" class="rating">Accuracy: 0%</span></div>
         <p id="synopsis"></p>
-        <div class="result-actions">
-          <button id="againBtn" class="secondary" type="button">Give Me Another</button>
-          <button id="copyBtn" class="secondary" type="button">Copy Synopsis</button>
-        </div>
+        <div id="seriesBox" class="series-box"><h3>Want to misunderstand one book at a time?</h3><p>Choose a title from this series:</p><div id="seriesBooks" class="series-books"></div></div>
+        <div class="result-actions"><button id="againBtn" class="secondary" type="button">Give Me Another</button><button id="copyBtn" class="secondary" type="button">Copy Synopsis</button></div>
       </article>
     </section>
-
-    <p class="footer-note">No books were responsibly summarized in the making of this application.</p>
+    <p class="footer-note">Accurate answers have been permanently checked out.</p>
   </main>
 
-  <script>
-    const openings = [
-      "A deeply confused hero discovers that",
-      "In a shocking breach of common sense,",
-      "After ignoring several perfectly reasonable warning signs,",
-      "A group of people with no business working together learns that",
-      "In what is clearly an overreaction to a minor inconvenience,",
-      "A local citizen accidentally uncovers the fact that"
-    ];
+<script>
+const library={
+ "the fellowship of the ring":{
+  subtle:"A neighborhood jewelry club discovers that one member has been keeping an extremely dramatic family heirloom. They take a very long walk to return it, but nobody remembers to bring snacks.",
+  silly:"Nine coworkers are assigned to dispose of a very fashionable ring, but the project suffers from unclear leadership, aggressive cave tourism, and one employee who keeps whispering about his jewelry. After several walking meetings, the team concludes that eagles would have made the entire trip much shorter.",
+  chaos:"A tiny landlord inherits jewelry with catastrophic customer reviews and forms a hiking club to throw it into the world's angriest fondue pot. The trip includes haunted office buildings, competitive riddles, and a wizard who rage-quits halfway through a bridge inspection."
+ },
+ "the two towers":{subtle:"Two very tall buildings become the center of a neighborhood zoning dispute while several friends search for one another without using maps.",silly:"A divided hiking club handles a major communications failure while two towers compete to become Middle-earth's least welcoming vacation rental.",chaos:"Two evil skyscrapers launch a hostile merger, a talking tree organizes a labor strike, and everyone else runs across several countries because nobody invented group texting."},
+ "the return of the king":{subtle:"A reluctant employee returns to accept a long-vacant management position while his friends finish an unusually dangerous jewelry return.",silly:"A mysterious ranger finally updates his résumé, becomes king, and discovers that leadership mostly involves ghost recruitment and very stressful landscaping.",chaos:"A man wins a crown through networking, undead outsourcing, and one excellent sword entrance while two exhausted tourists attempt to cancel a ring subscription inside a volcano."},
+ "the hunger games":{subtle:"A teenager volunteers for a nationally televised camping trip and quickly realizes the organizers have misunderstood team-building.",silly:"A skilled archer enters a reality show where the snacks are scarce, the outfits are flaming, and the producers take elimination rounds far too literally.",chaos:"A bakery enthusiast and an archer overthrow television by pretending to enjoy berries, capes, and the world's most hostile summer camp."},
+ "catching fire":{subtle:"Former reality-show winners are invited back for an anniversary special and discover that the network has not improved its safety standards.",silly:"A victory tour becomes awkward when the government realizes matching costumes and public speeches have accidentally started a revolution.",chaos:"A clock-shaped beach, murderous fog, and one extremely symbolic bird turn a celebrity reunion into the worst destination wedding ever filmed."},
+ "mockingjay":{subtle:"A reluctant spokesperson becomes the face of a rebellion while everyone debates branding, messaging, and whether singing birds are politically neutral.",silly:"A teenager becomes a revolutionary logo, films several intense commercials, and learns that overthrowing a government involves far more wardrobe meetings than expected.",chaos:"The nation's angriest bird mascot leads a marketing campaign against a president who is deeply committed to roses, television, and losing control of the narrative."},
+ "harry potter and the sorcerer's stone":{subtle:"A neglected child learns he is famous and enrolls in a school where the staircases move and the staff hide dangerous objects behind student-level puzzles.",silly:"A famous orphan attends a castle with no meaningful safety regulations and investigates why the faculty stored a priceless rock behind challenges designed for eleven-year-olds.",chaos:"A child receives an owl-based scholarship to a school run by ghosts, trolls, and one professor wearing another man as a hat."},
+ "harry potter and the chamber of secrets":{subtle:"A student returns to school despite repeated warnings and investigates a plumbing problem with a surprisingly complicated family history.",silly:"A haunted diary, an enormous snake, and a bathroom ghost expose Hogwarts' long-standing refusal to hire a qualified facilities manager.",chaos:"A celebrity snake hides in the pipes while a twelve-year-old fights school infrastructure using a sword delivered by a bird."},
+ "pride and prejudice":{subtle:"Two people repeatedly misread one another while their families turn courtship into a competitive public event.",silly:"Two people spend an entire book refusing to admit they like each other while their relatives compete to become the most embarrassing person in England. Eventually, a large house solves most of the emotional problems.",chaos:"A wealthy introvert and a professional eye-roller survive dancing, gossip, surprise proposals, and one aunt who treats boundaries as fictional."},
+ "the great gatsby":{subtle:"A man hosts elaborate parties in hopes that one specific guest will notice the invitation he never actually sends.",silly:"A man throws increasingly expensive parties because one woman once liked his shirt. His neighbor learns that rich people should not be trusted with symbolism, automobiles, or swimming pools.",chaos:"A mysterious millionaire attempts to time-travel using champagne, jazz, and a glowing dock light, while everyone drives as though traffic laws are optional."},
+ "the hobbit":{subtle:"A quiet homeowner is persuaded to join thirteen strangers on a long-distance property-recovery project.",silly:"A quiet homeowner is pressured into joining thirteen strangers on a burglary expedition. He returns with improved confidence, severe travel fatigue, and far fewer dinner plates.",chaos:"A wizard recruits a bathrobe-wearing homeowner and thirteen musicians to repossess a mountain from a dragon with strong opinions about accounting."},
+ "moby dick":{subtle:"A sea captain turns one bad encounter with a whale into an organization-wide strategic priority.",silly:"A sea captain turns a workplace grudge against one whale into the longest mandatory team-building exercise in maritime history.",chaos:"A captain weaponizes a cruise ship, an HR violation, and several hundred pages of whale facts to settle a dispute with one extremely unavailable mammal."},
+ "1984":{subtle:"A government employee begins a private writing project in an office that has taken monitoring and brand consistency too far.",silly:"A government employee starts keeping a diary, which becomes a major problem because his workplace has taken micromanagement to an extremely literal level.",chaos:"A man commits unauthorized journaling in a country where televisions watch employees, clocks behave strangely, and management keeps rewriting last quarter's reports."}
+};
 
-    const goals = [
-      "the fate of the world depends on returning an overdue library book",
-      "an ancient prophecy is actually a badly written grocery list",
-      "the kingdom's greatest treasure is a coupon that expired three Tuesdays ago",
-      "a mysterious object must be delivered to someone who refuses to answer the door",
-      "the villain can only be defeated by winning a very tense bake sale",
-      "everyone has been arguing for hundreds of pages because nobody checked the group chat",
-      "a magical artifact is mostly useful as an unusually dramatic paperweight",
-      "the entire conflict could be solved by one calm adult asking a follow-up question"
-    ];
+const series={
+ "the lord of the rings series":{aliases:["lord of the rings","lotr","lord of the rings series","the lord of the rings trilogy"],books:["The Fellowship of the Ring","The Two Towers","The Return of the King"],synopsis:{subtle:"A group of travelers spends three books returning a dangerous piece of jewelry while several kingdoms debate who should be in charge.",silly:"Middle-earth launches an emergency jewelry disposal project. The assignment requires nine walkers, several kings, one overworked wizard, thousands of dramatic speeches, and a volcano with a strict no-returns policy.",chaos:"A cursed ring triggers a three-volume group project involving wizard respawns, tree-based warfare, ghost contractors, giant spiders, and roughly eleven hours of people refusing to ask the eagles for transportation."}},
+ "the hunger games series":{aliases:["hunger games","hunger games series","the hunger games trilogy"],books:["The Hunger Games","Catching Fire","Mockingjay"],synopsis:{subtle:"A teenager survives a televised competition and gradually discovers that becoming a symbol is more complicated than winning a game.",silly:"A talented archer wins the worst reality show on television, accidentally becomes a political logo, and spends three books making an authoritarian government regret its branding strategy.",chaos:"A girl with arrows, a baker with feelings, and a bird-themed marketing campaign defeat a nation powered by reality television, extravagant wigs, and catastrophically bad public relations."}},
+ "harry potter series":{aliases:["harry potter","the harry potter series","harry potter books"],books:["Harry Potter and the Sorcerer's Stone","Harry Potter and the Chamber of Secrets","Harry Potter and the Prisoner of Azkaban","Harry Potter and the Goblet of Fire","Harry Potter and the Order of the Phoenix","Harry Potter and the Half-Blood Prince","Harry Potter and the Deathly Hallows"],synopsis:{subtle:"A famous student spends seven school years discovering that the adults around him have delegated most major safety problems to children.",silly:"A boy attends a castle where every academic year includes homework, sports, and one increasingly complicated attempt on his life. The faculty responds with points, riddles, and inconsistent supervision.",chaos:"Seven years of magical education prove that owls are email, staircases are untrustworthy, teachers require background checks, and the safest place for a soul-destroying artifact is apparently near teenagers."}}
+};
 
-    const companions = [
-      "They are joined by a suspiciously confident goose",
-      "Their companions include a retired wizard, two interns, and a horse with trust issues",
-      "A fellowship forms around them, mostly because everyone else missed the bus",
-      "They recruit a baker, a poet, and one person who keeps claiming to know a shortcut",
-      "Along the way, they befriend a dragon who is mainly interested in office supplies",
-      "Their only guide is a raccoon wearing a tiny waistcoat"
-    ];
+const generic={
+ subtle:["A person connected to {title} faces a surprisingly manageable problem that everyone insists on turning into a major literary event.","In {title}, several people misunderstand one another for hundreds of pages before discovering that a short meeting would have helped."],
+ silly:["{title} follows an ambitious group project ruined by unclear instructions, dramatic weather, and one person who insists the prophecy was 'basically obvious.'","In {title}, a local resident makes one unusual decision and is immediately joined by a suspicious mentor, an inconvenient journey, and far too much symbolism."],
+ chaos:["{title} is the inspiring story of a cursed household object, a goose with diplomatic immunity, and a hero who defeats destiny by misreading the instructions.","In {title}, civilization nearly collapses after someone opens a door labeled 'Do Not Open,' loses the map, and appoints a raccoon as interim king."]
+};
 
-    const complications = [
-      "Unfortunately, every map is upside down",
-      "Things become complicated when the chosen one takes a snack break lasting six chapters",
-      "The plan falls apart after someone presses the obviously forbidden button",
-      "Their journey is delayed by a committee meeting about the journey",
-      "The villain keeps sending passive-aggressive postcards",
-      "Nobody can remember the password to the secret fortress",
-      "A prophecy-related typo sends everyone to the wrong mountain",
-      "The final battle is rescheduled due to light rain"
-    ];
-
-    const endings = [
-      "In the end, friendship wins, logic loses, and someone definitely needs to replace a door.",
-      "Peace is restored after a dramatic apology and an unnecessarily expensive brunch.",
-      "The heroes succeed, although historians agree they should not have.",
-      "Everyone goes home wiser, dustier, and permanently banned from one very specific tavern.",
-      "The kingdom is saved and immediately launches an investigation into who approved this plan.",
-      "The story ends with a lesson about courage, teamwork, and reading the instructions first."
-    ];
-
-    const titleSpecific = {
-      "the fellowship of the ring": "Nine coworkers are assigned to dispose of a very fashionable ring, but the project suffers from unclear leadership, aggressive cave tourism, and one employee who keeps whispering about his jewelry. After several walking meetings, the team concludes that eagles would have made the entire trip much shorter.",
-      "pride and prejudice": "Two people spend an entire book refusing to admit they like each other while their relatives compete to become the most embarrassing person in England. Eventually, a large house solves most of the emotional problems.",
-      "the great gatsby": "A man throws increasingly expensive parties because one woman once liked his shirt. His neighbor watches the situation unfold and learns that rich people should not be trusted with symbolism, automobiles, or swimming pools.",
-      "harry potter and the sorcerer's stone": "A neglected child discovers he is famous, attends a school with no meaningful safety regulations, and spends the year investigating why the staff keep hiding a dangerous object behind a series of puzzles designed for eleven-year-olds.",
-      "moby dick": "A sea captain turns a workplace grudge against one whale into the longest mandatory team-building exercise in maritime history.",
-      "romeo and juliet": "Two teenagers meet, skip several important conversations, and create an emergency so dramatic that their families finally consider conflict resolution.",
-      "the hobbit": "A quiet homeowner is pressured into joining thirteen strangers on a burglary expedition. He returns with improved confidence, severe travel fatigue, and far fewer dinner plates.",
-      "1984": "A government employee starts keeping a diary, which becomes a major problem because his workplace has taken micromanagement to an extremely literal level."
-    };
-
-    const pick = arr => arr[Math.floor(Math.random() * arr.length)];
-
-    function cleanTitle(value) {
-      return value.trim().replace(/\s+/g, " ");
-    }
-
-    function makeSynopsis(title) {
-      const key = title.toLowerCase();
-      if (titleSpecific[key]) return titleSpecific[key];
-      return `${pick(openings)} ${pick(goals)}. ${pick(companions)}. ${pick(complications)}. ${pick(endings)}`;
-    }
-
-    function generate() {
-      const input = document.getElementById("bookTitle");
-      const title = cleanTitle(input.value);
-      if (!title) {
-        input.focus();
-        input.placeholder = "Please enter a real title—or at least a convincing fake one.";
-        return;
-      }
-
-      document.getElementById("resultTitle").textContent = `The totally accurate plot of “${title}”`;
-      document.getElementById("synopsis").textContent = makeSynopsis(title);
-      document.getElementById("rating").textContent = `Accuracy: ${Math.floor(Math.random() * 4)}%`;
-      const result = document.getElementById("result");
-      result.classList.remove("show");
-      void result.offsetWidth;
-      result.classList.add("show");
-      result.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    }
-
-    document.getElementById("generateBtn").addEventListener("click", generate);
-    document.getElementById("againBtn").addEventListener("click", generate);
-    document.getElementById("bookTitle").addEventListener("keydown", event => {
-      if (event.key === "Enter") generate();
-    });
-
-    document.querySelectorAll(".example-btn").forEach(button => {
-      button.addEventListener("click", () => {
-        document.getElementById("bookTitle").value = button.dataset.title;
-        generate();
-      });
-    });
-
-    document.getElementById("copyBtn").addEventListener("click", async () => {
-      const title = document.getElementById("resultTitle").textContent;
-      const synopsis = document.getElementById("synopsis").textContent;
-      const copyBtn = document.getElementById("copyBtn");
-      try {
-        await navigator.clipboard.writeText(`${title}\n\n${synopsis}`);
-        copyBtn.textContent = "Copied!";
-      } catch {
-        copyBtn.textContent = "Copy failed";
-      }
-      setTimeout(() => copyBtn.textContent = "Copy Synopsis", 1300);
-    });
-  </script>
+const normalize=s=>s.toLowerCase().replace(/[’']/g,"").replace(/[^a-z0-9]+/g," ").trim();
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+function findSeries(key){return Object.values(series).find(s=>s.aliases.some(a=>normalize(a)===key));}
+function makeSynopsis(title,level){const key=normalize(title);const exact=Object.entries(library).find(([k])=>normalize(k)===key);if(exact)return exact[1][level];const s=findSeries(key);if(s)return s.synopsis[level];return pick(generic[level]).replaceAll("{title}",`“${title}”`);}
+function renderSeries(s){const box=document.getElementById("seriesBox"),holder=document.getElementById("seriesBooks");holder.innerHTML="";if(!s){box.classList.remove("show");return;}s.books.forEach(title=>{const b=document.createElement("button");b.className="book-chip";b.textContent=title;b.type="button";b.onclick=()=>{document.getElementById("bookTitle").value=title;generate();};holder.appendChild(b)});box.classList.add("show");}
+function generate(){const input=document.getElementById("bookTitle");const title=input.value.trim().replace(/\s+/g," ");if(!title){input.focus();input.placeholder="Please enter a book or series title.";return;}const level=document.getElementById("sillyLevel").value,key=normalize(title),s=findSeries(key);document.getElementById("resultTitle").textContent=s?`The completely wrong story of “${title}”`:`The totally inaccurate plot of “${title}”`;document.getElementById("synopsis").textContent=makeSynopsis(title,level);document.getElementById("rating").textContent=`Accuracy: ${Math.floor(Math.random()*3)}%`;renderSeries(s);const result=document.getElementById("result");result.classList.remove("show");void result.offsetWidth;result.classList.add("show");result.scrollIntoView({behavior:"smooth",block:"nearest"});}
+document.getElementById("generateBtn").onclick=generate;document.getElementById("againBtn").onclick=generate;document.getElementById("bookTitle").addEventListener("keydown",e=>{if(e.key==="Enter")generate()});document.querySelectorAll(".example-btn").forEach(b=>b.onclick=()=>{document.getElementById("bookTitle").value=b.dataset.title;generate()});document.getElementById("copyBtn").onclick=async()=>{const b=document.getElementById("copyBtn");try{await navigator.clipboard.writeText(`${document.getElementById("resultTitle").textContent}\n\n${document.getElementById("synopsis").textContent}`);b.textContent="Copied!"}catch{b.textContent="Copy failed"}setTimeout(()=>b.textContent="Copy Synopsis",1300)};
+</script>
 </body>
 </html>
