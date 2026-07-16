@@ -2,7 +2,6 @@
 (function(){
   "use strict";
   const library=window.PENELOPE_LIBRARY||{},profiles=window.PENELOPE_PROFILES||{};
-  const staffPicks=window.PENELOPE_STAFF_PICKS||{keys:[],notes:{}};
   const easterEggs=window.PENELOPE_EASTER_EGGS||{};
   const $=id=>document.getElementById(id);
   const pick=(items,index)=>items&&items.length?items[((index%items.length)+items.length)%items.length]:"Penelope misplaced this section.";
@@ -130,31 +129,6 @@
     return Object.entries(window.PENELOPE_COLLECTIONS||{})
       .filter(([,collection])=>Array.isArray(collection.keys)&&collection.keys.includes(key))
       .map(([collectionKey])=>collectionKey);
-  }
-
-  function renderStaffPicks(){
-    const grid=$("staffPicksGrid");
-    if(!grid)return;
-    grid.innerHTML="";
-    const shuffled=[...staffPicks.keys].sort(()=>Math.random()-.5).slice(0,8);
-    shuffled.forEach(key=>{
-      const entry=library[key];
-      if(!entry)return;
-      const card=document.createElement("button");
-      card.className="staff-pick-card";
-      const name=document.createElement("strong");
-      name.textContent=entry.name;
-      const note=document.createElement("p");
-      note.textContent="“"+(staffPicks.notes[key]||pick(entry.silly||entry.wild,0))+"”";
-      const stamp=document.createElement("span");
-      stamp.textContent="PENELOPE RECOMMENDS";
-      card.append(name,note,stamp);
-      card.addEventListener("click",()=>{
-        $("query").value=entry.name;
-        runSearch(entry.name);
-      });
-      grid.appendChild(card);
-    });
   }
 
   function renderPassport(){
@@ -293,9 +267,6 @@
     tournamentWinners=[];tournamentRound=0;tournamentPairIndex=0;showTournamentMatch();
     $("tournament").scrollIntoView({behavior:"smooth",block:"start"});
   }
-
-
-  $("refreshStaffPicksBtn").addEventListener("click",renderStaffPicks);
   $("resetPassportBtn").addEventListener("click",()=>{
     if(confirm("Reset Penelope's Library Passport and browsing memory?")){
       window.PenelopeMemory?.resetAchievements();
@@ -348,7 +319,6 @@
   updateThemeButton();
   counters();
   renderSaved();
-  renderStaffPicks();
   renderPassport();
   const visitDays=window.PenelopeMemory?.recordVisit()||1;
   const seasonal=window.PenelopeMemory?.applySeason();
