@@ -18,6 +18,8 @@
 
 </head>
 <body>
+  <div id="seasonalLayer" class="seasonal-layer" aria-hidden="true"></div>
+  <div id="seasonalDeskItem" class="seasonal-desk-item" aria-hidden="true"></div>
   <div class="background" aria-hidden="true">
     <span>📚</span><span>🪿</span><span>📖</span><span>🪿</span><span>📕</span><span>📘</span>
   </div>
@@ -188,6 +190,31 @@
       <div><strong>Read widely.</strong><span>Then misfile everything responsibly.</span></div>
     </section>
 
+    
+    <section id="staffPicksSection" class="card staff-picks-section">
+      <div class="section-heading-row">
+        <div>
+          <p class="eyebrow">Handwritten notes from the circulation desk</p>
+          <h2>🪿 Penelope's Staff Picks</h2>
+          <p>Books Penelope recommends with complete confidence and limited accuracy.</p>
+        </div>
+        <button id="refreshStaffPicksBtn" class="secondary">Refresh Picks</button>
+      </div>
+      <div id="staffPicksGrid" class="staff-picks-grid"></div>
+    </section>
+
+    <section id="passportSection" class="card passport-section">
+      <div class="section-heading-row">
+        <div>
+          <p class="eyebrow">Personal library stamps</p>
+          <h2>📖 My Library Passport</h2>
+          <p>Quiet milestones earned through searches, visits, shelves, saves, and honks.</p>
+        </div>
+        <button id="resetPassportBtn" class="clear-collection">Reset Passport</button>
+      </div>
+      <div id="passportGrid" class="passport-grid"></div>
+    </section>
+
     <section id="tournament" class="card tournament">
       <div class="tournament-heading">
         <div>
@@ -237,6 +264,9 @@
   <script src="js/penelope.js"></script>
   <script src="js/library-card.js"></script>
   <script src="js/open-library.js"></script>
+  <script src="data/staff-picks.js"></script>
+  <script src="data/easter-eggs.js"></script>
+  <script src="js/memory-seasonal.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

@@ -2,6 +2,8 @@
 (function(){
   "use strict";
   const library=window.PENELOPE_LIBRARY||{},profiles=window.PENELOPE_PROFILES||{};
+  const staffPicks=window.PENELOPE_STAFF_PICKS||{keys:[],notes:{}};
+  const easterEggs=window.PENELOPE_EASTER_EGGS||{};
   const $=id=>document.getElementById(id);
   const pick=(items,index)=>items&&items.length?items[((index%items.length)+items.length)%items.length]:"Penelope misplaced this section.";
   let currentKey=null,currentEntry=null,cycle=0,apiSequence=0;
@@ -85,7 +87,12 @@
 
   function renderEntry(entry,key,advance=false){
     const repeated=currentKey===key;cycle=(advance||repeated)?cycle+1:0;currentKey=key;currentEntry=entry;
-    searchCount++;window.PenelopeStorage.set("penelopeSearchCount",searchCount);counters();hideStatus();
+    searchCount++;
+    window.PenelopeStorage.set("penelopeSearchCount",searchCount);
+    if(!entry.apiSource&&window.PenelopeMemory){
+      window.PenelopeMemory.recordSearch(entry,key,collectionsForKey(key));
+    }
+    counters();hideStatus();
     const level=$("level").value,options=entry[level]||entry.silly||entry.mild,p=profile(entry);
     $("result").classList.remove("hidden");$("entityType").textContent=entry.type;$("resultTitle").textContent=entry.name;
     const source=$("sourceBadge"),preview=$("sourcePreview");
@@ -118,7 +125,85 @@
     try{const results=await window.PenelopeOpenLibrary.search(value);if(requestId!==apiSequence)return;if(!results.length){showNotFound(value,false);return}renderEntry(results[0].entry,"api:"+window.PenelopeSearch.normalize(results[0].entry.name),false)}
     catch(error){console.error("Open Library search failed:",error);if(requestId===apiSequence)showNotFound(value,true)}
   }
-  function runSearch(value,advance=false){const key=window.PenelopeSearch.keyFor(value);if(key){renderEntry(library[key],key,advance);return}searchOpenLibrary(value)}
+
+  function collectionsForKey(key){
+    return Object.entries(window.PENELOPE_COLLECTIONS||{})
+      .filter(([,collection])=>Array.isArray(collection.keys)&&collection.keys.includes(key))
+      .map(([collectionKey])=>collectionKey);
+  }
+
+  function renderStaffPicks(){
+    const grid=$("staffPicksGrid");
+    if(!grid)return;
+    grid.innerHTML="";
+    const shuffled=[...staffPicks.keys].sort(()=>Math.random()-.5).slice(0,8);
+    shuffled.forEach(key=>{
+      const entry=library[key];
+      if(!entry)return;
+      const card=document.createElement("button");
+      card.className="staff-pick-card";
+      const name=document.createElement("strong");
+      name.textContent=entry.name;
+      const note=document.createElement("p");
+      note.textContent="“"+(staffPicks.notes[key]||pick(entry.silly||entry.wild,0))+"”";
+      const stamp=document.createElement("span");
+      stamp.textContent="PENELOPE RECOMMENDS";
+      card.append(name,note,stamp);
+      card.addEventListener("click",()=>{
+        $("query").value=entry.name;
+        runSearch(entry.name);
+      });
+      grid.appendChild(card);
+    });
+  }
+
+  function renderPassport(){
+    const grid=$("passportGrid");
+    if(!grid||!window.PenelopeMemory)return;
+    grid.innerHTML="";
+    window.PenelopeMemory.achievements().forEach(achievement=>{
+      const card=document.createElement("article");
+      card.className="passport-stamp "+(achievement.earned?"earned":"locked");
+      const icon=document.createElement("span");
+      icon.className="passport-icon";
+      icon.textContent=achievement.icon;
+      const title=document.createElement("strong");
+      title.textContent=achievement.name;
+      const detail=document.createElement("small");
+      detail.textContent=achievement.detail;
+      const state=document.createElement("em");
+      state.textContent=achievement.earned?"STAMPED":"Not yet stamped";
+      card.append(icon,title,detail,state);
+      grid.appendChild(card);
+    });
+  }
+
+  function checkEasterEgg(value){
+    const normalized=window.PenelopeSearch.normalize(value);
+    const line=easterEggs[normalized];
+    if(!line)return false;
+    window.PenelopeMemory?.recordEasterEgg(normalized);
+    bubble(line);
+    $("result").classList.add("hidden");
+    $("apiLoading").classList.add("hidden");
+    $("notFound").classList.add("hidden");
+    const panel=$("collectionPanel");
+    panel.innerHTML=`<div class="easter-egg-result"><span>🥚</span><h3>${value}</h3><p>“${line}”</p></div>`;
+    panel.classList.remove("hidden");
+    panel.scrollIntoView({behavior:"smooth",block:"start"});
+    renderPassport();
+    return true;
+  }
+
+  function runSearch(value,advance=false){
+    if(checkEasterEgg(value))return;
+    const key=window.PenelopeSearch.keyFor(value);
+    if(key){
+      renderEntry(library[key],key,advance);
+      return;
+    }
+    searchOpenLibrary(value);
+  }
 
 
 
@@ -209,6 +294,16 @@
     $("tournament").scrollIntoView({behavior:"smooth",block:"start"});
   }
 
+
+  $("refreshStaffPicksBtn").addEventListener("click",renderStaffPicks);
+  $("resetPassportBtn").addEventListener("click",()=>{
+    if(confirm("Reset Penelope's Library Passport and browsing memory?")){
+      window.PenelopeMemory?.resetAchievements();
+      renderPassport();
+      bubble("Passport reset. I have forgotten everything except where the snacks are.");
+    }
+  });
+
   $("searchBtn").addEventListener("click",()=>runSearch($("query").value));$("themeBtn").addEventListener("click",toggleTheme);
   $("browseCollectionBtn").addEventListener("click",()=>renderCollection($("collectionSelect").value));
   $("clearCollectionBtn").addEventListener("click",clearCollectionPanel);
@@ -232,5 +327,18 @@
   });
 
   $("openCardBtn").addEventListener("click",()=>{renderSaved();$("savedItems").scrollIntoView({behavior:"smooth",block:"start"})});
-  updateThemeButton();counters();renderSaved();bubble(visitCount>1?"Welcome back! I see you're still looking for accurate summaries.":"Welcome to my library. Please keep all facts outside.");
+  updateThemeButton();
+  counters();
+  renderSaved();
+  renderStaffPicks();
+  renderPassport();
+  const visitDays=window.PenelopeMemory?.recordVisit()||1;
+  const seasonal=window.PenelopeMemory?.applySeason();
+  let greeting=window.PenelopeMemory?.memoryGreeting(visitDays)
+    ||(visitCount>1?"Welcome back! I see you're still looking for accurate summaries.":"Welcome to my library. Please keep all facts outside.");
+  if(seasonal&&Math.random()<0.35){
+    const lines=seasonal.config.lines;
+    greeting=lines[Math.floor(Math.random()*lines.length)];
+  }
+  bubble(greeting);
 })();
