@@ -135,7 +135,7 @@
     entries.forEach(entry=>{if(Object.prototype.hasOwnProperty.call(counts,entry.type))counts[entry.type]++});
     const wrap=$("libraryHoldings");
     if(wrap)wrap.innerHTML=`<p>Books <strong>${counts.Book}</strong></p><p>Series <strong>${counts["Book Series"]}</strong></p><p>Authors <strong>${counts.Author}</strong></p><p>Characters <strong>${counts.Character}</strong></p><p>Wonderful Misunderstandings <strong>${entries.length}</strong></p>`;
-    const arrival=$("mangaArrivalCount");if(arrival)arrival.textContent="27";
+    const arrival=$("comicsArrivalCount");if(arrival)arrival.textContent="39";
   }
 
   function collectionsForKey(key){
@@ -144,7 +144,7 @@
       .map(([collectionKey])=>collectionKey);
   }
 
-  function renderPassport(){
+  function renderLegacyPassport(){
     const grid=$("passportGrid");
     if(!grid)return;
     grid.innerHTML="";
@@ -197,7 +197,7 @@
     panel.innerHTML=`<div class="easter-egg-result"><span>🥚</span><h3>${value}</h3><p>“${line}”</p></div>`;
     panel.classList.remove("hidden");
     panel.scrollIntoView({behavior:"smooth",block:"start"});
-    renderPassport();
+    window.PenelopePassport?.render?.();
     return true;
   }
 
@@ -302,7 +302,7 @@
   $("resetPassportBtn").addEventListener("click",()=>{
     if(confirm("Reset Penelope's Library Passport and browsing memory?")){
       window.PenelopeMemory?.resetAchievements();
-      renderPassport();
+      window.PenelopePassport?.render?.();
       bubble("Passport reset. I have forgotten everything except where the snacks are.");
     }
   });
@@ -356,16 +356,17 @@
   };
 
   initializeFoundationModules();
+  window.PenelopePassport?.init?.();
   searchCount=Number(window.PenelopeStorage.get("penelopeSearchCount",searchCount)||searchCount);
   honkCount=Number(window.PenelopeStorage.get("penelopeHonkCount",honkCount)||honkCount);
   updateThemeButton();
   counters();
   requestAnimationFrame(counters);
-  setTimeout(()=>{counters();renderPassport()},120);
-  setTimeout(()=>{counters();renderPassport()},600);
-  window.addEventListener("load",()=>{counters();renderPassport()},{once:true});
+  setTimeout(()=>{counters();window.PenelopePassport?.render?.()},120);
+  setTimeout(()=>{counters();window.PenelopePassport?.render?.()},600);
+  window.addEventListener("load",()=>{counters();window.PenelopePassport?.render?.()},{once:true});
   renderSaved();
-  renderPassport();
+  window.PenelopePassport?.render?.();
   const visitDays=window.PenelopeMemory?.recordVisit()||1;
   const seasonal=window.PenelopeMemory?.applySeason();
   let greeting=window.PenelopeMemory?.memoryGreeting(visitDays)
