@@ -478,5 +478,205 @@ window.PENELOPE_PROFILES = {
     "questions": [
       "When does determination become obsession?"
     ]
+  },
+  "percy": {
+    "audiences": [
+      "camp counselors updating liability forms",
+      "Greek gods avoiding customer service",
+      "students with alarming field trips",
+      "monsters denied summer vacation"
+    ],
+    "genres": [
+      "Mythological Summer Camp",
+      "Divine Family Drama",
+      "Sword-Based Tutoring",
+      "Field Trip Liability"
+    ],
+    "quotes": [
+      "My family tree requires a warning label.",
+      "Has anyone seen the waiver form?"
+    ],
+    "reviews": [
+      "Excellent mythology. Terrible supervision.",
+      "The camp brochure left out several monsters."
+    ],
+    "trailers": [
+      "One teenager. Twelve gods. Zero calm vacations.",
+      "This summer, mythology files an incident report."
+    ],
+    "morals": [
+      "Always read the summer-camp waiver.",
+      "Family reunions are harder when relatives control weather."
+    ],
+    "endings": [
+      "The gods attend mediation and return all borrowed lightning.",
+      "Camp Half-Blood hires a full-time risk manager."
+    ],
+    "questions": [
+      "Which adult should have been supervising this quest?",
+      "Could Olympus benefit from a customer-service department?"
+    ]
+  },
+  "potter": {
+    "audiences": [
+      "concerned school inspectors",
+      "owls waiting on delivery updates",
+      "students filing safety complaints"
+    ],
+    "genres": [
+      "Educational Horror",
+      "Bird Ownership",
+      "Wizard Administration",
+      "Property Damage"
+    ],
+    "quotes": [
+      "I specifically requested a normal school year."
+    ],
+    "reviews": [
+      "The school desperately needs an inspection."
+    ],
+    "trailers": [
+      "One student. Seven years. Zero guidance counselors."
+    ],
+    "morals": [
+      "Read enrollment forms carefully."
+    ],
+    "endings": [
+      "The parents form a school board."
+    ],
+    "questions": [
+      "Why was this school allowed to reopen?"
+    ]
+  },
+  "gandalf": {
+    "audiences": [
+      "hobbits waiting for the rest of the instructions",
+      "fireworks customers impressed by the demonstration",
+      "adventurers receiving deliberately incomplete guidance",
+      "wizards debating whether late arrival counts as punctual"
+    ],
+    "genres": [
+      "Mysterious Mentorship",
+      "Fireworks Diplomacy",
+      "Selective Information Management",
+      "Dramatic Arrival Studies"
+    ],
+    "quotes": [
+      "I have told you exactly as much as I intended to tell you.",
+      "A wizard is never late; the calendar is simply insufficiently wise.",
+      "Please begin the dangerous journey. I will explain the rest eventually."
+    ],
+    "reviews": [
+      "Kind, powerful, and helpful—once you accept that the complete plan will never be provided.",
+      "Excellent mentor. Extraordinary eyebrows. Communication plan needs revision.",
+      "He saved the day, inspired everyone, and still avoided sharing the meeting notes."
+    ],
+    "trailers": [
+      "One wizard. One staff. Several carefully withheld details.",
+      "This summer, wisdom arrives dramatically and explains only half the plan."
+    ],
+    "morals": [
+      "A good mentor does not need to give every answer, but a few more details would still be appreciated.",
+      "Never confuse gentleness with weakness—or a fireworks expert with an ordinary traveler."
+    ],
+    "endings": [
+      "Gandalf gives everyone the full itinerary, emergency contacts, and written objectives before departure.",
+      "He arrives ten minutes early and distributes a complete project brief."
+    ],
+    "questions": [
+      "Is Gandalf an effective mentor because he withholds information, or despite it?",
+      "Which defines Gandalf more: wisdom, compassion, power, mystery, or his faith in ordinary people?"
+    ]
+  },
+  "lotr": {
+    "audiences": [
+      "exhausted hikers",
+      "concerned jewelers",
+      "hobbits who packed too lightly"
+    ],
+    "genres": [
+      "Jewelry Management",
+      "Competitive Walking",
+      "Volcano Tourism",
+      "Friendship Logistics"
+    ],
+    "quotes": [
+      "Could someone please just mail the ring?"
+    ],
+    "reviews": [
+      "I came for jewelry and stayed for cardio."
+    ],
+    "trailers": [
+      "One ring. Nine walkers. Zero parking."
+    ],
+    "morals": [
+      "Never trust inherited jewelry."
+    ],
+    "endings": [
+      "They overnight the ring."
+    ],
+    "questions": [
+      "Could this have been solved with one group email?"
+    ]
+  },
+  "hunger": {
+    "audiences": [
+      "alarmed sponsors",
+      "archery camp counselors",
+      "parents questioning the waiver"
+    ],
+    "genres": [
+      "Government Reality TV",
+      "Archery Administration",
+      "Costume Rebellion"
+    ],
+    "quotes": [
+      "May the odds be reviewed by legal counsel."
+    ],
+    "reviews": [
+      "Worst summer camp ever."
+    ],
+    "trailers": [
+      "One bow. Twelve districts. Zero adults."
+    ],
+    "morals": [
+      "Never let government plan youth entertainment."
+    ],
+    "endings": [
+      "Everyone refuses to sign the release form."
+    ],
+    "questions": [
+      "When should an adult have cancelled this?"
+    ]
+  },
+  "gatsby": {
+    "audiences": [
+      "party guests who never met the host",
+      "West Egg zoning officials",
+      "green-light enthusiasts"
+    ],
+    "genres": [
+      "Luxury Networking",
+      "Emotional Real Estate",
+      "Champagne Logistics"
+    ],
+    "quotes": [
+      "Perhaps one more party will fix communication."
+    ],
+    "reviews": [
+      "Beautiful house. Host seemed distracted."
+    ],
+    "trailers": [
+      "One mansion. One light. Too many feelings."
+    ],
+    "morals": [
+      "Parties are not a substitute for honesty."
+    ],
+    "endings": [
+      "Gatsby sends one clear message."
+    ],
+    "questions": [
+      "Could this have been solved with one honest text?"
+    ]
   }
 };

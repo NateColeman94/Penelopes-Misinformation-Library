@@ -18,5 +18,15 @@ window.PENELOPE_ALIASES = {
   "lilo stitch": "lilo and stitch",
   "conceal don't feel": "conceal dont feel",
   "how far i'll go": "how far ill go",
-  "sally's lament": "sallys lament"
+  "sally's lament": "sallys lament",
+  "gandalf the grey": "gandalf",
+  "gandalf the white": "gandalf",
+  "tolkien": "j.r.r. tolkien",
+  "jrr tolkien": "j.r.r. tolkien",
+  "j r r tolkien": "j.r.r. tolkien",
+  "percy jackson series": "percy jackson",
+  "lightning thief": "the lightning thief",
+  "rick riordan books": "rick riordan",
+  "annabeth": "annabeth chase",
+  "katniss": "the hunger games"
 };

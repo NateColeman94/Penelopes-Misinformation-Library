@@ -1,33 +1,35 @@
-# Penelope's Misinformation Library 6.0
+# Penelope's Misinformation Library 6.1
 
-A clean modular rebuild for GitHub Pages.
+## Restored collection
+The modular 6.0 merge omitted several previously completed records. Version 6.1 restores the missing featured material, including:
 
-## Included features
-- 148 handcrafted entries
-- Smart Search with aliases, typo tolerance, partial matching, and Did You Mean suggestions
-- Separate book, series, author, and character content
-- Penelope's exact-title witty comments for featured searches
-- Honk, double honk, librarian honk, repeat-visitor, and busy-day reactions
-- My Library Card stored locally in the browser
-- Three silliness levels
-- Think That's Bad and Make It Worse
-- Fantasy Classics, Disney classics, and Twisted Tales content
-- Checked-out notice for unknown searches
+- Gandalf
+- J.R.R. Tolkien
+- Harry Potter
+- The Hunger Games
+- Percy Jackson
+- The Lightning Thief
+- Rick Riordan
+- Annabeth Chase
 
-## Repository structure
-Upload every file and folder:
+## Library polish
+- Saved light/dark appearance toggle
+- Animated bookshelf banner
+- Smoother result and notice transitions
+- Improved mobile layout
+- Strong keyboard focus indicators
+- Reduced-motion accessibility support
+- Existing Penelope mascot, honks, Smart Search, My Library Card, and witty title-specific dialogue preserved
 
-index.html
-assets/
-css/
-data/
-js/
-README.md
+## Collection
+Total handcrafted records: 159
 
-## Collection audit
 {
-  "Book": 65,
-  "Character": 56,
-  "Book Series": 6,
-  "Author": 21
+  "Book": 69,
+  "Character": 58,
+  "Book Series": 9,
+  "Author": 23
 }
+
+## Upload
+Upload and replace every file and folder from this ZIP because data, styling, HTML, and application logic changed.

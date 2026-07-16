@@ -8044,5 +8044,281 @@ window.PENELOPE_LIBRARY = {
     "questions": [
       "How does Melville use the whale differently from Ahab?"
     ]
+  },
+  "percy jackson": {
+    "name": "Percy Jackson Series",
+    "type": "Book Series",
+    "key": "percy",
+    "related": [
+      "The Lightning Thief",
+      "Rick Riordan",
+      "Annabeth Chase",
+      "Harry Potter"
+    ],
+    "mild": [
+      "A teenager learns that mythology is less of a school subject and more of a complicated family matter."
+    ],
+    "silly": [
+      "A boy discovers his family tree includes weather problems, ocean management, and an alarming number of summer-camp emergencies.",
+      "Greek mythology becomes a recurring field trip supervised by adults with questionable risk-management practices."
+    ],
+    "wild": [
+      "A dyslexic demigod turns every museum visit into an insurance claim.",
+      "Mount Olympus outsources crisis management to teenagers armed with snacks and unresolved family issues."
+    ]
+  },
+  "the lightning thief": {
+    "name": "The Lightning Thief",
+    "type": "Book",
+    "key": "percy",
+    "related": [
+      "Percy Jackson Series",
+      "Rick Riordan",
+      "Annabeth Chase",
+      "The Sea of Monsters"
+    ],
+    "mild": [
+      "A school trip becomes a cross-country search for misplaced weather equipment."
+    ],
+    "silly": [
+      "A teenager is blamed for stealing the sky's most expensive extension cord and must clear his name before summer camp ends.",
+      "A family disagreement among Greek gods becomes a road trip with monsters, maps, and no responsible chaperone."
+    ],
+    "wild": [
+      "A divine thunderbolt goes missing and every immortal immediately blames the nearest twelve-year-old.",
+      "The national power grid is nearly destroyed by one extremely complicated family reunion."
+    ]
+  },
+  "rick riordan": {
+    "name": "Rick Riordan",
+    "type": "Author",
+    "key": "percy",
+    "related": [
+      "Percy Jackson Series",
+      "The Lightning Thief",
+      "Magnus Chase",
+      "The Kane Chronicles"
+    ],
+    "mild": [
+      "An author who repeatedly proves mythology should never be left unsupervised around teenagers."
+    ],
+    "silly": [
+      "A former teacher who turned ancient myths into the world's least calm summer-camp brochures.",
+      "An author who gives every mythology its own group project and assigns it to children."
+    ],
+    "wild": [
+      "A mythology department becomes sentient and starts publishing field-trip incident reports.",
+      "One writer turns every pantheon into a youth leadership program with catastrophic liability exposure."
+    ]
+  },
+  "annabeth chase": {
+    "name": "Annabeth Chase",
+    "type": "Character",
+    "key": "percy",
+    "related": [
+      "Percy Jackson Series",
+      "The Lightning Thief",
+      "Percy Jackson",
+      "Rick Riordan"
+    ],
+    "mild": [
+      "A highly prepared strategist surrounded by people who refuse to read the plan."
+    ],
+    "silly": [
+      "An architect-in-training who spends most of her time preventing demigods from turning quests into demolition projects.",
+      "A teenager with a battle plan, a backup plan, and absolutely no patience for improvised heroics."
+    ],
+    "wild": [
+      "A human blueprint attempts to manage several walking disasters with swords.",
+      "The only person in mythology who brought a project schedule."
+    ]
+  },
+  "harry potter": {
+    "name": "Harry Potter Series",
+    "type": "Book Series",
+    "key": "potter",
+    "related": [
+      "Hermione Granger",
+      "Dumbledore",
+      "Percy Jackson Series",
+      "J.K. Rowling"
+    ],
+    "mild": [
+      "A boarding school repeatedly encounters preventable safety incidents."
+    ],
+    "silly": [
+      "Seven years of educational negligence are documented through owls, staircases, and one student who accidentally becomes Human Resources.",
+      "A magical school treats annual catastrophes as extracurricular activities."
+    ],
+    "wild": [
+      "An owl-powered institution survives seven audits by hiding evidence inside a moving castle.",
+      "A teenager defeats evil using friendship and the world's least reliable faculty."
+    ]
+  },
+  "gandalf": {
+    "name": "Gandalf",
+    "type": "Character",
+    "key": "gandalf",
+    "related": [
+      "The Hobbit",
+      "The Fellowship of the Ring",
+      "J.R.R. Tolkien",
+      "Bilbo Baggins",
+      "Frodo Baggins"
+    ],
+    "mild": [
+      "A wise but secretive wizard who guides others while revealing only the information he thinks they are ready to hear.",
+      "A patient mentor with a love of fireworks, long journeys, and arriving exactly when he considers appropriate."
+    ],
+    "silly": [
+      "A brilliant wizard who gives excellent advice in riddles, disappears for several chapters, and returns expecting everyone to have finished the assignment.",
+      "A warm but mysterious mentor who protects small people, challenges ancient evil, and treats punctuality as a philosophical concept.",
+      "A traveling wizard whose leadership style combines compassion, dramatic entrances, stern eyebrows, and carefully rationed explanations."
+    ],
+    "wild": [
+      "An immortal project sponsor disguised as an elderly fireworks enthusiast who refuses to share the complete strategy document.",
+      "A robe-powered mentor who fights ancient evil, comforts hobbits, and communicates deadlines almost entirely through meaningful looks.",
+      "A cosmic guardian who uses a staff, a hat, and selective disclosure to keep Middle-earth from failing its annual audit."
+    ],
+    "audiences": [
+      "hobbits waiting for the rest of the instructions",
+      "fireworks customers impressed by the demonstration",
+      "adventurers receiving deliberately incomplete guidance",
+      "wizards debating whether late arrival counts as punctual"
+    ],
+    "genres": [
+      "Mysterious Mentorship",
+      "Fireworks Diplomacy",
+      "Selective Information Management",
+      "Dramatic Arrival Studies"
+    ],
+    "quotes": [
+      "I have told you exactly as much as I intended to tell you.",
+      "A wizard is never late; the calendar is simply insufficiently wise.",
+      "Please begin the dangerous journey. I will explain the rest eventually."
+    ],
+    "reviews": [
+      "Kind, powerful, and helpful—once you accept that the complete plan will never be provided.",
+      "Excellent mentor. Extraordinary eyebrows. Communication plan needs revision.",
+      "He saved the day, inspired everyone, and still avoided sharing the meeting notes."
+    ],
+    "trailers": [
+      "One wizard. One staff. Several carefully withheld details.",
+      "This summer, wisdom arrives dramatically and explains only half the plan."
+    ],
+    "morals": [
+      "A good mentor does not need to give every answer, but a few more details would still be appreciated.",
+      "Never confuse gentleness with weakness—or a fireworks expert with an ordinary traveler."
+    ],
+    "endings": [
+      "Gandalf gives everyone the full itinerary, emergency contacts, and written objectives before departure.",
+      "He arrives ten minutes early and distributes a complete project brief."
+    ],
+    "questions": [
+      "Is Gandalf an effective mentor because he withholds information, or despite it?",
+      "Which defines Gandalf more: wisdom, compassion, power, mystery, or his faith in ordinary people?"
+    ]
+  },
+  "the fellowship of the ring": {
+    "name": "The Fellowship of the Ring",
+    "type": "Book",
+    "key": "lotr",
+    "related": [
+      "The Lord of the Rings Series",
+      "The Hobbit",
+      "Gandalf",
+      "J.R.R. Tolkien"
+    ],
+    "mild": [
+      "A jewelry club escorts an inherited ring through an unusually complicated return process."
+    ],
+    "silly": [
+      "A neighborhood jewelry club discovers one member inherited an extremely dramatic family heirloom. They choose cardio over customer service.",
+      "Nine hikers attempt to cancel a cursed subscription by walking to headquarters."
+    ],
+    "wild": [
+      "A volcano receives a surprise jewelry return after nine pedestrians reject transportation.",
+      "A wizard outsources hazardous-waste disposal to short interns and calls it destiny."
+    ]
+  },
+  "the lord of the rings series": {
+    "name": "The Lord of the Rings Series",
+    "type": "Book Series",
+    "key": "lotr",
+    "related": [
+      "The Fellowship of the Ring",
+      "The Two Towers",
+      "The Return of the King",
+      "Gandalf"
+    ],
+    "mild": [
+      "Three books about returning inherited jewelry through a complicated customer-service process."
+    ],
+    "silly": [
+      "A multi-volume hiking documentary where friendship, snacks, and volcano logistics fail quality control."
+    ],
+    "wild": [
+      "Middle-earth experiences an accessories recall managed entirely by pedestrians."
+    ]
+  },
+  "j.r.r. tolkien": {
+    "name": "J.R.R. Tolkien",
+    "type": "Author",
+    "key": "lotr",
+    "related": [
+      "The Hobbit",
+      "The Fellowship of the Ring",
+      "Gandalf",
+      "The Silmarillion"
+    ],
+    "mild": [
+      "An author who believed every walk deserved a language, map, and appendix."
+    ],
+    "silly": [
+      "A linguist who invented civilizations because one imaginary word needed context."
+    ],
+    "wild": [
+      "A map enthusiast accidentally creates literature while justifying footnotes."
+    ]
+  },
+  "the hunger games": {
+    "name": "The Hunger Games",
+    "type": "Book",
+    "key": "hunger",
+    "related": [
+      "Catching Fire",
+      "Mockingjay",
+      "Katniss Everdeen",
+      "Suzanne Collins"
+    ],
+    "mild": [
+      "A televised youth competition reveals weaknesses in event planning and ethics."
+    ],
+    "silly": [
+      "A teenager becomes the face of a reality show after demonstrating archery and refusing the dress code."
+    ],
+    "wild": [
+      "A costume department accidentally starts a revolution during a televised camping trip."
+    ]
+  },
+  "the great gatsby": {
+    "name": "The Great Gatsby",
+    "type": "Book",
+    "key": "gatsby",
+    "related": [
+      "F. Scott Fitzgerald",
+      "Pride and Prejudice",
+      "Nick Carraway",
+      "Moby Dick"
+    ],
+    "mild": [
+      "A wealthy host uses expensive parties as an inefficient communication strategy."
+    ],
+    "silly": [
+      "A man throws networking events because sending one honest text feels too vulnerable."
+    ],
+    "wild": [
+      "Champagne, symbolism, and poor driving collaborate on the least effective reunion plan ever."
+    ]
   }
 };

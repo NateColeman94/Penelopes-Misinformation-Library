@@ -8,8 +8,22 @@
   let searchCount=Number(sessionStorage.getItem("penelopeSearchCount")||0);
   let honkCount=Number(window.PenelopeStorage.get("penelopeHonkCount",0));
   const visitCount=Number(window.PenelopeStorage.get("penelopeVisitCount",0))+1;
+  const savedTheme=window.PenelopeStorage.get("penelopeTheme","light");
   window.PenelopeStorage.set("penelopeVisitCount",visitCount);
+  if(savedTheme==="dark")document.body.classList.add("dark");
 
+  function updateThemeButton(){
+    const button=$("themeBtn");
+    if(!button)return;
+    const dark=document.body.classList.contains("dark");
+    button.textContent=dark?"☀️ Light shelves":"🌙 Dark shelves";
+    button.setAttribute("aria-pressed",String(dark));
+  }
+  function toggleTheme(){
+    document.body.classList.toggle("dark");
+    window.PenelopeStorage.set("penelopeTheme",document.body.classList.contains("dark")?"dark":"light");
+    updateThemeButton();
+  }
   function counters(){
     $("searchCount").textContent=searchCount;
     $("honkCount").textContent=honkCount;
@@ -98,6 +112,7 @@
   }
 
   $("searchBtn").addEventListener("click",()=>runSearch($("query").value));
+  $("themeBtn").addEventListener("click",toggleTheme);
   $("query").addEventListener("keydown",event=>{if(event.key==="Enter"){event.preventDefault();runSearch(event.target.value)}});
   $("query").addEventListener("input",event=>{const value=event.target.value.trim();value.length>=3?showSuggestions(value):$("suggestions").classList.remove("show")});
   document.querySelectorAll(".example").forEach(button=>button.addEventListener("click",()=>{$("query").value=button.dataset.query;runSearch(button.dataset.query)}));
@@ -111,6 +126,6 @@
     renderSaved();
   });
 
-  counters();renderSaved();
+  updateThemeButton();counters();renderSaved();
   bubble(visitCount>1?"Welcome back! I see you're still looking for accurate summaries.":"Welcome to my library. Please keep all facts outside.");
 })();
