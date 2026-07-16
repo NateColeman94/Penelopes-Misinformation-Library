@@ -1,18 +1,24 @@
-# Penelope's Misinformation Library v4.0
+# Penelope's Misinformation Library v5
 
-A GitHub Pages-ready, single-file web application where every book is wonderfully misunderstood.
+This is the modular GitHub Pages version.
 
-## Features
-- Penelope the interactive goose librarian
-- Book, series, author, and character searches
-- Context-aware fictional audiences, genres, reviews, quotes, trailers, morals, endings, and discussion questions
-- Three silliness levels
-- Working “Think that's bad? Try another!” and “Make It Worse” buttons
-- Rotating Gandalf and other supported explanations
-- Clickable recommendations
-- Local voting with browser persistence
-- Floating books and geese
-- Library-stamp footer
+## Upload all files and folders
+Keep this structure exactly:
 
-## Deploy
-Upload `index.html` to the root of a GitHub repository and enable GitHub Pages from the main branch/root folder.
+- index.html
+- css/style.css
+- js/app.js
+- data/library.js
+- README.md
+
+Do not upload only index.html for Version 5. The page needs the CSS, JavaScript, and data folders.
+
+## Search types
+The interface now explicitly supports:
+- Books
+- Book series
+- Authors
+- Characters
+
+## Starter context-aware library
+Includes Percy Jackson, The Lightning Thief, Rick Riordan, Annabeth Chase, Harry Potter, Gandalf, The Fellowship of the Ring, The Lord of the Rings Series, J.R.R. Tolkien, The Hunger Games, and The Great Gatsby, plus a graceful generic fallback.

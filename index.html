@@ -1,435 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Penelope's Misinformation Library</title>
-<style>
-:root{
-  --ink:#2b2434; --paper:#fffdf5; --cream:#f6edcf; --gold:#e7b84b;
-  --mint:#dff4df; --pink:#ffdeda; --lav:#eee4ff; --blue:#dfeeff;
-  --shadow:0 12px 30px rgba(43,36,52,.14);
-}
-*{box-sizing:border-box}
-body{
-  margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink);
-  background:
-    radial-gradient(circle at 15% 15%,rgba(255,255,255,.9),transparent 20%),
-    linear-gradient(135deg,#f8f1dc,#f1e7ff 55%,#e5f4ea);
-  min-height:100vh; overflow-x:hidden;
-}
-.background-fun{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
-.floaty{position:absolute;font-size:clamp(2rem,5vw,4.8rem);opacity:.16;animation:drift 9s ease-in-out infinite alternate;filter:drop-shadow(2px 3px 0 rgba(43,36,52,.12))}
-.floaty:nth-child(2n){animation-duration:11s}.floaty:nth-child(3n){animation-duration:13s}
-@keyframes drift{from{transform:translateY(0) rotate(-8deg)}to{transform:translateY(-18px) rotate(8deg)}}
-.wrap{max-width:1120px;margin:auto;padding:28px 18px 60px}
-.hero{
-  display:grid;grid-template-columns:1fr 310px;gap:24px;align-items:center;
-  background:rgba(255,253,245,.94);border:3px solid var(--ink);border-radius:24px;
-  padding:28px;box-shadow:var(--shadow)
-}
-.brand h1{font-family:Georgia,serif;font-size:clamp(2.2rem,5vw,4rem);line-height:.98;margin:0 0 12px}
-.tagline{font-size:1.08rem;font-weight:700;margin:0 0 18px}
-.search-card{background:var(--cream);border:2px solid var(--ink);border-radius:18px;padding:16px}
-.search-row{display:flex;gap:10px}
-input,select,button{font:inherit}
-input{flex:1;padding:14px;border:2px solid var(--ink);border-radius:12px;background:white}
-select{padding:12px;border:2px solid var(--ink);border-radius:12px;background:white}
-button{border:2px solid var(--ink);border-radius:12px;padding:12px 16px;background:var(--gold);font-weight:900;cursor:pointer;box-shadow:3px 4px 0 var(--ink);transition:.15s}
-button:hover{transform:translate(-1px,-1px);box-shadow:5px 6px 0 var(--ink)}
-button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
-.penelope-card{text-align:center;background:var(--lav);border:3px solid var(--ink);border-radius:22px;padding:16px;position:relative}
-.goose{font-size:7rem;display:block;cursor:pointer;user-select:none;transition:.2s}
-.goose:hover{transform:rotate(-7deg) scale(1.04)}
-.bubble{background:white;border:2px solid var(--ink);border-radius:16px;padding:12px;font-weight:800;min-height:68px}
-.honk{font-family:Georgia,serif;font-size:1.15rem}
-.status-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
-.status{padding:10px;border:2px solid var(--ink);border-radius:12px;background:white;font-size:.9rem;font-weight:800}
-.result{display:none;margin-top:26px;background:rgba(255,253,245,.96);border:3px solid var(--ink);border-radius:24px;padding:24px;box-shadow:var(--shadow)}
-.result.show{display:block;animation:pop .25s ease-out}
-@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.result-top{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}
-.result h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3rem);margin:0}
-.type{background:var(--blue);border:2px solid var(--ink);padding:7px 11px;border-radius:999px;font-weight:900}
-.penelope-line{margin:18px 0;padding:14px;border-left:7px solid var(--gold);background:#fff7d9;border-radius:10px;font-weight:800}
-.synopsis{font-family:Georgia,serif;font-size:1.35rem;line-height:1.55;background:white;border:2px dashed var(--ink);padding:18px;border-radius:16px}
-.fake-rating{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:16px 0;padding:13px;border:2px solid var(--ink);border-radius:14px;background:var(--lav)}
-.stars{font-size:1.3rem;letter-spacing:2px}.rating-number{font-size:1.5rem;font-weight:950}.confused{font-size:.9rem}
-.badge-award{display:inline-block;padding:10px 14px;border:2px solid var(--ink);border-radius:999px;background:var(--pink);font-weight:950}
-.fake-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
-.fake-panel{border:2px solid var(--ink);border-radius:16px;padding:16px;background:white}
-.fake-panel h3{font-family:Georgia,serif;margin:0 0 9px}
-.fake-panel p{margin:0;line-height:1.5}
-.genre-list{display:flex;flex-wrap:wrap;gap:8px}
-.genre{border:2px solid var(--ink);border-radius:999px;padding:6px 10px;background:var(--mint);font-size:.84rem;font-weight:850}
-.wide{grid-column:1/-1}
-.related,.voting,.actions{margin-top:18px;border:2px solid var(--ink);border-radius:16px;padding:16px;background:#fff}
-.related-buttons,.vote-buttons,.action-buttons{display:flex;flex-wrap:wrap;gap:10px}
-.related button{background:var(--blue)}
-.vote-buttons button{background:var(--mint)}
-.actions button:nth-child(2){background:var(--pink)}
-.library-stamp{
-  margin:34px auto 0;max-width:760px;text-align:center;border:5px double var(--ink);
-  padding:18px;background:rgba(255,253,245,.9);font-family:Georgia,serif;
-  transform:rotate(-.5deg);box-shadow:var(--shadow)
-}
-.library-stamp strong{display:block;font-size:1.05rem;letter-spacing:.05em}
-.small{font-size:.82rem;opacity:.75}
-.confetti{position:fixed;z-index:20;font-size:1.5rem;pointer-events:none;animation:fall 1s ease-out forwards}
-@keyframes fall{to{transform:translateY(100px) rotate(180deg);opacity:0}}
-@media(max-width:820px){.hero{grid-template-columns:1fr}.penelope-card{order:-1}.fake-grid{grid-template-columns:1fr}.wide{grid-column:auto}}
-@media(max-width:600px){.search-row{flex-direction:column}.status-strip{grid-template-columns:1fr}.floaty{opacity:.1}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penelope's Misinformation Library</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="background-fun" aria-hidden="true">
-  <span class="floaty" style="top:4%;left:3%">📚</span>
-  <span class="floaty" style="top:12%;right:4%">🪿</span>
-  <span class="floaty" style="top:35%;left:1%">📖</span>
-  <span class="floaty" style="top:42%;right:2%">🪿</span>
-  <span class="floaty" style="top:68%;left:4%">📕</span>
-  <span class="floaty" style="top:73%;right:4%">🪿</span>
-  <span class="floaty" style="bottom:2%;left:14%">📘</span>
-  <span class="floaty" style="bottom:4%;right:15%">📚</span>
-</div>
+  <div class="background-fun" aria-hidden="true">
+    <span>📚</span><span>🪿</span><span>📖</span><span>🪿</span><span>📕</span><span>📘</span>
+  </div>
 
-<div class="wrap">
-<section class="hero">
-  <div class="brand">
-    <h1>Penelope's<br>Misinformation Library</h1>
-    <p class="tagline">Where every book is wonderfully misunderstood.</p>
-    <div class="search-card">
-      <div class="search-row">
-        <input id="query" placeholder="Ask Penelope to misunderstand a book..." aria-label="Book, series, author, or character">
-        <select id="level" aria-label="Silliness level">
-          <option value="mild">Plausibly Wrong</option>
-          <option value="silly" selected>Very Silly</option>
-          <option value="wild">Library Emergency</option>
-        </select>
-        <button id="searchBtn">📖 Misunderstand It</button>
+  <main class="wrap">
+    <section class="hero">
+      <div class="brand">
+        <h1>Penelope's<br>Misinformation Library</h1>
+        <p class="tagline">Where every book is wonderfully misunderstood.</p>
+        <p class="search-hint">Search for a <strong>book</strong>, <strong>book series</strong>, <strong>author</strong>, or <strong>character</strong>.</p>
+
+        <div class="search-card">
+          <input id="query" placeholder="Try Percy Jackson, Harry Potter, Gandalf, or J.R.R. Tolkien">
+          <select id="level">
+            <option value="mild">Plausibly Wrong</option>
+            <option value="silly" selected>Very Silly</option>
+            <option value="wild">Library Emergency</option>
+          </select>
+          <button id="searchBtn">📖 Misunderstand It</button>
+        </div>
+
+        <div class="example-row">
+          <button class="example" data-query="Percy Jackson">Book Series</button>
+          <button class="example" data-query="The Lightning Thief">Book</button>
+          <button class="example" data-query="Rick Riordan">Author</button>
+          <button class="example" data-query="Gandalf">Character</button>
+        </div>
       </div>
-    </div>
-  </div>
-  <aside class="penelope-card">
-    <span id="goose" class="goose" title="Click Penelope">🪿</span>
-    <div id="bubble" class="bubble"><span class="honk">Penelope says:</span><br>“Honk! Accurate summaries are unavailable today.”</div>
-    <div class="status-strip">
-      <div class="status">Accuracy: 0%</div>
-      <div class="status">Goose Approved</div>
-      <div class="status">Librarian Concerned</div>
-    </div>
-  </aside>
-</section>
 
-<article id="result" class="result">
-  <div class="result-top"><h2 id="title"></h2><span id="type" class="type"></span></div>
-  <div id="penelopeLine" class="penelope-line"></div>
-  <p id="synopsis" class="synopsis"></p>
+      <aside class="penelope-card">
+        <button id="goose" class="goose" aria-label="Click Penelope">🪿</button>
+        <div id="bubble" class="bubble"><strong>Penelope says:</strong><br>“Honk! Accurate summaries are unavailable today.”</div>
+        <div class="status-strip">
+          <span>Accuracy: 0%</span><span>Goose Approved</span><span>Librarian Concerned</span>
+        </div>
+      </aside>
+    </section>
 
-  <div class="fake-rating">
-    <span class="stars">★★★★★</span>
-    <span id="ratingNumber" class="rating-number"></span>
-    <span id="audience" class="confused"></span>
-    <span class="confused">• completely fictional</span>
-  </div>
+    <article id="result" class="result">
+      <header class="result-top">
+        <div><span id="type" class="type"></span><h2 id="title"></h2></div>
+      </header>
+      <div id="penelopeLine" class="penelope-line"></div>
+      <p id="synopsis" class="synopsis"></p>
 
-  <div id="award" class="badge-award"></div>
+      <div class="fake-rating">
+        <span class="stars">★★★★★</span>
+        <strong id="ratingNumber"></strong>
+        <span id="audience"></span>
+        <small>• completely fictional</small>
+      </div>
 
-  <div class="fake-grid">
-    <section class="fake-panel"><h3>🎭 Completely Silly Genres</h3><div id="genres" class="genre-list"></div></section>
-    <section class="fake-panel"><h3>💬 Famous Quote That Never Happened</h3><p id="quote"></p></section>
-    <section class="fake-panel"><h3>⭐ Reader Review</h3><p id="review"></p></section>
-    <section class="fake-panel"><h3>🎬 Honest Movie Trailer</h3><p id="trailer"></p></section>
-    <section class="fake-panel"><h3>🧠 Moral of the Story</h3><p id="moral"></p></section>
-    <section class="fake-panel"><h3>🔀 Alternate Ending</h3><p id="ending"></p></section>
-    <section class="fake-panel wide"><h3>☕ Book Club Discussion Question</h3><p id="discussion"></p></section>
-  </div>
+      <div id="award" class="award"></div>
 
-  <section class="related"><h3>📚 Readers Also Misunderstood</h3><div id="relatedButtons" class="related-buttons"></div></section>
-  <section class="voting"><h3>😂 Rate This Disaster</h3><div id="voteButtons" class="vote-buttons"></div></section>
-  <section class="actions"><div class="action-buttons">
-    <button id="tryAnother">📖 Think that's bad? Try another!</button>
-    <button id="makeWorse">🎲 Make It Worse</button>
-  </div></section>
-</article>
+      <div class="grid">
+        <section><h3>🎭 Completely Silly Genres</h3><div id="genres" class="genre-list"></div></section>
+        <section><h3>💬 Famous Quote That Never Happened</h3><p id="quote"></p></section>
+        <section><h3>⭐ Reader Review</h3><p id="review"></p></section>
+        <section><h3>🎬 Honest Movie Trailer</h3><p id="trailer"></p></section>
+        <section><h3>🧠 Moral of the Story</h3><p id="moral"></p></section>
+        <section><h3>🔀 Alternate Ending</h3><p id="ending"></p></section>
+        <section class="wide"><h3>☕ Book Club Discussion Question</h3><p id="discussion"></p></section>
+      </div>
 
-<footer class="library-stamp">
-  <strong>📚 LIBRARY NOTICE</strong>
-  <p>No books were responsibly summarized in the making of this application.</p>
-  <p>✓ Accurate Answers have been permanently checked out.</p>
-</footer>
-</div>
+      <section class="related"><h3>📚 Readers Also Misunderstood</h3><div id="relatedButtons"></div></section>
+      <section class="voting"><h3>😂 Rate This Disaster</h3><div id="voteButtons"></div></section>
+      <div class="actions">
+        <button id="tryAnother">📖 Think that's bad? Try another!</button>
+        <button id="makeWorse">🎲 Make It Worse</button>
+      </div>
+    </article>
 
-<script>
-const DATA = {
-  "the fellowship of the ring":{
-    name:"The Fellowship of the Ring",type:"Book",key:"lotr",
-    related:["The Hobbit","The Two Towers","The Return of the King","Gandalf"],
-    mild:["A jewelry club realizes one inherited ring has become an administrative problem, so nine members schedule an extended walking meeting.",
-          "A quiet neighborhood committee escorts a dramatic family heirloom across several counties because nobody trusts the postal service."],
-    silly:["A neighborhood jewelry club discovers one member inherited an extremely dramatic family heirloom. They choose cardio over customer service.",
-           "Nine hikers attempt to cancel a cursed subscription by walking directly to the company headquarters.",
-           "A small-town ring dispute becomes an international group project with no parking and limited snacks."],
-    wild:["A volcano receives a surprise jewelry return after nine pedestrians ignore every available transportation option.",
-          "An angry accessory launches the longest neighborhood watch meeting in literary history.",
-          "A wizard outsources hazardous waste disposal to four short interns and calls it destiny."]
-  },
-  "lord of the rings":{
-    name:"The Lord of the Rings Series",type:"Series",key:"lotr",
-    related:["The Fellowship of the Ring","The Two Towers","The Return of the King","The Hobbit"],
-    mild:["Three books about returning inherited jewelry through an unusually complicated customer-service process."],
-    silly:["A multi-volume hiking documentary in which friendship, snacks, and volcano logistics repeatedly fail quality control.",
-           "Several kingdoms spend three books discovering that evil jewelry cannot be solved through committee meetings."],
-    wild:["Middle-earth experiences a catastrophic accessories recall managed entirely by pedestrians.",
-          "A ring launches a continental staffing crisis while one wizard provides motivational smoke."]
-  },
-  "the hunger games":{
-    name:"The Hunger Games",type:"Book",key:"hunger",
-    related:["Catching Fire","Mockingjay","Harry Potter","Divergent"],
-    mild:["A televised youth competition reveals severe weaknesses in event planning and government ethics."],
-    silly:["A teenager accidentally becomes the face of a national reality show after demonstrating advanced archery and refusing the dress code.",
-           "The government launches the worst talent competition ever and is surprised when contestants dislike the format."],
-    wild:["A costume department accidentally starts a revolution during a nationally televised camping trip.",
-          "A bakery, a bow, and a flaming dress destroy an entire government's public-relations strategy."]
-  },
-  "harry potter":{
-    name:"Harry Potter Series",type:"Series",key:"potter",
-    related:["Harry Potter and the Sorcerer's Stone","Hermione Granger","Gandalf","Percy Jackson"],
-    mild:["A boarding school repeatedly encounters preventable safety incidents while one student receives unusually personalized homework."],
-    silly:["Seven years of educational negligence are documented through owls, staircases, and one student who accidentally becomes Human Resources.",
-           "A magical school treats annual catastrophes as extracurricular activities and never updates the parent handbook."],
-    wild:["An owl-powered institution survives seven audits by hiding all evidence inside a moving castle.",
-          "A teenager defeats evil using friendship, paperwork avoidance, and the world's least reliable faculty."]
-  },
-  "gandalf":{
-    name:"Gandalf",type:"Character",key:"gandalf",
-    related:["The Fellowship of the Ring","The Hobbit","J.R.R. Tolkien","Dumbledore"],
-    mild:["A traveling consultant who provides riddles, fireworks, and incomplete project instructions."],
-    silly:["A local fireworks enthusiast who disappears whenever anyone asks him to help move furniture.",
-           "An elderly travel agent who books dangerous group tours and vanishes during customer-support hours.",
-           "A wizard consultant whose main deliverables are smoke, riddles, and urgent hiking assignments."],
-    wild:["A sentient beard assigns interns to volcano duty and calls it leadership development.",
-          "A fireworks vendor weaponizes motivational speeches and refuses to document the project plan.",
-          "A mysterious hat-and-stick executive repeatedly leaves the meeting before action items are assigned."]
-  },
-  "j.r.r. tolkien":{
-    name:"J.R.R. Tolkien",type:"Author",key:"tolkien",
-    related:["The Hobbit","The Fellowship of the Ring","The Silmarillion","Gandalf"],
-    mild:["An author who believed every short walk deserved a language, a map, and several appendices."],
-    silly:["A linguist who invented entire civilizations because one imaginary word needed more background.",
-           "A professor who turned hiking into a multi-volume governance system."],
-    wild:["A map enthusiast accidentally creates literature while trying to justify excessive footnotes.",
-          "One man creates fourteen languages so fictional hikers can misunderstand directions more accurately."]
-  },
-  "the great gatsby":{
-    name:"The Great Gatsby",type:"Book",key:"gatsby",
-    related:["Pride and Prejudice","The Catcher in the Rye","Moby Dick","F. Scott Fitzgerald"],
-    mild:["A wealthy host uses expensive parties as an inefficient communication strategy."],
-    silly:["A man throws increasingly elaborate networking events because sending one honest text feels too vulnerable.",
-           "Long Island zoning officials fail to stop a green light from becoming emotionally significant."],
-    wild:["A mansion becomes a notification system for one man's unresolved feelings.",
-          "Champagne, symbolism, and poor driving collaborate on the least effective reunion plan ever."]
-  },
-  "pride and prejudice":{
-    name:"Pride and Prejudice",type:"Book",key:"pride",
-    related:["Jane Austen","The Great Gatsby","Emma","Little Women"],
-    mild:["Several families test whether indirect communication can sustain an entire social season."],
-    silly:["Two people spend hundreds of pages discovering that first impressions and family group chats are equally unreliable.",
-           "A ballroom misunderstanding becomes a full-scale estate-planning emergency."],
-    wild:["Competitive eye contact destabilizes the English countryside.",
-          "One awkward proposal triggers a regional shortage of honest conversations."]
-  }
-};
+    <footer class="library-stamp">
+      <strong>📚 LIBRARY NOTICE</strong>
+      <p>No books were responsibly summarized in the making of this application.</p>
+      <p>✓ Accurate Answers have been permanently checked out.</p>
+    </footer>
+  </main>
 
-const GENERIC = {
-  mild:["A perfectly normal book is reclassified as an avoidable group project.",
-        "Several characters misunderstand a manageable situation for approximately three hundred pages."],
-  silly:["A collection of questionable decisions becomes hardcover.",
-         "Everyone ignores the obvious solution because the sequel needs material.",
-         "A minor inconvenience develops symbolism and demands a dramatic soundtrack."],
-  wild:["A bookmark becomes the most responsible character.",
-        "The plot escapes supervision and starts filing its own paperwork.",
-        "Literature occurs after every adult simultaneously leaves the building."]
-};
-
-const PROFILES = {
- lotr:{
-  audiences:["exhausted hikers","concerned jewelers","hobbits who packed too lightly","wizards avoiding accountability"],
-  genres:["Jewelry Management","Competitive Walking","Volcano Tourism","Friendship Logistics","Wizard Consulting"],
-  quotes:["Could someone please just mail the ring?","This meeting could have been a raven.","We ride at dawn, assuming someone packed breakfast."],
-  reviews:["I came for the jewelry and stayed because nobody could agree on transportation.","Five stars for cardio. One star for project planning."],
-  trailers:["One ring. Nine walkers. Zero parking.","This summer, an accessories return becomes destiny."],
-  morals:["Never trust inherited jewelry.","Always ask whether the wizard has a backup plan."],
-  endings:["They overnight the ring with express shipping.","Everyone agrees to take the eagles after checking availability."],
-  questions:["Could all of this have been solved with one group email?","Who was responsible for snacks, and why were they not held accountable?"]
- },
- hunger:{
-  audiences:["alarmed sponsors","archery camp counselors","parents questioning the field-trip waiver","stylists with ethical concerns"],
-  genres:["Government Reality TV","Archery Administration","Costume-Based Rebellion","Unlicensed Summer Camp"],
-  quotes:["May the odds be reviewed by legal counsel.","I volunteer as tribute, pending HR approval."],
-  reviews:["Worst summer camp ever. The costumes were memorable.","I expected baking. The brochure was misleading."],
-  trailers:["One bow. Twelve districts. Zero responsible adults.","This season, television loses control of its contestants."],
-  morals:["Never let the government plan youth entertainment.","A strong costume can become a strategic asset."],
-  endings:["Everyone refuses to sign the release form.","The districts replace the arena with mandatory mediation."],
-  questions:["At what point should a responsible adult have cancelled the event?","Was the costume department the most effective department in government?"]
- },
- potter:{
-  audiences:["concerned school inspectors","owls waiting on delivery updates","students filing safety complaints","guidance counselors who were never hired"],
-  genres:["Educational Horror","Bird Ownership","Wizard Administration","Property Damage"],
-  quotes:["Have you tried unplugging the prophecy and plugging it back in?","I specifically requested a normal school year."],
-  reviews:["The school desperately needs an OSHA inspection.","My owl still has not arrived."],
-  trailers:["One student. Seven years. Zero qualified guidance counselors.","This fall, homework becomes a national security concern."],
-  morals:["Read the enrollment forms carefully.","Background checks matter, even at magical institutions."],
-  endings:["The parents form a school board and close the dangerous corridor.","Everyone attends therapy and the villain loses audience engagement."],
-  questions:["Why was this school allowed to reopen every September?","Which faculty meeting should have happened first?"]
- },
- gandalf:{
-  audiences:["fireworks customers","abandoned hiking groups","wizards between consulting engagements","hobbits waiting for clearer instructions"],
-  genres:["Fireworks Consulting","Executive Disappearing","Riddle Management","Adventure Outsourcing"],
-  quotes:["You shall not pass... until the risk assessment is complete.","I will return precisely when the project is least convenient."],
-  reviews:["Excellent fireworks. Unclear deliverables.","He scheduled the hike and skipped the status meeting."],
-  trailers:["One beard. Several riddles. No documented action plan.","This summer, leadership leaves before the hard part."],
-  morals:["Never accept vague assignments from a wizard.","Document responsibilities before the mentor disappears."],
-  endings:["Gandalf remains for the entire meeting and answers every question.","He provides a written itinerary with emergency contacts."],
-  questions:["Is disappearing a leadership style or a scheduling conflict?","Who approved his consulting contract?"]
- },
- tolkien:{
-  audiences:["editors counting walking scenes","linguists lost in the appendices","mapmakers requesting overtime","readers carrying emergency snacks"],
-  genres:["Advanced Map Appreciation","Linguistic Landscaping","Footnote Adventure","Mythological Project Management"],
-  quotes:["This place needs another language.","The appendix will explain everything, eventually."],
-  reviews:["I opened one book and accidentally enrolled in a history degree.","Wonderful maps. Bring snacks."],
-  trailers:["One professor. Fourteen languages. Infinite walking.","This summer, a footnote gets its own civilization."],
-  morals:["Never underestimate a linguist with graph paper.","A short story may require several thousand years of background."],
-  endings:["Everyone uses one language and the appendix becomes eight pages.","The characters choose a nearby destination."],
-  questions:["How many languages are too many for one fictional continent?","Could the map have included estimated travel times?"]
- },
- gatsby:{
-  audiences:["party guests who never met the host","West Egg zoning officials","green-light enthusiasts","drivers reconsidering the commute"],
-  genres:["Luxury Networking","Emotional Real Estate","Green-Light Studies","Champagne Logistics"],
-  quotes:["Perhaps one more party will fix communication.","The green light has accepted your follow request."],
-  reviews:["Beautiful house. Host seemed distracted.","I attended every party and still did not understand the agenda."],
-  trailers:["One mansion. One light. Too many unresolved feelings.","This summer, networking becomes symbolism."],
-  morals:["Do not use parties as a substitute for one honest conversation.","Money cannot complete an emotional project plan."],
-  endings:["Gatsby sends a clear message and receives a clear answer.","The green light is replaced with a normal porch lamp."],
-  questions:["Could this have been resolved with one honest text?","Was the party budget approved by anyone?"]
- },
- pride:{
-  audiences:["matchmakers working unpaid overtime","relatives misreading every conversation","estate planners","ballroom observers"],
-  genres:["Romantic Miscommunication","Ballroom Analytics","Estate Planning Drama","Competitive First Impressions"],
-  quotes:["I dislike you for reasons I have not yet reviewed.","This proposal requires significant revision."],
-  reviews:["Everyone needed one honest conversation and fewer relatives.","The dancing was efficient. The communication was not."],
-  trailers:["Two opinions. Several estates. No direct communication.","This season, eye contact becomes a negotiation."],
-  morals:["First impressions need quality control.","Do not outsource communication to relatives."],
-  endings:["Darcy opens with a respectful email.","Everyone states their feelings before the next dance."],
-  questions:["Which misunderstanding had the highest avoidable cost?","Could the entire plot survive direct communication?"]
- },
- default:{
-  audiences:["deeply suspicious librarians","book-club members regretting their vote","English teachers requesting a meeting","readers who skimmed the back cover"],
-  genres:["Questionable Decisions","Unnecessary Secrecy","Extreme Group Projects","Narrative Property Damage"],
-  quotes:["This seems important, but nobody explained why.","I have chosen symbolism over common sense."],
-  reviews:["I finished the book and somehow understand it less.","The bookmark showed better judgment than the characters."],
-  trailers:["One book. Several decisions. No adult supervision.","This summer, the plot escapes quality control."],
-  morals:["One clear conversation can prevent several chapters.","Always verify the mentor's availability."],
-  endings:["Everyone communicates honestly and leaves before dinner.","A librarian checks the records and solves everything."],
-  questions:["Could this have been solved with one group email?","At what point should a responsible adult have intervened?"]
- }
-};
-
-const PENNY = [
- "Honk! I found the book, but the accurate summary wandered off.",
- "I checked three shelves. Every explanation was equally incorrect.",
- "The catalog says this belongs under Questionable Life Choices.",
- "I misplaced the truth somewhere near the returns desk.",
- "That is absolutely not what happened. Five stars.",
- "The accurate version has been reserved by someone else."
-];
-const AWARDS=["🏆 Certified Librarian Nightmare","🏅 Incorrect but Confident","📚 Book Club Menace","🪿 Goose-Approved Misinformation","🎭 Plot? Never Heard of It","🚨 English Teacher Alert"];
-
-let currentQuery="", currentItem=null, cycle=0;
-
-const norm=s=>s.toLowerCase().trim().replace(/[’']/g,"").replace(/\s+/g," ");
-const pick=(arr,i)=>arr[((i%arr.length)+arr.length)%arr.length];
-
-function resolve(q){
- const n=norm(q);
- if(DATA[n]) return DATA[n];
- for(const [k,v] of Object.entries(DATA)) if(n.includes(k)||k.includes(n)) return v;
- return {name:q||"Untitled Book",type:"Mystery Search",key:"default",related:["The Fellowship of the Ring","The Hunger Games","Harry Potter","The Great Gatsby"],...GENERIC};
-}
-function profile(item){return PROFILES[item.key]||PROFILES.default}
-function content(arr,offset=0){return pick(arr,cycle+offset)}
-
-function render(q,advance=false){
- if(!q.trim()) q="The Fellowship of the Ring";
- const same = norm(q)===norm(currentQuery);
- if(advance || same) cycle++; else cycle=0;
- currentQuery=q;
- currentItem=resolve(q);
- const level=document.getElementById("level").value;
- const options=currentItem[level]||GENERIC[level];
- const p=profile(currentItem);
-
- document.getElementById("title").textContent=currentItem.name;
- document.getElementById("type").textContent=currentItem.type;
- document.getElementById("penelopeLine").textContent="🪿 Penelope says: “"+content(PENNY,2)+"”";
- document.getElementById("synopsis").textContent=content(options,0);
- const rating=(4.50+((currentItem.name.length*7+cycle*11)%49)/100).toFixed(2);
- const count=1250+((currentItem.name.length*643+cycle*977)%8750);
- document.getElementById("ratingNumber").textContent=rating;
- document.getElementById("audience").textContent=`Based on ${count.toLocaleString()} ${content(p.audiences,1)}`;
- document.getElementById("award").textContent=content(AWARDS,3);
-
- const genres=document.getElementById("genres"); genres.innerHTML="";
- [0,1,2,3].map(i=>content(p.genres,i)).filter((v,i,a)=>a.indexOf(v)===i).forEach(g=>{
-   const s=document.createElement("span");s.className="genre";s.textContent=g;genres.appendChild(s);
- });
- document.getElementById("quote").textContent='“'+content(p.quotes,1)+'”';
- document.getElementById("review").textContent=content(p.reviews,2);
- document.getElementById("trailer").textContent=content(p.trailers,3);
- document.getElementById("moral").textContent=content(p.morals,4);
- document.getElementById("ending").textContent=content(p.endings,5);
- document.getElementById("discussion").textContent=content(p.questions,6);
-
- const rel=document.getElementById("relatedButtons"); rel.innerHTML="";
- currentItem.related.forEach(r=>{
-  const b=document.createElement("button");b.textContent=r;b.onclick=()=>{document.getElementById("query").value=r;render(r,false);window.scrollTo({top:0,behavior:"smooth"})};rel.appendChild(b)
- });
-
- renderVotes();
- document.getElementById("result").classList.add("show");
-}
-function renderVotes(){
- const wrap=document.getElementById("voteButtons");wrap.innerHTML="";
- const labels=["😂 Brilliantly Wrong","🤨 Almost Believable","🙄 Needs More Nonsense"];
- const key="votes:"+norm(currentItem.name)+":"+cycle;
- const saved=JSON.parse(localStorage.getItem(key)||"[0,0,0]");
- labels.forEach((lab,i)=>{
-  const b=document.createElement("button");b.textContent=`${lab} (${saved[i]})`;
-  b.onclick=()=>{saved[i]++;localStorage.setItem(key,JSON.stringify(saved));confetti();renderVotes()};
-  wrap.appendChild(b);
- });
-}
-function confetti(){
- for(let i=0;i<14;i++){
-  const s=document.createElement("span");s.className="confetti";s.textContent=["📚","🪿","✨","📖"][i%4];
-  s.style.left=(45+Math.random()*10)+"%";s.style.top=(40+Math.random()*10)+"%";
-  document.body.appendChild(s);setTimeout(()=>s.remove(),1000);
- }
-}
-function penelopeClick(){
- const bubble=document.getElementById("bubble");
- const msg=content(PENNY,Math.floor(Math.random()*PENNY.length)+cycle);
- bubble.innerHTML='<span class="honk">Penelope says:</span><br>“'+msg+'”';
-}
-document.getElementById("searchBtn").onclick=()=>render(document.getElementById("query").value,false);
-document.getElementById("query").addEventListener("keydown",e=>{if(e.key==="Enter")render(e.target.value,false)});
-document.getElementById("tryAnother").onclick=()=>render(currentQuery,true);
-document.getElementById("makeWorse").onclick=()=>{
- const level=document.getElementById("level");
- level.value=level.value==="mild"?"silly":level.value==="silly"?"wild":"wild";
- render(currentQuery,true);
-};
-document.getElementById("goose").onclick=penelopeClick;
-</script>
+  <script src="data/library.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
