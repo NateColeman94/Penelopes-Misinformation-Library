@@ -189,18 +189,62 @@
       <div><strong>Think critically.</strong><span>Especially when the goose has a stamp.</span></div>
       <div><strong>Read widely.</strong><span>Then misfile everything responsibly.</span></div>
     </section>
-
-    
-    <section id="staffPicksSection" class="card staff-picks-section">
-      <div class="section-heading-row">
+    <section id="penelopeDeskSection" class="card penelope-desk-section">
+      <div class="desk-header-row">
         <div>
-          <p class="eyebrow">Handwritten notes from the circulation desk</p>
-          <h2>🪿 Penelope's Staff Picks</h2>
-          <p>Books Penelope recommends with complete confidence and limited accuracy.</p>
+          <p class="eyebrow">Notes, books, and questionable correspondence</p>
+          <h2>🪿 From Penelope's Desk</h2>
+          <p>Three selections from today’s circulation desk, plus whatever the mail slot delivered.</p>
         </div>
-        <button id="refreshStaffPicksBtn" class="secondary">Refresh Picks</button>
+        <button id="refreshDeskBtn" class="secondary">Shuffle the Desk</button>
       </div>
-      <div id="staffPicksGrid" class="staff-picks-grid"></div>
+
+      <div class="desk-notice-board" aria-live="polite">
+        <span>📌 LIBRARY NOTICE</span>
+        <p id="deskNotice"></p>
+        <button id="newDeskNoticeBtn" class="desk-text-button">Another notice</button>
+      </div>
+
+      <div id="deskCards" class="desk-cards">
+        <article class="desk-card" data-desk-slot="reading">
+          <span class="desk-card-label">📖 Currently Reading</span>
+          <h3 id="deskReadingTitle"></h3>
+          <p id="deskReadingNote"></p>
+          <button id="deskReadingBtn">Open This Book</button>
+        </article>
+        <article class="desk-card featured" data-desk-slot="recommendation">
+          <span class="desk-card-label">⭐ Today's Recommendation</span>
+          <h3 id="deskRecommendationTitle"></h3>
+          <p id="deskRecommendationNote"></p>
+          <button id="deskRecommendationBtn">Penelope Recommends It</button>
+        </article>
+        <article class="desk-card" data-desk-slot="misunderstanding">
+          <span class="desk-card-label">🤦 Today's Wonderful Misunderstanding</span>
+          <h3 id="deskMisunderstandingTitle"></h3>
+          <p id="deskMisunderstandingNote"></p>
+          <button id="deskMisunderstandingBtn">See the Damage</button>
+        </article>
+      </div>
+
+      <div class="desk-lower-row">
+        <div class="desk-surface" aria-hidden="true">
+          <span>☕</span><span>📚</span><span>🪶</span><span>🔖</span>
+        </div>
+        <aside class="desk-mail-slot">
+          <div>
+            <span class="desk-card-label">📬 Today's Mail</span>
+            <strong id="deskMailFrom"></strong>
+          </div>
+          <button id="openDeskMailBtn" class="secondary">Read Letter</button>
+        </aside>
+      </div>
+
+      <div id="deskMailPanel" class="desk-mail-panel hidden" aria-live="polite">
+        <button id="closeDeskMailBtn" class="desk-mail-close" aria-label="Close letter">×</button>
+        <p class="desk-mail-salutation">Dear Penelope,</p>
+        <p id="deskMailText"></p>
+        <p id="deskMailSignature" class="desk-mail-signature"></p>
+      </div>
     </section>
 
     <section id="passportSection" class="card passport-section">
@@ -264,7 +308,6 @@
   <script src="js/penelope.js"></script>
   <script src="js/library-card.js"></script>
   <script src="js/open-library.js"></script>
-  <script src="data/staff-picks.js"></script>
   <script src="data/easter-eggs.js"></script>
   <script src="js/memory-seasonal.js"></script>
   <script src="data/desk-data.js"></script>
