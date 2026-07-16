@@ -780,3 +780,5 @@ body.dark .recommendation-lock-icon{background:#3c352d}
 .passport-stamp.earned .passport-progress span{background:var(--sage)}
 
 .passport-fallback{grid-column:1/-1;padding:18px;text-align:center;font-style:italic;border:1px dashed rgba(73,55,45,.35);border-radius:8px;background:rgba(255,249,236,.65)}
+
+.passport-progress{width:82%;height:10px;margin:8px auto 4px;overflow:hidden;border:1px solid rgba(73,55,45,.28);border-radius:999px;background:rgba(73,55,45,.10)}.passport-progress span{display:block;height:100%;background:var(--rose);transition:width .35s ease}.passport-stamp.earned .passport-progress span{background:var(--sage)}
