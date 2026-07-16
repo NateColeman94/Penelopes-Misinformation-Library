@@ -233,7 +233,12 @@ window.PENELOPE_COLLECTIONS = {
       "a tale of two cities",
       "les miserables",
       "fahrenheit 451",
-      "lord of the flies"
+      "lord of the flies",
+      "to kill a mockingbird",
+      "the catcher in the rye",
+      "the grapes of wrath",
+      "east of eden",
+      "the brothers karamazov"
     ]
   },
   "mystery-horror": {
@@ -256,7 +261,12 @@ window.PENELOPE_COLLECTIONS = {
       "it",
       "the haunting of hill house",
       "mexican gothic",
-      "the woman in white"
+      "the woman in white",
+      "the murder of roger ackroyd",
+      "and then there were none",
+      "the thursday murder club",
+      "the exorcist",
+      "bird box"
     ]
   },
   "childrens-books": {
@@ -279,7 +289,11 @@ window.PENELOPE_COLLECTIONS = {
       "the secret garden",
       "winnie the pooh",
       "the cat in the hat",
-      "the very hungry caterpillar"
+      "the very hungry caterpillar",
+      "harold and the purple crayon",
+      "corduroy",
+      "the tale of peter rabbit",
+      "the phantom tollbooth"
     ]
   },
   "romance": {
@@ -302,7 +316,10 @@ window.PENELOPE_COLLECTIONS = {
       "outlander",
       "me before you",
       "the time travelers wife",
-      "the love hypothesis"
+      "the love hypothesis",
+      "the seven year slip",
+      "the wedding date",
+      "the hating game"
     ]
   },
   "christian-books": {
@@ -326,7 +343,9 @@ window.PENELOPE_COLLECTIONS = {
       "the screwtape letters",
       "celebration of discipline",
       "heaven",
-      "love does"
+      "love does",
+      "the hiding place",
+      "gentle and lowly"
     ]
   },
   "recently-shelved-fantasy": {
@@ -696,6 +715,47 @@ window.PENELOPE_COLLECTIONS = {
       "brian k vaughan",
       "robert kirkman",
       "jeff smith"
+    ]
+  },
+  "science-fiction": {
+    "name": "Science Fiction",
+    "description": "",
+    "keys": [
+      "dune",
+      "project hail mary",
+      "the martian",
+      "foundation",
+      "ready player one"
+    ]
+  },
+  "recently-shelved-final": {
+    "name": "Recently Shelved — Final Expansion",
+    "description": "Classics, mysteries, romance, children's books, Christian titles, and science fiction.",
+    "keys": [
+      "to kill a mockingbird",
+      "the catcher in the rye",
+      "the grapes of wrath",
+      "east of eden",
+      "the brothers karamazov",
+      "the murder of roger ackroyd",
+      "and then there were none",
+      "the thursday murder club",
+      "the exorcist",
+      "bird box",
+      "the seven year slip",
+      "the wedding date",
+      "the hating game",
+      "harold and the purple crayon",
+      "corduroy",
+      "the tale of peter rabbit",
+      "the phantom tollbooth",
+      "the hiding place",
+      "gentle and lowly",
+      "dune",
+      "project hail mary",
+      "the martian",
+      "foundation",
+      "ready player one"
     ]
   }
 };

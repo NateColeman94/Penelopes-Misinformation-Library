@@ -26131,5 +26131,1325 @@ window.PENELOPE_LIBRARY = {
       "Cartoon Adventure acquires editorial authority and immediately restarts the universe.",
       "One case of fantasy scale becomes a crossover, a retcon, and an emergency staff meeting."
     ]
+  },
+  "to kill a mockingbird": {
+    "name": "To Kill a Mockingbird",
+    "type": "Book",
+    "key": "literary-classics",
+    "related": [
+      "Harper Lee",
+      "Atticus Finch",
+      "Scout Finch"
+    ],
+    "mild": [
+      "A small town learns that fairness is much harder than pretending everyone already agrees on it."
+    ],
+    "audiences": [
+      "readers tracking moral courage",
+      "librarians worried about community prejudice",
+      "book clubs debating childhood observation"
+    ],
+    "genres": [
+      "Moral Courage",
+      "Community Prejudice",
+      "Childhood Observation",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that moral courage was not included in the approved reading plan.",
+      "I have filed community prejudice under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent moral courage. Concerning community prejudice.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited childhood observation. No responsible summary."
+    ],
+    "morals": [
+      "Moral Courage should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses community prejudice before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does moral courage shape the central conflict?",
+      "Would the story still work without community prejudice?"
+    ],
+    "silly": [
+      "A small town learns that fairness is much harder than pretending everyone already agrees on it.",
+      "To Kill a Mockingbird turns moral courage into a full library incident involving community prejudice and insufficient supervision.",
+      "A routine case of childhood observation becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Moral Courage acquires executive authority and immediately destabilizes the entire book.",
+      "One case of community prejudice becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the catcher in the rye": {
+    "name": "The Catcher in the Rye",
+    "type": "Book",
+    "key": "literary-classics",
+    "related": [
+      "J.D. Salinger",
+      "Holden Caulfield"
+    ],
+    "mild": [
+      "A teenager tours New York while filing complaints against nearly every available adult."
+    ],
+    "audiences": [
+      "readers tracking teen alienation",
+      "librarians worried about adult phoniness",
+      "book clubs debating city wandering"
+    ],
+    "genres": [
+      "Teen Alienation",
+      "Adult Phoniness",
+      "City Wandering",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that teen alienation was not included in the approved reading plan.",
+      "I have filed adult phoniness under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent teen alienation. Concerning adult phoniness.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited city wandering. No responsible summary."
+    ],
+    "morals": [
+      "Teen Alienation should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses adult phoniness before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does teen alienation shape the central conflict?",
+      "Would the story still work without adult phoniness?"
+    ],
+    "silly": [
+      "A teenager tours New York while filing complaints against nearly every available adult.",
+      "The Catcher in the Rye turns teen alienation into a full library incident involving adult phoniness and insufficient supervision.",
+      "A routine case of city wandering becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Teen Alienation acquires executive authority and immediately destabilizes the entire book.",
+      "One case of adult phoniness becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the grapes of wrath": {
+    "name": "The Grapes of Wrath",
+    "type": "Book",
+    "key": "literary-classics",
+    "related": [
+      "John Steinbeck",
+      "The Joad Family"
+    ],
+    "mild": [
+      "A family road trip becomes a national labor and housing emergency."
+    ],
+    "audiences": [
+      "readers tracking migration hardship",
+      "librarians worried about economic injustice",
+      "book clubs debating family endurance"
+    ],
+    "genres": [
+      "Migration Hardship",
+      "Economic Injustice",
+      "Family Endurance",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that migration hardship was not included in the approved reading plan.",
+      "I have filed economic injustice under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent migration hardship. Concerning economic injustice.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited family endurance. No responsible summary."
+    ],
+    "morals": [
+      "Migration Hardship should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses economic injustice before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does migration hardship shape the central conflict?",
+      "Would the story still work without economic injustice?"
+    ],
+    "silly": [
+      "A family road trip becomes a national labor and housing emergency.",
+      "The Grapes of Wrath turns migration hardship into a full library incident involving economic injustice and insufficient supervision.",
+      "A routine case of family endurance becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Migration Hardship acquires executive authority and immediately destabilizes the entire book.",
+      "One case of economic injustice becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "east of eden": {
+    "name": "East of Eden",
+    "type": "Book",
+    "key": "literary-classics",
+    "related": [
+      "John Steinbeck",
+      "Cal Trask",
+      "Adam Trask"
+    ],
+    "mild": [
+      "Several generations demonstrate that family history rarely stays inside one generation's filing cabinet."
+    ],
+    "audiences": [
+      "readers tracking family rivalry",
+      "librarians worried about moral choice",
+      "book clubs debating California farming"
+    ],
+    "genres": [
+      "Family Rivalry",
+      "Moral Choice",
+      "California Farming",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that family rivalry was not included in the approved reading plan.",
+      "I have filed moral choice under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent family rivalry. Concerning moral choice.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited California farming. No responsible summary."
+    ],
+    "morals": [
+      "Family Rivalry should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses moral choice before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does family rivalry shape the central conflict?",
+      "Would the story still work without moral choice?"
+    ],
+    "silly": [
+      "Several generations demonstrate that family history rarely stays inside one generation's filing cabinet.",
+      "East of Eden turns family rivalry into a full library incident involving moral choice and insufficient supervision.",
+      "A routine case of California farming becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Family Rivalry acquires executive authority and immediately destabilizes the entire book.",
+      "One case of moral choice becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the brothers karamazov": {
+    "name": "The Brothers Karamazov",
+    "type": "Book",
+    "key": "literary-classics",
+    "related": [
+      "Fyodor Dostoevsky",
+      "Dmitri Karamazov",
+      "Ivan Karamazov"
+    ],
+    "mild": [
+      "A family meeting expands into philosophy, accusation, inheritance, and several hundred pages of emotional paperwork."
+    ],
+    "audiences": [
+      "readers tracking family conflict",
+      "librarians worried about faith and doubt",
+      "book clubs debating inheritance disputes"
+    ],
+    "genres": [
+      "Family Conflict",
+      "Faith And Doubt",
+      "Inheritance Disputes",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that family conflict was not included in the approved reading plan.",
+      "I have filed faith and doubt under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent family conflict. Concerning faith and doubt.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited inheritance disputes. No responsible summary."
+    ],
+    "morals": [
+      "Family Conflict should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses faith and doubt before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does family conflict shape the central conflict?",
+      "Would the story still work without faith and doubt?"
+    ],
+    "silly": [
+      "A family meeting expands into philosophy, accusation, inheritance, and several hundred pages of emotional paperwork.",
+      "The Brothers Karamazov turns family conflict into a full library incident involving faith and doubt and insufficient supervision.",
+      "A routine case of inheritance disputes becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Family Conflict acquires executive authority and immediately destabilizes the entire book.",
+      "One case of faith and doubt becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the murder of roger ackroyd": {
+    "name": "The Murder of Roger Ackroyd",
+    "type": "Book",
+    "key": "mystery-horror",
+    "related": [
+      "Agatha Christie",
+      "Hercule Poirot"
+    ],
+    "mild": [
+      "A quiet village discovers that narration itself may require a background check."
+    ],
+    "audiences": [
+      "readers tracking village murder",
+      "librarians worried about unreliable narration",
+      "book clubs debating Poirot investigation"
+    ],
+    "genres": [
+      "Village Murder",
+      "Unreliable Narration",
+      "Poirot Investigation",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that village murder was not included in the approved reading plan.",
+      "I have filed unreliable narration under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent village murder. Concerning unreliable narration.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited Poirot investigation. No responsible summary."
+    ],
+    "morals": [
+      "Village Murder should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses unreliable narration before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does village murder shape the central conflict?",
+      "Would the story still work without unreliable narration?"
+    ],
+    "silly": [
+      "A quiet village discovers that narration itself may require a background check.",
+      "The Murder of Roger Ackroyd turns village murder into a full library incident involving unreliable narration and insufficient supervision.",
+      "A routine case of Poirot investigation becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Village Murder acquires executive authority and immediately destabilizes the entire book.",
+      "One case of unreliable narration becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "and then there were none": {
+    "name": "And Then There Were None",
+    "type": "Book",
+    "key": "mystery-horror",
+    "related": [
+      "Agatha Christie"
+    ],
+    "mild": [
+      "Ten guests attend an island retreat with the worst hospitality policy in literary history."
+    ],
+    "audiences": [
+      "readers tracking island isolation",
+      "librarians worried about guest-list danger",
+      "book clubs debating countdown mystery"
+    ],
+    "genres": [
+      "Island Isolation",
+      "Guest-List Danger",
+      "Countdown Mystery",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that island isolation was not included in the approved reading plan.",
+      "I have filed guest-list danger under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent island isolation. Concerning guest-list danger.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited countdown mystery. No responsible summary."
+    ],
+    "morals": [
+      "Island Isolation should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses guest-list danger before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does island isolation shape the central conflict?",
+      "Would the story still work without guest-list danger?"
+    ],
+    "silly": [
+      "Ten guests attend an island retreat with the worst hospitality policy in literary history.",
+      "And Then There Were None turns island isolation into a full library incident involving guest-list danger and insufficient supervision.",
+      "A routine case of countdown mystery becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Island Isolation acquires executive authority and immediately destabilizes the entire book.",
+      "One case of guest-list danger becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the thursday murder club": {
+    "name": "The Thursday Murder Club",
+    "type": "Book Series",
+    "key": "mystery-horror",
+    "related": [
+      "Richard Osman",
+      "Elizabeth Best",
+      "Joyce Meadowcroft"
+    ],
+    "mild": [
+      "A retirement community turns spare time into a highly effective cold-case department."
+    ],
+    "audiences": [
+      "readers tracking senior sleuthing",
+      "librarians worried about community teamwork",
+      "book clubs debating murder-club scheduling"
+    ],
+    "genres": [
+      "Senior Sleuthing",
+      "Community Teamwork",
+      "Murder-Club Scheduling",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that senior sleuthing was not included in the approved reading plan.",
+      "I have filed community teamwork under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent senior sleuthing. Concerning community teamwork.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited murder-club scheduling. No responsible summary."
+    ],
+    "morals": [
+      "Senior Sleuthing should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses community teamwork before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does senior sleuthing shape the central conflict?",
+      "Would the story still work without community teamwork?"
+    ],
+    "silly": [
+      "A continuing series where senior sleuthing repeatedly collides with community teamwork and nobody updates the procedure manual.",
+      "Several books prove murder-club scheduling is a renewable source of trouble.",
+      "A long-running collection powered by senior sleuthing, escalating community teamwork, and extremely optimistic planning."
+    ],
+    "wild": [
+      "Senior Sleuthing acquires executive authority and immediately destabilizes the entire book.",
+      "One case of community teamwork becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the exorcist": {
+    "name": "The Exorcist",
+    "type": "Book",
+    "key": "mystery-horror",
+    "related": [
+      "William Peter Blatty"
+    ],
+    "mild": [
+      "A family learns that some household disturbances require more than a maintenance request."
+    ],
+    "audiences": [
+      "readers tracking demonic possession",
+      "librarians worried about family fear",
+      "book clubs debating religious intervention"
+    ],
+    "genres": [
+      "Demonic Possession",
+      "Family Fear",
+      "Religious Intervention",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that demonic possession was not included in the approved reading plan.",
+      "I have filed family fear under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent demonic possession. Concerning family fear.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited religious intervention. No responsible summary."
+    ],
+    "morals": [
+      "Demonic Possession should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses family fear before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does demonic possession shape the central conflict?",
+      "Would the story still work without family fear?"
+    ],
+    "silly": [
+      "A family learns that some household disturbances require more than a maintenance request.",
+      "The Exorcist turns demonic possession into a full library incident involving family fear and insufficient supervision.",
+      "A routine case of religious intervention becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Demonic Possession acquires executive authority and immediately destabilizes the entire book.",
+      "One case of family fear becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "bird box": {
+    "name": "Bird Box",
+    "type": "Book",
+    "key": "mystery-horror",
+    "related": [
+      "Josh Malerman",
+      "Malorie"
+    ],
+    "mild": [
+      "A survival plan requires blindfolds, river travel, and remarkably little visual confirmation."
+    ],
+    "audiences": [
+      "readers tracking unseen threat",
+      "librarians worried about blindfolded survival",
+      "book clubs debating parental protection"
+    ],
+    "genres": [
+      "Unseen Threat",
+      "Blindfolded Survival",
+      "Parental Protection",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that unseen threat was not included in the approved reading plan.",
+      "I have filed blindfolded survival under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent unseen threat. Concerning blindfolded survival.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited parental protection. No responsible summary."
+    ],
+    "morals": [
+      "Unseen Threat should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses blindfolded survival before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does unseen threat shape the central conflict?",
+      "Would the story still work without blindfolded survival?"
+    ],
+    "silly": [
+      "A survival plan requires blindfolds, river travel, and remarkably little visual confirmation.",
+      "Bird Box turns unseen threat into a full library incident involving blindfolded survival and insufficient supervision.",
+      "A routine case of parental protection becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Unseen Threat acquires executive authority and immediately destabilizes the entire book.",
+      "One case of blindfolded survival becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the seven year slip": {
+    "name": "The Seven Year Slip",
+    "type": "Book",
+    "key": "romance",
+    "related": [
+      "Ashley Poston"
+    ],
+    "mild": [
+      "An apartment's time-management problem creates the least convenient dating schedule imaginable."
+    ],
+    "audiences": [
+      "readers tracking time-slip romance",
+      "librarians worried about apartment magic",
+      "book clubs debating emotional timing"
+    ],
+    "genres": [
+      "Time-Slip Romance",
+      "Apartment Magic",
+      "Emotional Timing",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that time-slip romance was not included in the approved reading plan.",
+      "I have filed apartment magic under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent time-slip romance. Concerning apartment magic.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited emotional timing. No responsible summary."
+    ],
+    "morals": [
+      "Time-Slip Romance should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses apartment magic before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does time-slip romance shape the central conflict?",
+      "Would the story still work without apartment magic?"
+    ],
+    "silly": [
+      "An apartment's time-management problem creates the least convenient dating schedule imaginable.",
+      "The Seven Year Slip turns time-slip romance into a full library incident involving apartment magic and insufficient supervision.",
+      "A routine case of emotional timing becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Time-Slip Romance acquires executive authority and immediately destabilizes the entire book.",
+      "One case of apartment magic becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the wedding date": {
+    "name": "The Wedding Date",
+    "type": "Book",
+    "key": "romance",
+    "related": [
+      "Jasmine Guillory"
+    ],
+    "mild": [
+      "A broken elevator produces a plus-one arrangement with far more follow-up than building management expected."
+    ],
+    "audiences": [
+      "readers tracking fake dating",
+      "librarians worried about wedding logistics",
+      "book clubs debating elevator introductions"
+    ],
+    "genres": [
+      "Fake Dating",
+      "Wedding Logistics",
+      "Elevator Introductions",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that fake dating was not included in the approved reading plan.",
+      "I have filed wedding logistics under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent fake dating. Concerning wedding logistics.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited elevator introductions. No responsible summary."
+    ],
+    "morals": [
+      "Fake Dating should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses wedding logistics before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does fake dating shape the central conflict?",
+      "Would the story still work without wedding logistics?"
+    ],
+    "silly": [
+      "A broken elevator produces a plus-one arrangement with far more follow-up than building management expected.",
+      "The Wedding Date turns fake dating into a full library incident involving wedding logistics and insufficient supervision.",
+      "A routine case of elevator introductions becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Fake Dating acquires executive authority and immediately destabilizes the entire book.",
+      "One case of wedding logistics becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the hating game": {
+    "name": "The Hating Game",
+    "type": "Book",
+    "key": "romance",
+    "related": [
+      "Sally Thorne",
+      "Lucy Hutton",
+      "Joshua Templeman"
+    ],
+    "mild": [
+      "Two coworkers convert office competition into an HR situation with excellent chemistry."
+    ],
+    "audiences": [
+      "readers tracking workplace rivalry",
+      "librarians worried about romantic tension",
+      "book clubs debating promotion competition"
+    ],
+    "genres": [
+      "Workplace Rivalry",
+      "Romantic Tension",
+      "Promotion Competition",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that workplace rivalry was not included in the approved reading plan.",
+      "I have filed romantic tension under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent workplace rivalry. Concerning romantic tension.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited promotion competition. No responsible summary."
+    ],
+    "morals": [
+      "Workplace Rivalry should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses romantic tension before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does workplace rivalry shape the central conflict?",
+      "Would the story still work without romantic tension?"
+    ],
+    "silly": [
+      "Two coworkers convert office competition into an HR situation with excellent chemistry.",
+      "The Hating Game turns workplace rivalry into a full library incident involving romantic tension and insufficient supervision.",
+      "A routine case of promotion competition becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Workplace Rivalry acquires executive authority and immediately destabilizes the entire book.",
+      "One case of romantic tension becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "harold and the purple crayon": {
+    "name": "Harold and the Purple Crayon",
+    "type": "Book",
+    "key": "childrens-books",
+    "related": [
+      "Crockett Johnson",
+      "Harold"
+    ],
+    "mild": [
+      "A child discovers drawing is a valid infrastructure strategy when no adults are present."
+    ],
+    "audiences": [
+      "readers tracking imaginative drawing",
+      "librarians worried about purple construction",
+      "book clubs debating bedtime navigation"
+    ],
+    "genres": [
+      "Imaginative Drawing",
+      "Purple Construction",
+      "Bedtime Navigation",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that imaginative drawing was not included in the approved reading plan.",
+      "I have filed purple construction under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent imaginative drawing. Concerning purple construction.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited bedtime navigation. No responsible summary."
+    ],
+    "morals": [
+      "Imaginative Drawing should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses purple construction before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does imaginative drawing shape the central conflict?",
+      "Would the story still work without purple construction?"
+    ],
+    "silly": [
+      "A child discovers drawing is a valid infrastructure strategy when no adults are present.",
+      "Harold and the Purple Crayon turns imaginative drawing into a full library incident involving purple construction and insufficient supervision.",
+      "A routine case of bedtime navigation becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Imaginative Drawing acquires executive authority and immediately destabilizes the entire book.",
+      "One case of purple construction becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "corduroy": {
+    "name": "Corduroy",
+    "type": "Book",
+    "key": "childrens-books",
+    "related": [
+      "Don Freeman",
+      "Lisa"
+    ],
+    "mild": [
+      "A bear searches a department store for one missing button and accidentally launches a nighttime retail audit."
+    ],
+    "audiences": [
+      "readers tracking toy friendship",
+      "librarians worried about missing buttons",
+      "book clubs debating store exploration"
+    ],
+    "genres": [
+      "Toy Friendship",
+      "Missing Buttons",
+      "Store Exploration",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that toy friendship was not included in the approved reading plan.",
+      "I have filed missing buttons under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent toy friendship. Concerning missing buttons.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited store exploration. No responsible summary."
+    ],
+    "morals": [
+      "Toy Friendship should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses missing buttons before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does toy friendship shape the central conflict?",
+      "Would the story still work without missing buttons?"
+    ],
+    "silly": [
+      "A bear searches a department store for one missing button and accidentally launches a nighttime retail audit.",
+      "Corduroy turns toy friendship into a full library incident involving missing buttons and insufficient supervision.",
+      "A routine case of store exploration becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Toy Friendship acquires executive authority and immediately destabilizes the entire book.",
+      "One case of missing buttons becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the tale of peter rabbit": {
+    "name": "The Tale of Peter Rabbit",
+    "type": "Book",
+    "key": "childrens-books",
+    "related": [
+      "Beatrix Potter",
+      "Peter Rabbit"
+    ],
+    "mild": [
+      "A rabbit ignores one clear garden policy and creates an entire produce-security incident."
+    ],
+    "audiences": [
+      "readers tracking garden trespassing",
+      "librarians worried about rabbit curiosity",
+      "book clubs debating vegetable theft"
+    ],
+    "genres": [
+      "Garden Trespassing",
+      "Rabbit Curiosity",
+      "Vegetable Theft",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that garden trespassing was not included in the approved reading plan.",
+      "I have filed rabbit curiosity under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent garden trespassing. Concerning rabbit curiosity.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited vegetable theft. No responsible summary."
+    ],
+    "morals": [
+      "Garden Trespassing should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses rabbit curiosity before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does garden trespassing shape the central conflict?",
+      "Would the story still work without rabbit curiosity?"
+    ],
+    "silly": [
+      "A rabbit ignores one clear garden policy and creates an entire produce-security incident.",
+      "The Tale of Peter Rabbit turns garden trespassing into a full library incident involving rabbit curiosity and insufficient supervision.",
+      "A routine case of vegetable theft becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Garden Trespassing acquires executive authority and immediately destabilizes the entire book.",
+      "One case of rabbit curiosity becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the phantom tollbooth": {
+    "name": "The Phantom Tollbooth",
+    "type": "Book",
+    "key": "childrens-books",
+    "related": [
+      "Norton Juster",
+      "Milo"
+    ],
+    "mild": [
+      "A bored child drives through grammar, mathematics, and several departments that should not have roads."
+    ],
+    "audiences": [
+      "readers tracking wordplay adventure",
+      "librarians worried about learning",
+      "book clubs debating bureaucratic kingdoms"
+    ],
+    "genres": [
+      "Wordplay Adventure",
+      "Learning",
+      "Bureaucratic Kingdoms",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that wordplay adventure was not included in the approved reading plan.",
+      "I have filed learning under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent wordplay adventure. Concerning learning.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited bureaucratic kingdoms. No responsible summary."
+    ],
+    "morals": [
+      "Wordplay Adventure should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses learning before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does wordplay adventure shape the central conflict?",
+      "Would the story still work without learning?"
+    ],
+    "silly": [
+      "A bored child drives through grammar, mathematics, and several departments that should not have roads.",
+      "The Phantom Tollbooth turns wordplay adventure into a full library incident involving learning and insufficient supervision.",
+      "A routine case of bureaucratic kingdoms becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Wordplay Adventure acquires executive authority and immediately destabilizes the entire book.",
+      "One case of learning becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the hiding place": {
+    "name": "The Hiding Place",
+    "type": "Book",
+    "key": "christian-books",
+    "related": [
+      "Corrie ten Boom"
+    ],
+    "mild": [
+      "A family's courage turns a house into a place of resistance, refuge, and costly faithfulness."
+    ],
+    "audiences": [
+      "readers tracking wartime courage",
+      "librarians worried about faith under pressure",
+      "book clubs debating resistance"
+    ],
+    "genres": [
+      "Wartime Courage",
+      "Faith Under Pressure",
+      "Resistance",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that wartime courage was not included in the approved reading plan.",
+      "I have filed faith under pressure under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent wartime courage. Concerning faith under pressure.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited resistance. No responsible summary."
+    ],
+    "morals": [
+      "Wartime Courage should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses faith under pressure before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does wartime courage shape the central conflict?",
+      "Would the story still work without faith under pressure?"
+    ],
+    "silly": [
+      "A family's courage turns a house into a place of resistance, refuge, and costly faithfulness.",
+      "The Hiding Place turns wartime courage into a full library incident involving faith under pressure and insufficient supervision.",
+      "A routine case of resistance becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Wartime Courage acquires executive authority and immediately destabilizes the entire book.",
+      "One case of faith under pressure becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "gentle and lowly": {
+    "name": "Gentle and Lowly",
+    "type": "Book",
+    "key": "christian-books",
+    "related": [
+      "Dane Ortlund"
+    ],
+    "mild": [
+      "A theological book spends its pages insisting that compassion belongs near the center of the shelf."
+    ],
+    "audiences": [
+      "readers tracking Christ's compassion",
+      "librarians worried about grace",
+      "book clubs debating spiritual encouragement"
+    ],
+    "genres": [
+      "Christ'S Compassion",
+      "Grace",
+      "Spiritual Encouragement",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that Christ's compassion was not included in the approved reading plan.",
+      "I have filed grace under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent Christ's compassion. Concerning grace.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited spiritual encouragement. No responsible summary."
+    ],
+    "morals": [
+      "Christ'S Compassion should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses grace before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does Christ's compassion shape the central conflict?",
+      "Would the story still work without grace?"
+    ],
+    "silly": [
+      "A theological book spends its pages insisting that compassion belongs near the center of the shelf.",
+      "Gentle and Lowly turns Christ's compassion into a full library incident involving grace and insufficient supervision.",
+      "A routine case of spiritual encouragement becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Christ'S Compassion acquires executive authority and immediately destabilizes the entire book.",
+      "One case of grace becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "dune": {
+    "name": "Dune",
+    "type": "Book Series",
+    "key": "science-fiction",
+    "related": [
+      "Frank Herbert",
+      "Paul Atreides",
+      "Arrakis"
+    ],
+    "mild": [
+      "A desert planet turns spice inventory into religion, politics, and the most consequential water policy imaginable."
+    ],
+    "audiences": [
+      "readers tracking desert politics",
+      "librarians worried about spice control",
+      "book clubs debating messianic leadership"
+    ],
+    "genres": [
+      "Desert Politics",
+      "Spice Control",
+      "Messianic Leadership",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that desert politics was not included in the approved reading plan.",
+      "I have filed spice control under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent desert politics. Concerning spice control.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited messianic leadership. No responsible summary."
+    ],
+    "morals": [
+      "Desert Politics should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses spice control before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does desert politics shape the central conflict?",
+      "Would the story still work without spice control?"
+    ],
+    "silly": [
+      "A continuing series where desert politics repeatedly collides with spice control and nobody updates the procedure manual.",
+      "Several books prove messianic leadership is a renewable source of trouble.",
+      "A long-running collection powered by desert politics, escalating spice control, and extremely optimistic planning."
+    ],
+    "wild": [
+      "Desert Politics acquires executive authority and immediately destabilizes the entire book.",
+      "One case of spice control becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "project hail mary": {
+    "name": "Project Hail Mary",
+    "type": "Book",
+    "key": "science-fiction",
+    "related": [
+      "Andy Weir",
+      "Ryland Grace"
+    ],
+    "mild": [
+      "A science teacher wakes up in space and discovers the group project has only one human participant."
+    ],
+    "audiences": [
+      "readers tracking space survival",
+      "librarians worried about scientific problem solving",
+      "book clubs debating alien friendship"
+    ],
+    "genres": [
+      "Space Survival",
+      "Scientific Problem Solving",
+      "Alien Friendship",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that space survival was not included in the approved reading plan.",
+      "I have filed scientific problem solving under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent space survival. Concerning scientific problem solving.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited alien friendship. No responsible summary."
+    ],
+    "morals": [
+      "Space Survival should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses scientific problem solving before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does space survival shape the central conflict?",
+      "Would the story still work without scientific problem solving?"
+    ],
+    "silly": [
+      "A science teacher wakes up in space and discovers the group project has only one human participant.",
+      "Project Hail Mary turns space survival into a full library incident involving scientific problem solving and insufficient supervision.",
+      "A routine case of alien friendship becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Space Survival acquires executive authority and immediately destabilizes the entire book.",
+      "One case of scientific problem solving becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "the martian": {
+    "name": "The Martian",
+    "type": "Book",
+    "key": "science-fiction",
+    "related": [
+      "Andy Weir",
+      "Mark Watney"
+    ],
+    "mild": [
+      "An astronaut turns being stranded on Mars into a gardening and communications problem."
+    ],
+    "audiences": [
+      "readers tracking Mars survival",
+      "librarians worried about engineering improvisation",
+      "book clubs debating space agriculture"
+    ],
+    "genres": [
+      "Mars Survival",
+      "Engineering Improvisation",
+      "Space Agriculture",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that Mars survival was not included in the approved reading plan.",
+      "I have filed engineering improvisation under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent Mars survival. Concerning engineering improvisation.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited space agriculture. No responsible summary."
+    ],
+    "morals": [
+      "Mars Survival should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses engineering improvisation before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does Mars survival shape the central conflict?",
+      "Would the story still work without engineering improvisation?"
+    ],
+    "silly": [
+      "An astronaut turns being stranded on Mars into a gardening and communications problem.",
+      "The Martian turns Mars survival into a full library incident involving engineering improvisation and insufficient supervision.",
+      "A routine case of space agriculture becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Mars Survival acquires executive authority and immediately destabilizes the entire book.",
+      "One case of engineering improvisation becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "foundation": {
+    "name": "Foundation",
+    "type": "Book Series",
+    "key": "science-fiction",
+    "related": [
+      "Isaac Asimov",
+      "Hari Seldon"
+    ],
+    "mild": [
+      "A mathematician predicts civilization's collapse and responds by opening the universe's most ambitious archive."
+    ],
+    "audiences": [
+      "readers tracking psychohistory",
+      "librarians worried about galactic decline",
+      "book clubs debating knowledge preservation"
+    ],
+    "genres": [
+      "Psychohistory",
+      "Galactic Decline",
+      "Knowledge Preservation",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that psychohistory was not included in the approved reading plan.",
+      "I have filed galactic decline under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent psychohistory. Concerning galactic decline.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited knowledge preservation. No responsible summary."
+    ],
+    "morals": [
+      "Psychohistory should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses galactic decline before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does psychohistory shape the central conflict?",
+      "Would the story still work without galactic decline?"
+    ],
+    "silly": [
+      "A continuing series where psychohistory repeatedly collides with galactic decline and nobody updates the procedure manual.",
+      "Several books prove knowledge preservation is a renewable source of trouble.",
+      "A long-running collection powered by psychohistory, escalating galactic decline, and extremely optimistic planning."
+    ],
+    "wild": [
+      "Psychohistory acquires executive authority and immediately destabilizes the entire book.",
+      "One case of galactic decline becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
+  },
+  "ready player one": {
+    "name": "Ready Player One",
+    "type": "Book",
+    "key": "science-fiction",
+    "related": [
+      "Ernest Cline",
+      "Wade Watts"
+    ],
+    "mild": [
+      "A virtual scavenger hunt becomes an employment exam, inheritance dispute, and pop-culture endurance test."
+    ],
+    "audiences": [
+      "readers tracking virtual reality",
+      "librarians worried about treasure hunt",
+      "book clubs debating corporate control"
+    ],
+    "genres": [
+      "Virtual Reality",
+      "Treasure Hunt",
+      "Corporate Control",
+      "Wonderful Misunderstanding"
+    ],
+    "quotes": [
+      "Please note that virtual reality was not included in the approved reading plan.",
+      "I have filed treasure hunt under Needs Further Questioning."
+    ],
+    "reviews": [
+      "Excellent virtual reality. Concerning treasure hunt.",
+      "The book was clear. Penelope's notes were not."
+    ],
+    "trailers": [
+      "One story. Unlimited corporate control. No responsible summary."
+    ],
+    "morals": [
+      "Virtual Reality should always be paired with judgment.",
+      "One honest conversation could have reduced the page count."
+    ],
+    "endings": [
+      "Everyone discusses treasure hunt before the final chapter.",
+      "Penelope files the conclusion under Probably Fine."
+    ],
+    "questions": [
+      "How does virtual reality shape the central conflict?",
+      "Would the story still work without treasure hunt?"
+    ],
+    "silly": [
+      "A virtual scavenger hunt becomes an employment exam, inheritance dispute, and pop-culture endurance test.",
+      "Ready Player One turns virtual reality into a full library incident involving treasure hunt and insufficient supervision.",
+      "A routine case of corporate control becomes a chapter-wide emergency because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Virtual Reality acquires executive authority and immediately destabilizes the entire book.",
+      "One case of treasure hunt becomes a prophecy, a scandal, and an emergency staff meeting."
+    ]
   }
 };

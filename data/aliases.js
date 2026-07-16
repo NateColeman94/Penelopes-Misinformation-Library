@@ -241,5 +241,21 @@ window.PENELOPE_ALIASES = {
   "tony stark": "iron man",
   "steve rogers": "captain america",
   "omniman": "omni man",
-  "bkv": "brian k vaughan"
+  "bkv": "brian k vaughan",
+  "mockingbird": "to kill a mockingbird",
+  "catcher in rye": "the catcher in the rye",
+  "grapes wrath": "the grapes of wrath",
+  "brothers karamazov": "the brothers karamazov",
+  "roger ackroyd": "the murder of roger ackroyd",
+  "and then there were none book": "and then there were none",
+  "thursday murder club": "the thursday murder club",
+  "seven year slip": "the seven year slip",
+  "purple crayon": "harold and the purple crayon",
+  "peter rabbit": "the tale of peter rabbit",
+  "wrinkle in time": "a wrinkle in time",
+  "phantom tollbooth": "the phantom tollbooth",
+  "project hailmary": "project hail mary",
+  "martian": "the martian",
+  "foundation series": "foundation",
+  "ready player 1": "ready player one"
 };
