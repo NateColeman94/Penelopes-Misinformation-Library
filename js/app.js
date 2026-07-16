@@ -135,53 +135,13 @@
     entries.forEach(entry=>{if(Object.prototype.hasOwnProperty.call(counts,entry.type))counts[entry.type]++});
     const wrap=$("libraryHoldings");
     if(wrap)wrap.innerHTML=`<p>Books <strong>${counts.Book}</strong></p><p>Series <strong>${counts["Book Series"]}</strong></p><p>Authors <strong>${counts.Author}</strong></p><p>Characters <strong>${counts.Character}</strong></p><p>Wonderful Misunderstandings <strong>${entries.length}</strong></p>`;
-    const arrival=$("comicsArrivalCount");if(arrival)arrival.textContent="39";
+    const arrival=$("finalArrivalCount");if(arrival)arrival.textContent="24";
   }
 
   function collectionsForKey(key){
     return Object.entries(window.PENELOPE_COLLECTIONS||{})
       .filter(([,collection])=>Array.isArray(collection.keys)&&collection.keys.includes(key))
       .map(([collectionKey])=>collectionKey);
-  }
-
-  function renderLegacyPassport(){
-    const grid=$("passportGrid");
-    if(!grid)return;
-    grid.innerHTML="";
-    try{
-      if(!window.PenelopeMemory||typeof window.PenelopeMemory.achievements!=="function"){
-        grid.innerHTML='<p class="passport-fallback">Penelope is still opening the Passport desk. Please refresh once.</p>';
-        return;
-      }
-      const achievements=window.PenelopeMemory.achievements();
-      if(!Array.isArray(achievements)||!achievements.length){
-        grid.innerHTML='<p class="passport-fallback">No stamps loaded yet. Your activity is safe; Penelope is repairing the stamp drawer.</p>';
-        return;
-      }
-      achievements.forEach(achievement=>{
-      const card=document.createElement("article");
-      card.className="passport-stamp "+(achievement.earned?"earned":"locked");
-      const icon=document.createElement("span");
-      icon.className="passport-icon";
-      icon.textContent=achievement.icon;
-      const title=document.createElement("strong");
-      title.textContent=achievement.name;
-      const detail=document.createElement("small");
-      detail.textContent=achievement.detail;
-      const state=document.createElement("em");
-      state.textContent=achievement.earned?"STAMPED":`${Math.min(achievement.current||0,achievement.target||0)} / ${achievement.target||1}`;
-      const track=document.createElement("div");
-      track.className="passport-progress";
-      const fill=document.createElement("span");
-      fill.style.width=((achievement.progress||0)*100)+"%";
-      track.appendChild(fill);
-      card.append(icon,title,detail,track,state);
-      grid.appendChild(card);
-      });
-    }catch(error){
-      console.error("Passport render failed",error);
-      grid.innerHTML='<p class="passport-fallback">The Passport drawer jammed, but your searches and honks are still safe.</p>';
-    }
   }
 
   function checkEasterEgg(value){
@@ -197,7 +157,7 @@
     panel.innerHTML=`<div class="easter-egg-result"><span>🥚</span><h3>${value}</h3><p>“${line}”</p></div>`;
     panel.classList.remove("hidden");
     panel.scrollIntoView({behavior:"smooth",block:"start"});
-    window.PenelopePassport?.render?.();
+    undefined;
     return true;
   }
 
@@ -299,13 +259,6 @@
     tournamentWinners=[];tournamentRound=0;tournamentPairIndex=0;showTournamentMatch();
     $("tournament").scrollIntoView({behavior:"smooth",block:"start"});
   }
-  $("resetPassportBtn").addEventListener("click",()=>{
-    if(confirm("Reset Penelope's Library Passport and browsing memory?")){
-      window.PenelopeMemory?.resetAchievements();
-      window.PenelopePassport?.render?.();
-      bubble("Passport reset. I have forgotten everything except where the snacks are.");
-    }
-  });
 
   window.addEventListener("penelope:desk-open",event=>{
     const name=event.detail?.name;
@@ -356,17 +309,16 @@
   };
 
   initializeFoundationModules();
-  window.PenelopePassport?.init?.();
   searchCount=Number(window.PenelopeStorage.get("penelopeSearchCount",searchCount)||searchCount);
   honkCount=Number(window.PenelopeStorage.get("penelopeHonkCount",honkCount)||honkCount);
   updateThemeButton();
   counters();
   requestAnimationFrame(counters);
-  setTimeout(()=>{counters();window.PenelopePassport?.render?.()},120);
-  setTimeout(()=>{counters();window.PenelopePassport?.render?.()},600);
-  window.addEventListener("load",()=>{counters();window.PenelopePassport?.render?.()},{once:true});
+  setTimeout(()=>{counters();undefined},120);
+  setTimeout(()=>{counters();undefined},600);
+  window.addEventListener("load",()=>{counters();undefined},{once:true});
   renderSaved();
-  window.PenelopePassport?.render?.();
+  undefined;
   const visitDays=window.PenelopeMemory?.recordVisit()||1;
   const seasonal=window.PenelopeMemory?.applySeason();
   let greeting=window.PenelopeMemory?.memoryGreeting(visitDays)
