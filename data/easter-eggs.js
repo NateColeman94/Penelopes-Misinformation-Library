@@ -1,0 +1,21 @@
+window.PENELOPE_EASTER_EGGS = {
+  "penelope": "That's me. Five stars. Very reliable. Terrible at summaries.",
+  "goose": "Finally, a subject I'm uniquely qualified to discuss.",
+  "duck": "Close... but incorrect.",
+  "library": "You're standing in one.",
+  "overdue": "I wasn't going to mention your fines.",
+  "chatgpt": "Very knowledgeable. Needs more honking.",
+  "google": "Good index. Poor goose representation.",
+  "wikipedia": "Useful. Surprisingly free of overdue notices.",
+  "dewey decimal": "We exchange Christmas cards.",
+  "isbn": "I memorized one once. It wasn't healthy.",
+  "bookmark": "Please don't fold the corners.",
+  "librarian": "My dream job.",
+  "silence": "HONK.",
+  "404": "That shelf appears to be missing.",
+  "error": "That sounds like Kevin from Interlibrary Loan.",
+  "truth": "Currently checked out.",
+  "accurate summary": "We do not carry that title.",
+  "honk": "You called?",
+  "kevin": "Interlibrary Loan has asked that we stop discussing Kevin."
+};
