@@ -158,7 +158,7 @@
     </article>
 
     <footer class="library-stamp">
-      <strong>📚 LIBRARY NOTICE</strong><div class="small">Build 5.4.2 — Search Repair</div>
+      <strong>📚 LIBRARY NOTICE</strong><div class="small">Build 5.5 — Entity-Aware Collection</div>
       <p>No books were responsibly summarized in the making of this application.</p>
       <p>✓ Accurate Answers have been permanently checked out.</p>
     </footer>
@@ -958,6 +958,527 @@ window.LIBRARY_DATA = {
     ]
   }
 };
+
+Object.assign(window.LIBRARY_DATA, {
+  "alice in wonderland": {
+    "name": "Alice's Adventures in Wonderland",
+    "type": "Book",
+    "key": "wonderland",
+    "related": [
+      "Alice",
+      "The Cheshire Cat",
+      "The Mad Hatter",
+      "Lewis Carroll"
+    ],
+    "mild": [
+      "A curious child attends an unusually disorganized afternoon meeting underground."
+    ],
+    "silly": [
+      "A girl follows a rabbit into a government office run entirely by riddles, snacks, and poor emotional regulation.",
+      "A tea break becomes a legal proceeding after everyone forgets what time means."
+    ],
+    "wild": [
+      "A child changes size repeatedly while trying to escape the least functional administration in literature.",
+      "One rabbit’s scheduling problem destabilizes an entire kingdom."
+    ],
+    "audiences": [
+      "tea-party coordinators",
+      "rabbits late for meetings",
+      "playing-card civil servants"
+    ],
+    "genres": [
+      "Tea-Time Bureaucracy",
+      "Rabbit-Led Logistics",
+      "Size-Change Compliance",
+      "Nonsense Governance"
+    ],
+    "quotes": [
+      "I object on the grounds that none of this makes sense.",
+      "Please submit all riddles before tea."
+    ],
+    "reviews": [
+      "The tea was endless. The leadership was not.",
+      "I entered for curiosity and left with a court summons."
+    ],
+    "trailers": [
+      "One rabbit. One tea party. No normal procedures."
+    ],
+    "morals": [
+      "Never follow a manager who is already late."
+    ],
+    "endings": [
+      "Alice schedules a normal meeting with an agenda."
+    ],
+    "questions": [
+      "Which department in Wonderland most urgently needed written procedures?"
+    ]
+  },
+  "alice": {
+    "name": "Alice",
+    "type": "Character",
+    "key": "wonderland",
+    "related": [
+      "Alice in Wonderland",
+      "The Cheshire Cat",
+      "The Mad Hatter",
+      "Lewis Carroll"
+    ],
+    "mild": [
+      "A curious, practical child repeatedly asks reasonable questions in an unreasonable place."
+    ],
+    "silly": [
+      "A determined young investigator spends an afternoon fact-checking a kingdom that has never encountered facts.",
+      "A polite child tries to apply common sense to talking animals, unstable furniture, and executive playing cards."
+    ],
+    "wild": [
+      "One schoolgirl becomes the sole quality-control department for nonsense itself.",
+      "A child with excellent follow-up questions nearly audits Wonderland out of existence."
+    ],
+    "audiences": [
+      "curious students",
+      "adults avoiding follow-up questions",
+      "Wonderland officials under review"
+    ],
+    "genres": [
+      "Curiosity Management",
+      "Child-Led Auditing",
+      "Common-Sense Resistance"
+    ],
+    "quotes": [
+      "That still does not answer my question.",
+      "I would like to speak to whoever organized this."
+    ],
+    "reviews": [
+      "Excellent questions. Terrible local answers.",
+      "She was the only person reading the situation correctly."
+    ],
+    "trailers": [
+      "One child. Endless nonsense. Unlimited follow-up questions."
+    ],
+    "morals": [
+      "Keep asking questions when adults become confusing."
+    ],
+    "endings": [
+      "Alice receives a complete explanation on the first attempt."
+    ],
+    "questions": [
+      "Was Alice adventurous, patient, or simply surrounded by worse decision-makers?"
+    ]
+  },
+  "the cheshire cat": {
+    "name": "The Cheshire Cat",
+    "type": "Character",
+    "key": "wonderland",
+    "related": [
+      "Alice in Wonderland",
+      "Alice",
+      "The Mad Hatter",
+      "Lewis Carroll"
+    ],
+    "mild": [
+      "A smiling cat gives directions that are technically words but rarely assistance."
+    ],
+    "silly": [
+      "A floating customer-service representative specializes in vague guidance and dramatic exits.",
+      "A cat treats disappearing mid-conversation as a professional communication style."
+    ],
+    "wild": [
+      "A grin becomes an independent consultant and bills by the riddle.",
+      "One cat turns ambiguity into a full-time career."
+    ],
+    "audiences": [
+      "confused travelers",
+      "cats avoiding accountability",
+      "direction-seekers regretting the question"
+    ],
+    "genres": [
+      "Vague Navigation",
+      "Disappearing Consultancy",
+      "Smiling Ambiguity"
+    ],
+    "quotes": [
+      "That depends entirely on whether you needed a useful answer.",
+      "I was here, but only aesthetically."
+    ],
+    "reviews": [
+      "Memorable smile. Unhelpful directions.",
+      "He vanished before the action items were assigned."
+    ],
+    "trailers": [
+      "One grin. No body. Limited customer support."
+    ],
+    "morals": [
+      "A confident answer is not always a useful answer."
+    ],
+    "endings": [
+      "The cat provides a map and remains visible."
+    ],
+    "questions": [
+      "Is the Cheshire Cat wise, evasive, or simply committed to branding?"
+    ]
+  },
+  "the mad hatter": {
+    "name": "The Mad Hatter",
+    "type": "Character",
+    "key": "wonderland",
+    "related": [
+      "Alice in Wonderland",
+      "Alice",
+      "The Cheshire Cat",
+      "Lewis Carroll"
+    ],
+    "mild": [
+      "An energetic host whose tea gathering has continued beyond reasonable scheduling limits."
+    ],
+    "silly": [
+      "A tea-party manager refuses to end the meeting because the clock relationship has become complicated.",
+      "A hat professional converts one snack break into a permanent operating model."
+    ],
+    "wild": [
+      "One host traps time inside an endless catering event.",
+      "A milliner turns poor calendar management into a personality."
+    ],
+    "audiences": [
+      "meeting facilitators",
+      "tea suppliers",
+      "guests waiting for the agenda"
+    ],
+    "genres": [
+      "Endless Tea Operations",
+      "Calendar Avoidance",
+      "Hat-Based Hospitality"
+    ],
+    "quotes": [
+      "The meeting will end when time apologizes.",
+      "Please move one seat to the left and call it progress."
+    ],
+    "reviews": [
+      "Strong tea. No closure.",
+      "The host had energy but no agenda."
+    ],
+    "trailers": [
+      "One table. Infinite tea. Zero adjournments."
+    ],
+    "morals": [
+      "Even whimsical meetings need an end time."
+    ],
+    "endings": [
+      "The Hatter sends a calendar invitation with a clear duration."
+    ],
+    "questions": [
+      "Was the Hatter entertaining, exhausting, or both?"
+    ]
+  },
+  "lewis carroll": {
+    "name": "Lewis Carroll",
+    "type": "Author",
+    "key": "wonderland",
+    "related": [
+      "Alice in Wonderland",
+      "Alice",
+      "The Cheshire Cat",
+      "The Mad Hatter"
+    ],
+    "mild": [
+      "An author who treated logic as something best tested by bending it."
+    ],
+    "silly": [
+      "A mathematician who turned wordplay into an entire government system.",
+      "An author who proved one rabbit can carry a full philosophical crisis."
+    ],
+    "wild": [
+      "A logician releases nonsense into the wild and gives it tea.",
+      "One writer weaponizes puns against conventional reality."
+    ],
+    "audiences": [
+      "linguists chasing puns",
+      "mathematicians reviewing rabbits",
+      "readers questioning clocks"
+    ],
+    "genres": [
+      "Mathematical Nonsense",
+      "Riddle Engineering",
+      "Tea-Party Philosophy"
+    ],
+    "quotes": [
+      "Logic is more entertaining after it has been lightly scrambled."
+    ],
+    "reviews": [
+      "Excellent wordplay. Reality remained unavailable."
+    ],
+    "trailers": [
+      "One mathematician. Several riddles. No stable scale."
+    ],
+    "morals": [
+      "Language can misbehave productively."
+    ],
+    "endings": [
+      "Every riddle includes an answer key."
+    ],
+    "questions": [
+      "Did Carroll use nonsense to escape logic or examine it more closely?"
+    ]
+  },
+  "peter pan": {
+    "name": "Peter Pan",
+    "type": "Book",
+    "key": "neverland",
+    "related": [
+      "Peter Pan",
+      "Captain Hook",
+      "Tinker Bell",
+      "J.M. Barrie"
+    ],
+    "mild": [
+      "Several children visit an island where adult supervision is considered optional."
+    ],
+    "silly": [
+      "A flying boy recruits siblings for an overnight trip without permission forms or a return itinerary.",
+      "An island’s youth program is managed by pirates, fairies, and one child who refuses promotions."
+    ],
+    "wild": [
+      "A boy rejects adulthood so aggressively that it becomes regional policy.",
+      "One bedtime story becomes an international child-safety investigation."
+    ],
+    "audiences": [
+      "parents checking bedroom windows",
+      "pirates reviewing youth policies",
+      "children avoiding bedtimes"
+    ],
+    "genres": [
+      "Flying Child Logistics",
+      "Pirate Youth Services",
+      "Never-Growing Management"
+    ],
+    "quotes": [
+      "Growing up has been postponed indefinitely.",
+      "Please sign the flying waiver."
+    ],
+    "reviews": [
+      "Wonderful flight. Concerning supervision.",
+      "The island needed an adult immediately."
+    ],
+    "trailers": [
+      "One window. One island. Zero permission slips."
+    ],
+    "morals": [
+      "Adventure still benefits from a return plan."
+    ],
+    "endings": [
+      "Everyone leaves a note and schedules the trip responsibly."
+    ],
+    "questions": [
+      "Is Neverland freedom, avoidance, or a poorly governed summer camp?"
+    ]
+  },
+  "peter pan character": {
+    "name": "Peter Pan",
+    "type": "Character",
+    "key": "neverland",
+    "related": [
+      "Peter Pan",
+      "Captain Hook",
+      "Tinker Bell",
+      "J.M. Barrie"
+    ],
+    "mild": [
+      "A charismatic flying child strongly opposed to long-term personal development."
+    ],
+    "silly": [
+      "A forever-young team leader who loves adventure but delegates consequences to everyone else.",
+      "A flying boy treats emotional growth as an optional subscription."
+    ],
+    "wild": [
+      "A child turns avoidance of adulthood into an island-wide constitution.",
+      "One airborne manager runs entirely on confidence and no succession plan."
+    ],
+    "audiences": [
+      "career counselors",
+      "children resisting bedtime",
+      "friends handling Peter’s consequences"
+    ],
+    "genres": [
+      "Permanent Adolescence",
+      "Flying Leadership",
+      "Responsibility Avoidance"
+    ],
+    "quotes": [
+      "I would grow as a person, but I have plans.",
+      "Consequences are for the return trip."
+    ],
+    "reviews": [
+      "Excellent confidence. Limited accountability.",
+      "He led every adventure and completed none of the paperwork."
+    ],
+    "trailers": [
+      "One flying boy. Endless confidence. No development plan."
+    ],
+    "morals": [
+      "Charm does not replace responsibility."
+    ],
+    "endings": [
+      "Peter agrees to one honest conversation about growing up."
+    ],
+    "questions": [
+      "Is Peter fearless, selfish, lonely, or all three?"
+    ]
+  },
+  "captain hook": {
+    "name": "Captain Hook",
+    "type": "Character",
+    "key": "neverland",
+    "related": [
+      "Peter Pan",
+      "Peter Pan Character",
+      "Tinker Bell",
+      "J.M. Barrie"
+    ],
+    "mild": [
+      "A formally dressed pirate whose professional goals are complicated by one child and one crocodile."
+    ],
+    "silly": [
+      "A revenge-focused captain maintains excellent wardrobe standards while making every decision about one flying teenager.",
+      "A pirate executive allows a ticking reptile to control his entire risk register."
+    ],
+    "wild": [
+      "One mustache turns a personal grievance into maritime strategy.",
+      "A pirate captain spends more time fearing a clock than managing his ship."
+    ],
+    "audiences": [
+      "pirates requesting clearer priorities",
+      "crocodile safety officers",
+      "captains managing personal grudges"
+    ],
+    "genres": [
+      "Revenge Administration",
+      "Crocodile Risk Management",
+      "Formal Pirate Leadership"
+    ],
+    "quotes": [
+      "This strategy is sound except for the child, the crocodile, and everything else.",
+      "Someone silence that clock."
+    ],
+    "reviews": [
+      "Excellent coat. Narrow strategic focus.",
+      "His risk assessment contained only one crocodile."
+    ],
+    "trailers": [
+      "One hook. One grudge. One extremely punctual reptile."
+    ],
+    "morals": [
+      "Do not let one rivalry become the entire business plan."
+    ],
+    "endings": [
+      "Hook hires a therapist and updates the ship’s priorities."
+    ],
+    "questions": [
+      "Would Hook be more effective without Peter Pan—or without his obsession with Peter Pan?"
+    ]
+  },
+  "tinker bell": {
+    "name": "Tinker Bell",
+    "type": "Character",
+    "key": "neverland",
+    "related": [
+      "Peter Pan",
+      "Peter Pan Character",
+      "Captain Hook",
+      "J.M. Barrie"
+    ],
+    "mild": [
+      "A highly capable fairy with strong opinions and limited patience."
+    ],
+    "silly": [
+      "A tiny engineering specialist powers flight while receiving none of the project-management authority.",
+      "A fairy combines technical talent, loyalty, and emotional escalation in a very small workspace."
+    ],
+    "wild": [
+      "A glowing maintenance expert becomes the most volatile stakeholder in Neverland.",
+      "One tiny fairy carries the entire aviation department and all workplace tension."
+    ],
+    "audiences": [
+      "fairies seeking recognition",
+      "engineers denied decision rights",
+      "small but influential stakeholders"
+    ],
+    "genres": [
+      "Fairy Engineering",
+      "Pixie-Dust Aviation",
+      "Compact Emotional Escalation"
+    ],
+    "quotes": [
+      "I power the flight, so I would like a vote.",
+      "Tiny does not mean optional."
+    ],
+    "reviews": [
+      "Excellent technical skills. Intense stakeholder management.",
+      "The entire flight system depended on her mood."
+    ],
+    "trailers": [
+      "One fairy. Infinite sparkle. Immediate escalation."
+    ],
+    "morals": [
+      "Recognize the person doing the essential work."
+    ],
+    "endings": [
+      "Tinker Bell receives formal authority and transparent communication."
+    ],
+    "questions": [
+      "Is Tinker Bell jealous, loyal, overlooked, or some combination?"
+    ]
+  },
+  "j.m. barrie": {
+    "name": "J.M. Barrie",
+    "type": "Author",
+    "key": "neverland",
+    "related": [
+      "Peter Pan",
+      "Peter Pan Character",
+      "Captain Hook",
+      "Tinker Bell"
+    ],
+    "mild": [
+      "An author who explored childhood by giving it flight and removing its calendar."
+    ],
+    "silly": [
+      "A playwright who turned bedtime avoidance into a national mythology.",
+      "An author who created an island where emotional development has no due date."
+    ],
+    "wild": [
+      "One writer gives childhood wings and adulthood a restraining order.",
+      "A playwright turns a nursery window into international transportation."
+    ],
+    "audiences": [
+      "parents inspecting windows",
+      "playwrights studying childhood",
+      "readers reconsidering growing up"
+    ],
+    "genres": [
+      "Flying Childhood",
+      "Neverland Psychology",
+      "Pirate Bedtime Drama"
+    ],
+    "quotes": [
+      "Growing up is narratively negotiable."
+    ],
+    "reviews": [
+      "Beautiful imagination. Complicated adulthood.",
+      "The window-security implications were significant."
+    ],
+    "trailers": [
+      "One playwright. One island. No aging policy."
+    ],
+    "morals": [
+      "Childhood wonder and avoidance are not always the same thing."
+    ],
+    "endings": [
+      "Neverland establishes a healthy transition program."
+    ],
+    "questions": [
+      "Does Barrie present childhood as freedom, loss, or both?"
+    ]
+  }
+});
 window.HUMOR_PROFILES = {
   "tolkien": {
     "audiences": [
@@ -1262,6 +1783,69 @@ window.HUMOR_PROFILES = {
     ]
   }
 };
+
+Object.assign(window.HUMOR_PROFILES, {
+  "wonderland": {
+    "audiences": [
+      "tea-party coordinators",
+      "rabbits late for meetings",
+      "Wonderland civil servants"
+    ],
+    "genres": [
+      "Nonsense Governance",
+      "Tea-Time Bureaucracy",
+      "Rabbit Logistics"
+    ],
+    "quotes": [
+      "Please submit all riddles before tea."
+    ],
+    "reviews": [
+      "Reality was not available during my visit."
+    ],
+    "trailers": [
+      "One rabbit. Endless nonsense. No procedures."
+    ],
+    "morals": [
+      "Keep asking reasonable questions."
+    ],
+    "endings": [
+      "Wonderland adopts written policies."
+    ],
+    "questions": [
+      "Which rule in Wonderland made the least sense?"
+    ]
+  },
+  "neverland": {
+    "audiences": [
+      "parents checking windows",
+      "pirates reviewing youth policy",
+      "fairies managing flight operations"
+    ],
+    "genres": [
+      "Flying Child Logistics",
+      "Pirate Administration",
+      "Never-Growing Strategy"
+    ],
+    "quotes": [
+      "Growing up has been postponed."
+    ],
+    "reviews": [
+      "Wonderful flight. Concerning supervision."
+    ],
+    "trailers": [
+      "One island. One window. No permission slips."
+    ],
+    "morals": [
+      "Adventure still needs accountability."
+    ],
+    "endings": [
+      "Everyone creates a return plan."
+    ],
+    "questions": [
+      "Is Neverland freedom or avoidance?"
+    ]
+  }
+});
 </script>
 <script>
 
@@ -1284,8 +1868,24 @@ let current="",item=null,cycle=0;
 const norm=s=>s.toLowerCase().trim().replace(/[’']/g,"").replace(/\s+/g," ");
 const pick=(a,i)=>a[((i%a.length)+a.length)%a.length];
 function resolve(q){const n=norm(q);if(DATA[n])return DATA[n];for(const[k,v]of Object.entries(DATA))if(n.includes(k)||k.includes(n))return v;return{name:q||"Untitled Book",type:"Mystery Search",key:"default",related:["Percy Jackson","The Fellowship of the Ring","Harry Potter","Gandalf"],mild:["A normal book becomes an avoidable group project."],silly:["A collection of questionable decisions becomes hardcover.","Everyone ignores the obvious solution because the sequel needs material."],wild:["The plot escapes supervision and begins filing paperwork.","A bookmark becomes the most responsible character."]}}
-function render(q,advance=false){if(!q.trim())q="Percy Jackson";const same=norm(q)===norm(current);cycle=(advance||same)?cycle+1:0;current=q;item=resolve(q);const lvl=document.getElementById("level").value,p=PROFILES[item.key]||PROFILES.default;
-document.getElementById("title").textContent=item.name;document.getElementById("type").textContent=item.type;document.getElementById("penelopeLine").textContent="🪿 Penelope says: “"+pick(PENNY,cycle)+"”";document.getElementById("synopsis").textContent=pick(item[lvl],cycle);
+function render(q,advance=false){if(!q.trim())q="Percy Jackson";const same=norm(q)===norm(current);cycle=(advance||same)?cycle+1:0;current=q;item=resolve(q);const lvl=document.getElementById("level").value,baseProfile=PROFILES[item.key]||PROFILES.default;
+const p={
+  audiences:item.audiences||baseProfile.audiences,
+  genres:item.genres||baseProfile.genres,
+  quotes:item.quotes||baseProfile.quotes,
+  reviews:item.reviews||baseProfile.reviews,
+  trailers:item.trailers||baseProfile.trailers,
+  morals:item.morals||baseProfile.morals,
+  endings:item.endings||baseProfile.endings,
+  questions:item.questions||baseProfile.questions
+};
+document.getElementById("title").textContent=item.name;document.getElementById("type").textContent=item.type;const typeIntro={
+  "Book":"I found the plot and immediately misfiled it.",
+  "Book Series":"I reviewed the whole series and misplaced the central point.",
+  "Author":"I studied the author’s style and irresponsibly summarized their entire career.",
+  "Character":"I checked the character file. Their personality remains suspicious."
+};
+document.getElementById("penelopeLine").textContent="🪿 Penelope says: “"+(typeIntro[item.type]||pick(PENNY,cycle))+"”";document.getElementById("synopsis").textContent=pick(item[lvl],cycle);
 document.getElementById("ratingNumber").textContent=(4.5+((item.name.length*7+cycle*11)%49)/100).toFixed(2);document.getElementById("audience").textContent=`Based on ${(1250+((item.name.length*643+cycle*977)%8750)).toLocaleString()} ${pick(p.audiences,cycle+1)}`;document.getElementById("award").textContent=pick(AWARDS,cycle+2);
 const g=document.getElementById("genres");g.innerHTML="";[0,1,2,3].map(i=>pick(p.genres,cycle+i)).filter((v,i,a)=>a.indexOf(v)===i).forEach(x=>{const s=document.createElement("span");s.textContent=x;g.appendChild(s)});
 for(const [id,key,off] of [["quote","quotes",1],["review","reviews",2],["trailer","trailers",3],["moral","morals",4],["ending","endings",5],["discussion","questions",6]])document.getElementById(id).textContent=(id==="quote"?"“":"")+pick(p[key],cycle+off)+(id==="quote"?"”":"");
