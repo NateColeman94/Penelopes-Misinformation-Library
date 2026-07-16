@@ -229,5 +229,17 @@ window.PENELOPE_ALIASES = {
   "jinwoo": "sung jinwoo",
   "zoro": "roronoa zoro",
   "naruto character": "naruto uzumaki",
-  "l deathnote": "l death note"
+  "l deathnote": "l death note",
+  "batman year 1": "batman year one",
+  "dark knight returns": "the dark knight returns",
+  "long halloween": "batman the long halloween",
+  "civil war marvel": "marvel civil war",
+  "spiderverse": "spider verse",
+  "walking dead": "the walking dead",
+  "wonderwoman": "wonder woman",
+  "flash": "the flash",
+  "tony stark": "iron man",
+  "steve rogers": "captain america",
+  "omniman": "omni man",
+  "bkv": "brian k vaughan"
 };

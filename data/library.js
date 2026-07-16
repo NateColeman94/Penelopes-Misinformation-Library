@@ -23952,5 +23952,2184 @@ window.PENELOPE_LIBRARY = {
       "Absurd Action acquires executive authority and immediately destabilizes the entire arc.",
       "One case of dark humor becomes a tournament, a prophecy, and an emergency staff meeting."
     ]
+  },
+  "batman year one": {
+    "name": "Batman: Year One",
+    "type": "Graphic Novel",
+    "key": "comics-dc",
+    "related": [
+      "Batman",
+      "Jim Gordon",
+      "Frank Miller"
+    ],
+    "mild": [
+      "A new vigilante and a new police lieutenant discover Gotham has no onboarding process."
+    ],
+    "audiences": [
+      "readers following rookie vigilantism",
+      "librarians concerned about Gotham corruption",
+      "fans debating cape-based urban planning"
+    ],
+    "genres": [
+      "Rookie Vigilantism",
+      "Gotham Corruption",
+      "Cape-Based Urban Planning",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that rookie vigilantism was not approved by the library board.",
+      "I have filed Gotham corruption under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent rookie vigilantism. Concerning Gotham corruption.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited cape-based urban planning. No cape-storage policy."
+    ],
+    "morals": [
+      "Rookie Vigilantism should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses Gotham corruption before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does rookie vigilantism shape the central conflict?",
+      "Would the story work without Gotham corruption?"
+    ],
+    "silly": [
+      "A new vigilante and a new police lieutenant discover Gotham has no onboarding process.",
+      "Batman: Year One turns rookie vigilantism into a citywide library incident involving Gotham corruption and insufficient supervision.",
+      "A routine case of cape-based urban planning becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Rookie Vigilantism acquires editorial authority and immediately restarts the universe.",
+      "One case of Gotham corruption becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "the dark knight returns": {
+    "name": "The Dark Knight Returns",
+    "type": "Graphic Novel",
+    "key": "comics-dc",
+    "related": [
+      "Batman",
+      "Frank Miller",
+      "Superman"
+    ],
+    "mild": [
+      "A retired billionaire returns to night work because Gotham's retirement plan failed."
+    ],
+    "audiences": [
+      "readers following late-career heroism",
+      "librarians concerned about urban unrest",
+      "fans debating retirement reversal"
+    ],
+    "genres": [
+      "Late-Career Heroism",
+      "Urban Unrest",
+      "Retirement Reversal",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that late-career heroism was not approved by the library board.",
+      "I have filed urban unrest under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent late-career heroism. Concerning urban unrest.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited retirement reversal. No cape-storage policy."
+    ],
+    "morals": [
+      "Late-Career Heroism should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses urban unrest before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does late-career heroism shape the central conflict?",
+      "Would the story work without urban unrest?"
+    ],
+    "silly": [
+      "A retired billionaire returns to night work because Gotham's retirement plan failed.",
+      "The Dark Knight Returns turns late-career heroism into a citywide library incident involving urban unrest and insufficient supervision.",
+      "A routine case of retirement reversal becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Late-Career Heroism acquires editorial authority and immediately restarts the universe.",
+      "One case of urban unrest becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "batman the long halloween": {
+    "name": "Batman: The Long Halloween",
+    "type": "Graphic Novel",
+    "key": "comics-dc",
+    "related": [
+      "Batman",
+      "Catwoman",
+      "Jeph Loeb"
+    ],
+    "mild": [
+      "Batman spends an entire holiday season investigating why Gotham cannot celebrate responsibly."
+    ],
+    "audiences": [
+      "readers following holiday crime",
+      "librarians concerned about detective work",
+      "fans debating Gotham calendar management"
+    ],
+    "genres": [
+      "Holiday Crime",
+      "Detective Work",
+      "Gotham Calendar Management",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that holiday crime was not approved by the library board.",
+      "I have filed detective work under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent holiday crime. Concerning detective work.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited Gotham calendar management. No cape-storage policy."
+    ],
+    "morals": [
+      "Holiday Crime should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses detective work before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does holiday crime shape the central conflict?",
+      "Would the story work without detective work?"
+    ],
+    "silly": [
+      "Batman spends an entire holiday season investigating why Gotham cannot celebrate responsibly.",
+      "Batman: The Long Halloween turns holiday crime into a citywide library incident involving detective work and insufficient supervision.",
+      "A routine case of Gotham calendar management becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Holiday Crime acquires editorial authority and immediately restarts the universe.",
+      "One case of detective work becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "v for vendetta": {
+    "name": "V for Vendetta",
+    "type": "Graphic Novel",
+    "key": "comics-dc",
+    "related": [
+      "V",
+      "Evey Hammond",
+      "Alan Moore"
+    ],
+    "mild": [
+      "A masked theater enthusiast turns political resistance into an extremely elaborate performance."
+    ],
+    "audiences": [
+      "readers following revolutionary theater",
+      "librarians concerned about authoritarian surveillance",
+      "fans debating mask-based symbolism"
+    ],
+    "genres": [
+      "Revolutionary Theater",
+      "Authoritarian Surveillance",
+      "Mask-Based Symbolism",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that revolutionary theater was not approved by the library board.",
+      "I have filed authoritarian surveillance under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent revolutionary theater. Concerning authoritarian surveillance.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited mask-based symbolism. No cape-storage policy."
+    ],
+    "morals": [
+      "Revolutionary Theater should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses authoritarian surveillance before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does revolutionary theater shape the central conflict?",
+      "Would the story work without authoritarian surveillance?"
+    ],
+    "silly": [
+      "A masked theater enthusiast turns political resistance into an extremely elaborate performance.",
+      "V for Vendetta turns revolutionary theater into a citywide library incident involving authoritarian surveillance and insufficient supervision.",
+      "A routine case of mask-based symbolism becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Revolutionary Theater acquires editorial authority and immediately restarts the universe.",
+      "One case of authoritarian surveillance becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "sandman": {
+    "name": "The Sandman",
+    "type": "Comic Series",
+    "key": "comics-dc",
+    "related": [
+      "Dream",
+      "Neil Gaiman",
+      "Death"
+    ],
+    "mild": [
+      "The person responsible for dreams returns to work and discovers the department has not been well managed."
+    ],
+    "audiences": [
+      "readers following dream administration",
+      "librarians concerned about mythological staffing",
+      "fans debating cosmic family conflict"
+    ],
+    "genres": [
+      "Dream Administration",
+      "Mythological Staffing",
+      "Cosmic Family Conflict",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that dream administration was not approved by the library board.",
+      "I have filed mythological staffing under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent dream administration. Concerning mythological staffing.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited cosmic family conflict. No cape-storage policy."
+    ],
+    "morals": [
+      "Dream Administration should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses mythological staffing before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does dream administration shape the central conflict?",
+      "Would the story work without mythological staffing?"
+    ],
+    "silly": [
+      "A continuing series where dream administration repeatedly collides with mythological staffing and nobody respects municipal property.",
+      "Several issues prove cosmic family conflict is a renewable source of crossovers.",
+      "A long-running collection powered by dream administration, escalating mythological staffing, and very flexible timelines."
+    ],
+    "wild": [
+      "Dream Administration acquires editorial authority and immediately restarts the universe.",
+      "One case of mythological staffing becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "all star superman": {
+    "name": "All-Star Superman",
+    "type": "Graphic Novel",
+    "key": "comics-dc",
+    "related": [
+      "Superman",
+      "Grant Morrison",
+      "Lex Luthor"
+    ],
+    "mild": [
+      "Superman receives a difficult diagnosis and responds by completing an impossible civic-service checklist."
+    ],
+    "audiences": [
+      "readers following solar overexposure",
+      "librarians concerned about heroic legacy",
+      "fans debating final-task management"
+    ],
+    "genres": [
+      "Solar Overexposure",
+      "Heroic Legacy",
+      "Final-Task Management",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that solar overexposure was not approved by the library board.",
+      "I have filed heroic legacy under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent solar overexposure. Concerning heroic legacy.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited final-task management. No cape-storage policy."
+    ],
+    "morals": [
+      "Solar Overexposure should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses heroic legacy before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does solar overexposure shape the central conflict?",
+      "Would the story work without heroic legacy?"
+    ],
+    "silly": [
+      "Superman receives a difficult diagnosis and responds by completing an impossible civic-service checklist.",
+      "All-Star Superman turns solar overexposure into a citywide library incident involving heroic legacy and insufficient supervision.",
+      "A routine case of final-task management becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Solar Overexposure acquires editorial authority and immediately restarts the universe.",
+      "One case of heroic legacy becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "kingdom come": {
+    "name": "Kingdom Come",
+    "type": "Graphic Novel",
+    "key": "comics-dc",
+    "related": [
+      "Superman",
+      "Wonder Woman",
+      "Mark Waid"
+    ],
+    "mild": [
+      "Retired heroes return because the new generation has confused confidence with public-safety planning."
+    ],
+    "audiences": [
+      "readers following generational hero conflict",
+      "librarians concerned about superpowered accountability",
+      "fans debating retirement interruption"
+    ],
+    "genres": [
+      "Generational Hero Conflict",
+      "Superpowered Accountability",
+      "Retirement Interruption",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that generational hero conflict was not approved by the library board.",
+      "I have filed superpowered accountability under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent generational hero conflict. Concerning superpowered accountability.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited retirement interruption. No cape-storage policy."
+    ],
+    "morals": [
+      "Generational Hero Conflict should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses superpowered accountability before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does generational hero conflict shape the central conflict?",
+      "Would the story work without superpowered accountability?"
+    ],
+    "silly": [
+      "Retired heroes return because the new generation has confused confidence with public-safety planning.",
+      "Kingdom Come turns generational hero conflict into a citywide library incident involving superpowered accountability and insufficient supervision.",
+      "A routine case of retirement interruption becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Generational Hero Conflict acquires editorial authority and immediately restarts the universe.",
+      "One case of superpowered accountability becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "marvel civil war": {
+    "name": "Civil War",
+    "type": "Comic Series",
+    "key": "comics-marvel",
+    "related": [
+      "Captain America",
+      "Iron Man",
+      "Mark Millar"
+    ],
+    "mild": [
+      "The superhero community turns a registration form into a nationwide workplace dispute."
+    ],
+    "audiences": [
+      "readers following hero registration",
+      "librarians concerned about team division",
+      "fans debating government oversight"
+    ],
+    "genres": [
+      "Hero Registration",
+      "Team Division",
+      "Government Oversight",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that hero registration was not approved by the library board.",
+      "I have filed team division under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent hero registration. Concerning team division.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited government oversight. No cape-storage policy."
+    ],
+    "morals": [
+      "Hero Registration should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses team division before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does hero registration shape the central conflict?",
+      "Would the story work without team division?"
+    ],
+    "silly": [
+      "A continuing series where hero registration repeatedly collides with team division and nobody respects municipal property.",
+      "Several issues prove government oversight is a renewable source of crossovers.",
+      "A long-running collection powered by hero registration, escalating team division, and very flexible timelines."
+    ],
+    "wild": [
+      "Hero Registration acquires editorial authority and immediately restarts the universe.",
+      "One case of team division becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "house of m": {
+    "name": "House of M",
+    "type": "Comic Series",
+    "key": "comics-marvel",
+    "related": [
+      "Scarlet Witch",
+      "Magneto",
+      "Brian Michael Bendis"
+    ],
+    "mild": [
+      "Reality is reorganized after one family meeting goes significantly worse than planned."
+    ],
+    "audiences": [
+      "readers following reality alteration",
+      "librarians concerned about mutant politics",
+      "fans debating family crisis"
+    ],
+    "genres": [
+      "Reality Alteration",
+      "Mutant Politics",
+      "Family Crisis",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that reality alteration was not approved by the library board.",
+      "I have filed mutant politics under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent reality alteration. Concerning mutant politics.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited family crisis. No cape-storage policy."
+    ],
+    "morals": [
+      "Reality Alteration should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses mutant politics before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does reality alteration shape the central conflict?",
+      "Would the story work without mutant politics?"
+    ],
+    "silly": [
+      "A continuing series where reality alteration repeatedly collides with mutant politics and nobody respects municipal property.",
+      "Several issues prove family crisis is a renewable source of crossovers.",
+      "A long-running collection powered by reality alteration, escalating mutant politics, and very flexible timelines."
+    ],
+    "wild": [
+      "Reality Alteration acquires editorial authority and immediately restarts the universe.",
+      "One case of mutant politics becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "secret invasion": {
+    "name": "Secret Invasion",
+    "type": "Comic Series",
+    "key": "comics-marvel",
+    "related": [
+      "Skrulls",
+      "Nick Fury",
+      "Brian Michael Bendis"
+    ],
+    "mild": [
+      "The heroes discover the staff directory has contained several unauthorized replacements."
+    ],
+    "audiences": [
+      "readers following alien infiltration",
+      "librarians concerned about identity verification",
+      "fans debating team paranoia"
+    ],
+    "genres": [
+      "Alien Infiltration",
+      "Identity Verification",
+      "Team Paranoia",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that alien infiltration was not approved by the library board.",
+      "I have filed identity verification under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent alien infiltration. Concerning identity verification.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited team paranoia. No cape-storage policy."
+    ],
+    "morals": [
+      "Alien Infiltration should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses identity verification before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does alien infiltration shape the central conflict?",
+      "Would the story work without identity verification?"
+    ],
+    "silly": [
+      "A continuing series where alien infiltration repeatedly collides with identity verification and nobody respects municipal property.",
+      "Several issues prove team paranoia is a renewable source of crossovers.",
+      "A long-running collection powered by alien infiltration, escalating identity verification, and very flexible timelines."
+    ],
+    "wild": [
+      "Alien Infiltration acquires editorial authority and immediately restarts the universe.",
+      "One case of identity verification becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "infinity gauntlet": {
+    "name": "The Infinity Gauntlet",
+    "type": "Graphic Novel",
+    "key": "comics-marvel",
+    "related": [
+      "Thanos",
+      "Silver Surfer",
+      "Jim Starlin"
+    ],
+    "mild": [
+      "A purple collector obtains six decorative stones and immediately exceeds the universe's authority limits."
+    ],
+    "audiences": [
+      "readers following cosmic artifacts",
+      "librarians concerned about universal imbalance",
+      "fans debating glove-based management"
+    ],
+    "genres": [
+      "Cosmic Artifacts",
+      "Universal Imbalance",
+      "Glove-Based Management",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that cosmic artifacts was not approved by the library board.",
+      "I have filed universal imbalance under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent cosmic artifacts. Concerning universal imbalance.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited glove-based management. No cape-storage policy."
+    ],
+    "morals": [
+      "Cosmic Artifacts should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses universal imbalance before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does cosmic artifacts shape the central conflict?",
+      "Would the story work without universal imbalance?"
+    ],
+    "silly": [
+      "A purple collector obtains six decorative stones and immediately exceeds the universe's authority limits.",
+      "The Infinity Gauntlet turns cosmic artifacts into a citywide library incident involving universal imbalance and insufficient supervision.",
+      "A routine case of glove-based management becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Cosmic Artifacts acquires editorial authority and immediately restarts the universe.",
+      "One case of universal imbalance becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "old man logan": {
+    "name": "Old Man Logan",
+    "type": "Graphic Novel",
+    "key": "comics-marvel",
+    "related": [
+      "Wolverine",
+      "Hawkeye",
+      "Mark Millar"
+    ],
+    "mild": [
+      "A retired hero accepts one last road trip across a country with extremely poor zoning decisions."
+    ],
+    "audiences": [
+      "readers following post-apocalyptic travel",
+      "librarians concerned about retired heroism",
+      "fans debating cross-country danger"
+    ],
+    "genres": [
+      "Post-Apocalyptic Travel",
+      "Retired Heroism",
+      "Cross-Country Danger",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that post-apocalyptic travel was not approved by the library board.",
+      "I have filed retired heroism under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent post-apocalyptic travel. Concerning retired heroism.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited cross-country danger. No cape-storage policy."
+    ],
+    "morals": [
+      "Post-Apocalyptic Travel should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses retired heroism before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does post-apocalyptic travel shape the central conflict?",
+      "Would the story work without retired heroism?"
+    ],
+    "silly": [
+      "A retired hero accepts one last road trip across a country with extremely poor zoning decisions.",
+      "Old Man Logan turns post-apocalyptic travel into a citywide library incident involving retired heroism and insufficient supervision.",
+      "A routine case of cross-country danger becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Post-Apocalyptic Travel acquires editorial authority and immediately restarts the universe.",
+      "One case of retired heroism becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "ms marvel no normal": {
+    "name": "Ms. Marvel: No Normal",
+    "type": "Graphic Novel",
+    "key": "comics-marvel",
+    "related": [
+      "Kamala Khan",
+      "G. Willow Wilson",
+      "Captain Marvel"
+    ],
+    "mild": [
+      "A teenager gains powers and discovers superhero work does not excuse missed homework."
+    ],
+    "audiences": [
+      "readers following teen heroism",
+      "librarians concerned about identity growth",
+      "fans debating family expectations"
+    ],
+    "genres": [
+      "Teen Heroism",
+      "Identity Growth",
+      "Family Expectations",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that teen heroism was not approved by the library board.",
+      "I have filed identity growth under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent teen heroism. Concerning identity growth.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited family expectations. No cape-storage policy."
+    ],
+    "morals": [
+      "Teen Heroism should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses identity growth before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does teen heroism shape the central conflict?",
+      "Would the story work without identity growth?"
+    ],
+    "silly": [
+      "A teenager gains powers and discovers superhero work does not excuse missed homework.",
+      "Ms. Marvel: No Normal turns teen heroism into a citywide library incident involving identity growth and insufficient supervision.",
+      "A routine case of family expectations becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Teen Heroism acquires editorial authority and immediately restarts the universe.",
+      "One case of identity growth becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "hawkeye my life as a weapon": {
+    "name": "Hawkeye: My Life as a Weapon",
+    "type": "Graphic Novel",
+    "key": "comics-marvel",
+    "related": [
+      "Hawkeye",
+      "Kate Bishop",
+      "Matt Fraction"
+    ],
+    "mild": [
+      "An archer handles neighborhood problems, dog care, and superhero work with very limited backup."
+    ],
+    "audiences": [
+      "readers following street-level heroism",
+      "librarians concerned about apartment trouble",
+      "fans debating arrow logistics"
+    ],
+    "genres": [
+      "Street-Level Heroism",
+      "Apartment Trouble",
+      "Arrow Logistics",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that street-level heroism was not approved by the library board.",
+      "I have filed apartment trouble under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent street-level heroism. Concerning apartment trouble.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited arrow logistics. No cape-storage policy."
+    ],
+    "morals": [
+      "Street-Level Heroism should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses apartment trouble before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does street-level heroism shape the central conflict?",
+      "Would the story work without apartment trouble?"
+    ],
+    "silly": [
+      "An archer handles neighborhood problems, dog care, and superhero work with very limited backup.",
+      "Hawkeye: My Life as a Weapon turns street-level heroism into a citywide library incident involving apartment trouble and insufficient supervision.",
+      "A routine case of arrow logistics becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Street-Level Heroism acquires editorial authority and immediately restarts the universe.",
+      "One case of apartment trouble becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "spider verse": {
+    "name": "Spider-Verse",
+    "type": "Comic Series",
+    "key": "comics-marvel",
+    "related": [
+      "Spider-Man",
+      "Miles Morales",
+      "Spider-Gwen"
+    ],
+    "mild": [
+      "Every possible spider-themed employee attends the same cross-dimensional conference."
+    ],
+    "audiences": [
+      "readers following multiverse spiders",
+      "librarians concerned about team coordination",
+      "fans debating web-based travel"
+    ],
+    "genres": [
+      "Multiverse Spiders",
+      "Team Coordination",
+      "Web-Based Travel",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that multiverse spiders was not approved by the library board.",
+      "I have filed team coordination under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent multiverse spiders. Concerning team coordination.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited web-based travel. No cape-storage policy."
+    ],
+    "morals": [
+      "Multiverse Spiders should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses team coordination before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does multiverse spiders shape the central conflict?",
+      "Would the story work without team coordination?"
+    ],
+    "silly": [
+      "A continuing series where multiverse spiders repeatedly collides with team coordination and nobody respects municipal property.",
+      "Several issues prove web-based travel is a renewable source of crossovers.",
+      "A long-running collection powered by multiverse spiders, escalating team coordination, and very flexible timelines."
+    ],
+    "wild": [
+      "Multiverse Spiders acquires editorial authority and immediately restarts the universe.",
+      "One case of team coordination becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "saga": {
+    "name": "Saga",
+    "type": "Comic Series",
+    "key": "comics-indie",
+    "related": [
+      "Alana",
+      "Marko",
+      "Brian K. Vaughan"
+    ],
+    "mild": [
+      "Two soldiers from opposing sides start a family and become the galaxy's least convenient peace initiative."
+    ],
+    "audiences": [
+      "readers following space family",
+      "librarians concerned about interplanetary war",
+      "fans debating parenting on the run"
+    ],
+    "genres": [
+      "Space Family",
+      "Interplanetary War",
+      "Parenting On The Run",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that space family was not approved by the library board.",
+      "I have filed interplanetary war under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent space family. Concerning interplanetary war.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited parenting on the run. No cape-storage policy."
+    ],
+    "morals": [
+      "Space Family should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses interplanetary war before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does space family shape the central conflict?",
+      "Would the story work without interplanetary war?"
+    ],
+    "silly": [
+      "A continuing series where space family repeatedly collides with interplanetary war and nobody respects municipal property.",
+      "Several issues prove parenting on the run is a renewable source of crossovers.",
+      "A long-running collection powered by space family, escalating interplanetary war, and very flexible timelines."
+    ],
+    "wild": [
+      "Space Family acquires editorial authority and immediately restarts the universe.",
+      "One case of interplanetary war becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "invincible": {
+    "name": "Invincible",
+    "type": "Comic Series",
+    "key": "comics-indie",
+    "related": [
+      "Mark Grayson",
+      "Omni-Man",
+      "Robert Kirkman"
+    ],
+    "mild": [
+      "A teenager inherits superpowers and discovers the family business has alarming international implications."
+    ],
+    "audiences": [
+      "readers following teen superheroism",
+      "librarians concerned about family betrayal",
+      "fans debating planetary consequences"
+    ],
+    "genres": [
+      "Teen Superheroism",
+      "Family Betrayal",
+      "Planetary Consequences",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that teen superheroism was not approved by the library board.",
+      "I have filed family betrayal under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent teen superheroism. Concerning family betrayal.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited planetary consequences. No cape-storage policy."
+    ],
+    "morals": [
+      "Teen Superheroism should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses family betrayal before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does teen superheroism shape the central conflict?",
+      "Would the story work without family betrayal?"
+    ],
+    "silly": [
+      "A continuing series where teen superheroism repeatedly collides with family betrayal and nobody respects municipal property.",
+      "Several issues prove planetary consequences is a renewable source of crossovers.",
+      "A long-running collection powered by teen superheroism, escalating family betrayal, and very flexible timelines."
+    ],
+    "wild": [
+      "Teen Superheroism acquires editorial authority and immediately restarts the universe.",
+      "One case of family betrayal becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "the walking dead": {
+    "name": "The Walking Dead",
+    "type": "Comic Series",
+    "key": "comics-indie",
+    "related": [
+      "Rick Grimes",
+      "Robert Kirkman",
+      "Michonne"
+    ],
+    "mild": [
+      "Survivors learn that the zombies are often easier to schedule than the people."
+    ],
+    "audiences": [
+      "readers following zombie survival",
+      "librarians concerned about community leadership",
+      "fans debating human conflict"
+    ],
+    "genres": [
+      "Zombie Survival",
+      "Community Leadership",
+      "Human Conflict",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that zombie survival was not approved by the library board.",
+      "I have filed community leadership under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent zombie survival. Concerning community leadership.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited human conflict. No cape-storage policy."
+    ],
+    "morals": [
+      "Zombie Survival should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses community leadership before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does zombie survival shape the central conflict?",
+      "Would the story work without community leadership?"
+    ],
+    "silly": [
+      "A continuing series where zombie survival repeatedly collides with community leadership and nobody respects municipal property.",
+      "Several issues prove human conflict is a renewable source of crossovers.",
+      "A long-running collection powered by zombie survival, escalating community leadership, and very flexible timelines."
+    ],
+    "wild": [
+      "Zombie Survival acquires editorial authority and immediately restarts the universe.",
+      "One case of community leadership becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "spawn": {
+    "name": "Spawn",
+    "type": "Comic Series",
+    "key": "comics-indie",
+    "related": [
+      "Spawn",
+      "Todd McFarlane",
+      "Violator"
+    ],
+    "mild": [
+      "A former operative returns from the dead with a cape, chains, and extremely poor contract terms."
+    ],
+    "audiences": [
+      "readers following hell contracts",
+      "librarians concerned about antihero identity",
+      "fans debating cape overengineering"
+    ],
+    "genres": [
+      "Hell Contracts",
+      "Antihero Identity",
+      "Cape Overengineering",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that hell contracts was not approved by the library board.",
+      "I have filed antihero identity under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent hell contracts. Concerning antihero identity.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited cape overengineering. No cape-storage policy."
+    ],
+    "morals": [
+      "Hell Contracts should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses antihero identity before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does hell contracts shape the central conflict?",
+      "Would the story work without antihero identity?"
+    ],
+    "silly": [
+      "A continuing series where hell contracts repeatedly collides with antihero identity and nobody respects municipal property.",
+      "Several issues prove cape overengineering is a renewable source of crossovers.",
+      "A long-running collection powered by hell contracts, escalating antihero identity, and very flexible timelines."
+    ],
+    "wild": [
+      "Hell Contracts acquires editorial authority and immediately restarts the universe.",
+      "One case of antihero identity becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "monstress": {
+    "name": "Monstress",
+    "type": "Comic Series",
+    "key": "comics-indie",
+    "related": [
+      "Maika Halfwolf",
+      "Marjorie Liu",
+      "Sana Takeda"
+    ],
+    "mild": [
+      "A young woman shares space with an ancient monster and receives no useful roommate agreement."
+    ],
+    "audiences": [
+      "readers following dark fantasy",
+      "librarians concerned about internal monsters",
+      "fans debating war-torn identity"
+    ],
+    "genres": [
+      "Dark Fantasy",
+      "Internal Monsters",
+      "War-Torn Identity",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that dark fantasy was not approved by the library board.",
+      "I have filed internal monsters under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent dark fantasy. Concerning internal monsters.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited war-torn identity. No cape-storage policy."
+    ],
+    "morals": [
+      "Dark Fantasy should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses internal monsters before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does dark fantasy shape the central conflict?",
+      "Would the story work without internal monsters?"
+    ],
+    "silly": [
+      "A continuing series where dark fantasy repeatedly collides with internal monsters and nobody respects municipal property.",
+      "Several issues prove war-torn identity is a renewable source of crossovers.",
+      "A long-running collection powered by dark fantasy, escalating internal monsters, and very flexible timelines."
+    ],
+    "wild": [
+      "Dark Fantasy acquires editorial authority and immediately restarts the universe.",
+      "One case of internal monsters becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "paper girls": {
+    "name": "Paper Girls",
+    "type": "Comic Series",
+    "key": "comics-indie",
+    "related": [
+      "Erin Tieng",
+      "Brian K. Vaughan",
+      "Cliff Chiang"
+    ],
+    "mild": [
+      "Four newspaper carriers encounter time travel before finishing the morning route."
+    ],
+    "audiences": [
+      "readers following time-travel delivery",
+      "librarians concerned about teen friendship",
+      "fans debating future conflict"
+    ],
+    "genres": [
+      "Time-Travel Delivery",
+      "Teen Friendship",
+      "Future Conflict",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that time-travel delivery was not approved by the library board.",
+      "I have filed teen friendship under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent time-travel delivery. Concerning teen friendship.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited future conflict. No cape-storage policy."
+    ],
+    "morals": [
+      "Time-Travel Delivery should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses teen friendship before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does time-travel delivery shape the central conflict?",
+      "Would the story work without teen friendship?"
+    ],
+    "silly": [
+      "A continuing series where time-travel delivery repeatedly collides with teen friendship and nobody respects municipal property.",
+      "Several issues prove future conflict is a renewable source of crossovers.",
+      "A long-running collection powered by time-travel delivery, escalating teen friendship, and very flexible timelines."
+    ],
+    "wild": [
+      "Time-Travel Delivery acquires editorial authority and immediately restarts the universe.",
+      "One case of teen friendship becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "bone": {
+    "name": "Bone",
+    "type": "Graphic Novel Series",
+    "key": "comics-graphic",
+    "related": [
+      "Fone Bone",
+      "Jeff Smith",
+      "Thorn"
+    ],
+    "mild": [
+      "Three cousins get lost and accidentally enter an epic fantasy because the map was apparently decorative."
+    ],
+    "audiences": [
+      "readers following lost cousins",
+      "librarians concerned about fantasy adventure",
+      "fans debating valley politics"
+    ],
+    "genres": [
+      "Lost Cousins",
+      "Fantasy Adventure",
+      "Valley Politics",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that lost cousins was not approved by the library board.",
+      "I have filed fantasy adventure under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent lost cousins. Concerning fantasy adventure.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited valley politics. No cape-storage policy."
+    ],
+    "morals": [
+      "Lost Cousins should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses fantasy adventure before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does lost cousins shape the central conflict?",
+      "Would the story work without fantasy adventure?"
+    ],
+    "silly": [
+      "A continuing series where lost cousins repeatedly collides with fantasy adventure and nobody respects municipal property.",
+      "Several issues prove valley politics is a renewable source of crossovers.",
+      "A long-running collection powered by lost cousins, escalating fantasy adventure, and very flexible timelines."
+    ],
+    "wild": [
+      "Lost Cousins acquires editorial authority and immediately restarts the universe.",
+      "One case of fantasy adventure becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "amulet": {
+    "name": "Amulet",
+    "type": "Graphic Novel Series",
+    "key": "comics-graphic",
+    "related": [
+      "Emily Hayes",
+      "Kazu Kibuishi",
+      "Navin Hayes"
+    ],
+    "mild": [
+      "A mysterious stone recruits a child into interdimensional property management."
+    ],
+    "audiences": [
+      "readers following magical amulets",
+      "librarians concerned about family rescue",
+      "fans debating alternate-world navigation"
+    ],
+    "genres": [
+      "Magical Amulets",
+      "Family Rescue",
+      "Alternate-World Navigation",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that magical amulets was not approved by the library board.",
+      "I have filed family rescue under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent magical amulets. Concerning family rescue.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited alternate-world navigation. No cape-storage policy."
+    ],
+    "morals": [
+      "Magical Amulets should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses family rescue before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does magical amulets shape the central conflict?",
+      "Would the story work without family rescue?"
+    ],
+    "silly": [
+      "A continuing series where magical amulets repeatedly collides with family rescue and nobody respects municipal property.",
+      "Several issues prove alternate-world navigation is a renewable source of crossovers.",
+      "A long-running collection powered by magical amulets, escalating family rescue, and very flexible timelines."
+    ],
+    "wild": [
+      "Magical Amulets acquires editorial authority and immediately restarts the universe.",
+      "One case of family rescue becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "nimona": {
+    "name": "Nimona",
+    "type": "Graphic Novel",
+    "key": "comics-graphic",
+    "related": [
+      "Nimona",
+      "ND Stevenson",
+      "Ballister Blackheart"
+    ],
+    "mild": [
+      "A shapeshifter applies for a villain-sidekick position and immediately exceeds the job description."
+    ],
+    "audiences": [
+      "readers following shapeshifting chaos",
+      "librarians concerned about villain public relations",
+      "fans debating institutional suspicion"
+    ],
+    "genres": [
+      "Shapeshifting Chaos",
+      "Villain Public Relations",
+      "Institutional Suspicion",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that shapeshifting chaos was not approved by the library board.",
+      "I have filed villain public relations under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent shapeshifting chaos. Concerning villain public relations.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited institutional suspicion. No cape-storage policy."
+    ],
+    "morals": [
+      "Shapeshifting Chaos should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses villain public relations before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does shapeshifting chaos shape the central conflict?",
+      "Would the story work without villain public relations?"
+    ],
+    "silly": [
+      "A shapeshifter applies for a villain-sidekick position and immediately exceeds the job description.",
+      "Nimona turns shapeshifting chaos into a citywide library incident involving villain public relations and insufficient supervision.",
+      "A routine case of institutional suspicion becomes a full crossover because everyone chose the dramatic entrance."
+    ],
+    "wild": [
+      "Shapeshifting Chaos acquires editorial authority and immediately restarts the universe.",
+      "One case of villain public relations becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "nightwing": {
+    "name": "Nightwing",
+    "type": "Character",
+    "key": "comics-dc",
+    "related": [
+      "Batman",
+      "Blüdhaven",
+      "Robin"
+    ],
+    "mild": [
+      "A former sidekick demonstrates that leaving Gotham is possible but cape-related overtime follows."
+    ],
+    "audiences": [
+      "readers following acrobatics",
+      "librarians concerned about independent heroism",
+      "fans debating former-sidekick administration"
+    ],
+    "genres": [
+      "Acrobatics",
+      "Independent Heroism",
+      "Former-Sidekick Administration",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that acrobatics was not approved by the library board.",
+      "I have filed independent heroism under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent acrobatics. Concerning independent heroism.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited former-sidekick administration. No cape-storage policy."
+    ],
+    "morals": [
+      "Acrobatics should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses independent heroism before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does acrobatics shape the central conflict?",
+      "Would the story work without independent heroism?"
+    ],
+    "silly": [
+      "Nightwing treats acrobatics as a full-time responsibility and independent heroism as an optional memo.",
+      "A highly specific hero powered by acrobatics, former-sidekick administration, and questionable work-life balance.",
+      "Nightwing enters the library, reorganizes independent heroism, and leaves through a skylight."
+    ],
+    "wild": [
+      "Acrobatics acquires editorial authority and immediately restarts the universe.",
+      "One case of independent heroism becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "the flash": {
+    "name": "The Flash",
+    "type": "Character",
+    "key": "comics-dc",
+    "related": [
+      "Central City",
+      "Speed Force",
+      "Justice League"
+    ],
+    "mild": [
+      "A scientist runs so fast that deadlines become more of a philosophical question."
+    ],
+    "audiences": [
+      "readers following super speed",
+      "librarians concerned about time complications",
+      "fans debating snack consumption"
+    ],
+    "genres": [
+      "Super Speed",
+      "Time Complications",
+      "Snack Consumption",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that super speed was not approved by the library board.",
+      "I have filed time complications under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent super speed. Concerning time complications.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited snack consumption. No cape-storage policy."
+    ],
+    "morals": [
+      "Super Speed should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses time complications before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does super speed shape the central conflict?",
+      "Would the story work without time complications?"
+    ],
+    "silly": [
+      "The Flash treats super speed as a full-time responsibility and time complications as an optional memo.",
+      "A highly specific hero powered by super speed, snack consumption, and questionable work-life balance.",
+      "The Flash enters the library, reorganizes time complications, and leaves through a skylight."
+    ],
+    "wild": [
+      "Super Speed acquires editorial authority and immediately restarts the universe.",
+      "One case of time complications becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "iron man": {
+    "name": "Iron Man",
+    "type": "Character",
+    "key": "comics-marvel",
+    "related": [
+      "Tony Stark",
+      "Avengers",
+      "Pepper Potts"
+    ],
+    "mild": [
+      "An inventor solves personal problems by adding more metal, software, and press conferences."
+    ],
+    "audiences": [
+      "readers following powered armor",
+      "librarians concerned about corporate heroism",
+      "fans debating technology escalation"
+    ],
+    "genres": [
+      "Powered Armor",
+      "Corporate Heroism",
+      "Technology Escalation",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that powered armor was not approved by the library board.",
+      "I have filed corporate heroism under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent powered armor. Concerning corporate heroism.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited technology escalation. No cape-storage policy."
+    ],
+    "morals": [
+      "Powered Armor should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses corporate heroism before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does powered armor shape the central conflict?",
+      "Would the story work without corporate heroism?"
+    ],
+    "silly": [
+      "Iron Man treats powered armor as a full-time responsibility and corporate heroism as an optional memo.",
+      "A highly specific hero powered by powered armor, technology escalation, and questionable work-life balance.",
+      "Iron Man enters the library, reorganizes corporate heroism, and leaves through a skylight."
+    ],
+    "wild": [
+      "Powered Armor acquires editorial authority and immediately restarts the universe.",
+      "One case of corporate heroism becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "captain america": {
+    "name": "Captain America",
+    "type": "Character",
+    "key": "comics-marvel",
+    "related": [
+      "Steve Rogers",
+      "Avengers",
+      "Bucky Barnes"
+    ],
+    "mild": [
+      "A super-soldier treats every disagreement like an opportunity for a motivational speech and shield demonstration."
+    ],
+    "audiences": [
+      "readers following principled leadership",
+      "librarians concerned about shield logistics",
+      "fans debating historical adjustment"
+    ],
+    "genres": [
+      "Principled Leadership",
+      "Shield Logistics",
+      "Historical Adjustment",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that principled leadership was not approved by the library board.",
+      "I have filed shield logistics under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent principled leadership. Concerning shield logistics.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited historical adjustment. No cape-storage policy."
+    ],
+    "morals": [
+      "Principled Leadership should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses shield logistics before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does principled leadership shape the central conflict?",
+      "Would the story work without shield logistics?"
+    ],
+    "silly": [
+      "Captain America treats principled leadership as a full-time responsibility and shield logistics as an optional memo.",
+      "A highly specific hero powered by principled leadership, historical adjustment, and questionable work-life balance.",
+      "Captain America enters the library, reorganizes shield logistics, and leaves through a skylight."
+    ],
+    "wild": [
+      "Principled Leadership acquires editorial authority and immediately restarts the universe.",
+      "One case of shield logistics becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "thor": {
+    "name": "Thor",
+    "type": "Character",
+    "key": "comics-marvel",
+    "related": [
+      "Asgard",
+      "Loki",
+      "Mjolnir"
+    ],
+    "mild": [
+      "A thunder god travels between realms with a hammer that doubles as transportation and meeting enforcement."
+    ],
+    "audiences": [
+      "readers following storm power",
+      "librarians concerned about Asgard politics",
+      "fans debating hammer-based travel"
+    ],
+    "genres": [
+      "Storm Power",
+      "Asgard Politics",
+      "Hammer-Based Travel",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that storm power was not approved by the library board.",
+      "I have filed Asgard politics under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent storm power. Concerning Asgard politics.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited hammer-based travel. No cape-storage policy."
+    ],
+    "morals": [
+      "Storm Power should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses Asgard politics before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does storm power shape the central conflict?",
+      "Would the story work without Asgard politics?"
+    ],
+    "silly": [
+      "Thor treats storm power as a full-time responsibility and Asgard politics as an optional memo.",
+      "A highly specific hero powered by storm power, hammer-based travel, and questionable work-life balance.",
+      "Thor enters the library, reorganizes Asgard politics, and leaves through a skylight."
+    ],
+    "wild": [
+      "Storm Power acquires editorial authority and immediately restarts the universe.",
+      "One case of Asgard politics becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "loki": {
+    "name": "Loki",
+    "type": "Character",
+    "key": "comics-marvel",
+    "related": [
+      "Thor",
+      "Asgard",
+      "Sylvie"
+    ],
+    "mild": [
+      "A trickster has promised to behave on multiple occasions, none of which survived review."
+    ],
+    "audiences": [
+      "readers following mischief",
+      "librarians concerned about identity reinvention",
+      "fans debating Asgardian sibling conflict"
+    ],
+    "genres": [
+      "Mischief",
+      "Identity Reinvention",
+      "Asgardian Sibling Conflict",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that mischief was not approved by the library board.",
+      "I have filed identity reinvention under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent mischief. Concerning identity reinvention.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited Asgardian sibling conflict. No cape-storage policy."
+    ],
+    "morals": [
+      "Mischief should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses identity reinvention before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does mischief shape the central conflict?",
+      "Would the story work without identity reinvention?"
+    ],
+    "silly": [
+      "Loki treats mischief as a full-time responsibility and identity reinvention as an optional memo.",
+      "A highly specific hero powered by mischief, Asgardian sibling conflict, and questionable work-life balance.",
+      "Loki enters the library, reorganizes identity reinvention, and leaves through a skylight."
+    ],
+    "wild": [
+      "Mischief acquires editorial authority and immediately restarts the universe.",
+      "One case of identity reinvention becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "deadpool": {
+    "name": "Deadpool",
+    "type": "Character",
+    "key": "comics-marvel",
+    "related": [
+      "Wolverine",
+      "X-Force",
+      "Marvel"
+    ],
+    "mild": [
+      "A mercenary has read the narration and keeps filing comments directly into it."
+    ],
+    "audiences": [
+      "readers following fourth-wall awareness",
+      "librarians concerned about chaotic combat",
+      "fans debating unapproved commentary"
+    ],
+    "genres": [
+      "Fourth-Wall Awareness",
+      "Chaotic Combat",
+      "Unapproved Commentary",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that fourth-wall awareness was not approved by the library board.",
+      "I have filed chaotic combat under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent fourth-wall awareness. Concerning chaotic combat.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited unapproved commentary. No cape-storage policy."
+    ],
+    "morals": [
+      "Fourth-Wall Awareness should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses chaotic combat before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does fourth-wall awareness shape the central conflict?",
+      "Would the story work without chaotic combat?"
+    ],
+    "silly": [
+      "Deadpool treats fourth-wall awareness as a full-time responsibility and chaotic combat as an optional memo.",
+      "A highly specific hero powered by fourth-wall awareness, unapproved commentary, and questionable work-life balance.",
+      "Deadpool enters the library, reorganizes chaotic combat, and leaves through a skylight."
+    ],
+    "wild": [
+      "Fourth-Wall Awareness acquires editorial authority and immediately restarts the universe.",
+      "One case of chaotic combat becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "kamala khan": {
+    "name": "Kamala Khan",
+    "type": "Character",
+    "key": "comics-marvel",
+    "related": [
+      "Ms. Marvel",
+      "Captain Marvel",
+      "Jersey City"
+    ],
+    "mild": [
+      "A superhero fan becomes a hero and immediately discovers inspiration comes with family scheduling."
+    ],
+    "audiences": [
+      "readers following teen identity",
+      "librarians concerned about embiggened responsibility",
+      "fans debating community heroism"
+    ],
+    "genres": [
+      "Teen Identity",
+      "Embiggened Responsibility",
+      "Community Heroism",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that teen identity was not approved by the library board.",
+      "I have filed embiggened responsibility under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent teen identity. Concerning embiggened responsibility.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited community heroism. No cape-storage policy."
+    ],
+    "morals": [
+      "Teen Identity should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses embiggened responsibility before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does teen identity shape the central conflict?",
+      "Would the story work without embiggened responsibility?"
+    ],
+    "silly": [
+      "Kamala Khan treats teen identity as a full-time responsibility and embiggened responsibility as an optional memo.",
+      "A highly specific hero powered by teen identity, community heroism, and questionable work-life balance.",
+      "Kamala Khan enters the library, reorganizes embiggened responsibility, and leaves through a skylight."
+    ],
+    "wild": [
+      "Teen Identity acquires editorial authority and immediately restarts the universe.",
+      "One case of embiggened responsibility becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "mark grayson": {
+    "name": "Mark Grayson",
+    "type": "Character",
+    "key": "comics-indie",
+    "related": [
+      "Invincible",
+      "Omni-Man",
+      "Atom Eve"
+    ],
+    "mild": [
+      "A teenager inherits the family powers and none of the family risk disclosures."
+    ],
+    "audiences": [
+      "readers following young heroism",
+      "librarians concerned about family secrets",
+      "fans debating planetary danger"
+    ],
+    "genres": [
+      "Young Heroism",
+      "Family Secrets",
+      "Planetary Danger",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that young heroism was not approved by the library board.",
+      "I have filed family secrets under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent young heroism. Concerning family secrets.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited planetary danger. No cape-storage policy."
+    ],
+    "morals": [
+      "Young Heroism should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses family secrets before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does young heroism shape the central conflict?",
+      "Would the story work without family secrets?"
+    ],
+    "silly": [
+      "Mark Grayson treats young heroism as a full-time responsibility and family secrets as an optional memo.",
+      "A highly specific hero powered by young heroism, planetary danger, and questionable work-life balance.",
+      "Mark Grayson enters the library, reorganizes family secrets, and leaves through a skylight."
+    ],
+    "wild": [
+      "Young Heroism acquires editorial authority and immediately restarts the universe.",
+      "One case of family secrets becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "omni man": {
+    "name": "Omni-Man",
+    "type": "Character",
+    "key": "comics-indie",
+    "related": [
+      "Invincible",
+      "Mark Grayson",
+      "Viltrum"
+    ],
+    "mild": [
+      "A respected hero reveals that the employee handbook omitted several planetary objectives."
+    ],
+    "audiences": [
+      "readers following alien parenthood",
+      "librarians concerned about hidden agenda",
+      "fans debating superpowered authority"
+    ],
+    "genres": [
+      "Alien Parenthood",
+      "Hidden Agenda",
+      "Superpowered Authority",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that alien parenthood was not approved by the library board.",
+      "I have filed hidden agenda under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent alien parenthood. Concerning hidden agenda.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited superpowered authority. No cape-storage policy."
+    ],
+    "morals": [
+      "Alien Parenthood should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses hidden agenda before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does alien parenthood shape the central conflict?",
+      "Would the story work without hidden agenda?"
+    ],
+    "silly": [
+      "Omni-Man treats alien parenthood as a full-time responsibility and hidden agenda as an optional memo.",
+      "A highly specific hero powered by alien parenthood, superpowered authority, and questionable work-life balance.",
+      "Omni-Man enters the library, reorganizes hidden agenda, and leaves through a skylight."
+    ],
+    "wild": [
+      "Alien Parenthood acquires editorial authority and immediately restarts the universe.",
+      "One case of hidden agenda becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "hellboy": {
+    "name": "Hellboy",
+    "type": "Character",
+    "key": "comics-indie",
+    "related": [
+      "B.P.R.D.",
+      "Mike Mignola"
+    ],
+    "mild": [
+      "A paranormal investigator with enormous hands keeps declining his assigned apocalypse."
+    ],
+    "audiences": [
+      "readers following occult investigation",
+      "librarians concerned about destiny refusal",
+      "fans debating government paperwork"
+    ],
+    "genres": [
+      "Occult Investigation",
+      "Destiny Refusal",
+      "Government Paperwork",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that occult investigation was not approved by the library board.",
+      "I have filed destiny refusal under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent occult investigation. Concerning destiny refusal.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited government paperwork. No cape-storage policy."
+    ],
+    "morals": [
+      "Occult Investigation should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses destiny refusal before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does occult investigation shape the central conflict?",
+      "Would the story work without destiny refusal?"
+    ],
+    "silly": [
+      "Hellboy treats occult investigation as a full-time responsibility and destiny refusal as an optional memo.",
+      "A highly specific hero powered by occult investigation, government paperwork, and questionable work-life balance.",
+      "Hellboy enters the library, reorganizes destiny refusal, and leaves through a skylight."
+    ],
+    "wild": [
+      "Occult Investigation acquires editorial authority and immediately restarts the universe.",
+      "One case of destiny refusal becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "frank miller": {
+    "name": "Frank Miller",
+    "type": "Creator",
+    "key": "comics-creators",
+    "related": [
+      "Batman: Year One",
+      "The Dark Knight Returns"
+    ],
+    "mild": [
+      "A creator who gives cities heavy shadows and retirement very little authority."
+    ],
+    "audiences": [
+      "readers following noir heroism",
+      "librarians concerned about urban grit",
+      "fans debating aging vigilantes"
+    ],
+    "genres": [
+      "Noir Heroism",
+      "Urban Grit",
+      "Aging Vigilantes",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that noir heroism was not approved by the library board.",
+      "I have filed urban grit under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent noir heroism. Concerning urban grit.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited aging vigilantes. No cape-storage policy."
+    ],
+    "morals": [
+      "Noir Heroism should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses urban grit before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does noir heroism shape the central conflict?",
+      "Would the story work without urban grit?"
+    ],
+    "silly": [
+      "Frank Miller turns noir heroism into an entire illustrated department.",
+      "A creator combining urban grit, aging vigilantes, and enough noir heroism to require another longbox.",
+      "Frank Miller has submitted another volume of professionally lettered chaos."
+    ],
+    "wild": [
+      "Noir Heroism acquires editorial authority and immediately restarts the universe.",
+      "One case of urban grit becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "brian k vaughan": {
+    "name": "Brian K. Vaughan",
+    "type": "Creator",
+    "key": "comics-creators",
+    "related": [
+      "Saga",
+      "Paper Girls"
+    ],
+    "mild": [
+      "A creator who combines families, politics, and impossible travel into extremely readable emergencies."
+    ],
+    "audiences": [
+      "readers following character drama",
+      "librarians concerned about speculative worlds",
+      "fans debating ongoing complications"
+    ],
+    "genres": [
+      "Character Drama",
+      "Speculative Worlds",
+      "Ongoing Complications",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that character drama was not approved by the library board.",
+      "I have filed speculative worlds under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent character drama. Concerning speculative worlds.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited ongoing complications. No cape-storage policy."
+    ],
+    "morals": [
+      "Character Drama should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses speculative worlds before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does character drama shape the central conflict?",
+      "Would the story work without speculative worlds?"
+    ],
+    "silly": [
+      "Brian K. Vaughan turns character drama into an entire illustrated department.",
+      "A creator combining speculative worlds, ongoing complications, and enough character drama to require another longbox.",
+      "Brian K. Vaughan has submitted another volume of professionally lettered chaos."
+    ],
+    "wild": [
+      "Character Drama acquires editorial authority and immediately restarts the universe.",
+      "One case of speculative worlds becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "robert kirkman": {
+    "name": "Robert Kirkman",
+    "type": "Creator",
+    "key": "comics-creators",
+    "related": [
+      "Invincible",
+      "The Walking Dead"
+    ],
+    "mild": [
+      "A creator who asks whether families and communities can survive one more issue, then adds another issue."
+    ],
+    "audiences": [
+      "readers following long-form consequence",
+      "librarians concerned about family conflict",
+      "fans debating survival storytelling"
+    ],
+    "genres": [
+      "Long-Form Consequence",
+      "Family Conflict",
+      "Survival Storytelling",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that long-form consequence was not approved by the library board.",
+      "I have filed family conflict under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent long-form consequence. Concerning family conflict.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited survival storytelling. No cape-storage policy."
+    ],
+    "morals": [
+      "Long-Form Consequence should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses family conflict before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does long-form consequence shape the central conflict?",
+      "Would the story work without family conflict?"
+    ],
+    "silly": [
+      "Robert Kirkman turns long-form consequence into an entire illustrated department.",
+      "A creator combining family conflict, survival storytelling, and enough long-form consequence to require another longbox.",
+      "Robert Kirkman has submitted another volume of professionally lettered chaos."
+    ],
+    "wild": [
+      "Long-Form Consequence acquires editorial authority and immediately restarts the universe.",
+      "One case of family conflict becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
+  },
+  "jeff smith": {
+    "name": "Jeff Smith",
+    "type": "Creator",
+    "key": "comics-creators",
+    "related": [
+      "Bone",
+      "Fone Bone"
+    ],
+    "mild": [
+      "A creator who sends three cartoon cousins into an epic fantasy with no return-date slip."
+    ],
+    "audiences": [
+      "readers following cartoon adventure",
+      "librarians concerned about fantasy scale",
+      "fans debating lost-cousin logistics"
+    ],
+    "genres": [
+      "Cartoon Adventure",
+      "Fantasy Scale",
+      "Lost-Cousin Logistics",
+      "Illustrated Continuity Management"
+    ],
+    "quotes": [
+      "Please note that cartoon adventure was not approved by the library board.",
+      "I have filed fantasy scale under Extremely Illustrated."
+    ],
+    "reviews": [
+      "Excellent cartoon adventure. Concerning fantasy scale.",
+      "The panels were organized. The continuity was not."
+    ],
+    "trailers": [
+      "One city. Unlimited lost-cousin logistics. No cape-storage policy."
+    ],
+    "morals": [
+      "Cartoon Adventure should be paired with judgment.",
+      "A secret identity still requires calendar management."
+    ],
+    "endings": [
+      "Everyone discusses fantasy scale before the next crossover.",
+      "Penelope requires the heroes to complete an incident report."
+    ],
+    "questions": [
+      "How does cartoon adventure shape the central conflict?",
+      "Would the story work without fantasy scale?"
+    ],
+    "silly": [
+      "Jeff Smith turns cartoon adventure into an entire illustrated department.",
+      "A creator combining fantasy scale, lost-cousin logistics, and enough cartoon adventure to require another longbox.",
+      "Jeff Smith has submitted another volume of professionally lettered chaos."
+    ],
+    "wild": [
+      "Cartoon Adventure acquires editorial authority and immediately restarts the universe.",
+      "One case of fantasy scale becomes a crossover, a retcon, and an emergency staff meeting."
+    ]
   }
 };
