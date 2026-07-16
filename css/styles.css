@@ -773,3 +773,8 @@ body.dark .recommendation-lock-icon{background:#3c352d}
 
 /* 8.1A Fantasy New Arrivals */
 .new-arrivals-card{display:grid;grid-template-columns:1.5fr .8fr .8fr;gap:16px;margin-top:22px;padding:24px;border-top:7px solid #8a6a4c}.arrival-letter,.holdings-card,.recently-shelved{padding:16px;border:1px solid rgba(73,55,45,.28);border-radius:8px;background:rgba(255,253,247,.78)}.arrival-letter h2,.holdings-card h3,.recently-shelved h3{font-family:Georgia,serif;margin:.25rem 0}.arrival-signature{text-align:right;font-style:italic}.holdings-card p{display:flex;justify-content:space-between;margin:.42rem 0;border-bottom:1px dotted rgba(73,55,45,.28)}.recently-shelved span{font-size:1.5rem;font-weight:700;color:#8c5a48}@media(max-width:800px){.new-arrivals-card{grid-template-columns:1fr}}
+
+/* 8.1B Passport progress */
+.passport-progress{width:82%;height:10px;margin:8px auto 4px;overflow:hidden;border:1px solid rgba(73,55,45,.28);border-radius:999px;background:rgba(73,55,45,.10)}
+.passport-progress span{display:block;height:100%;background:var(--rose);transition:width .35s ease}
+.passport-stamp.earned .passport-progress span{background:var(--sage)}
