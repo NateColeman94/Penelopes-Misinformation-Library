@@ -133,6 +133,7 @@
   }
 
   function clickLine(honkCount,searchCount,visitCount){
+    if(honkCount%5===0)return "Double honk! HONK HONK!";
     if(visitCount>2&&honkCount%7===0)return pick(repeat,honkCount+visitCount);
     if(searchCount>=5&&honkCount%5===0)return pick(busy,honkCount+searchCount);
     if(honkCount%3===0)return pick(honks,honkCount);

@@ -1,48 +1,19 @@
-# Penelope's Misinformation Library 7.1
+# Penelope's Misinformation Library 7.1.1
 
-## Penelope Personality 2.0
-- 30 distinct honk styles
-- 60+ witty library remarks
-- Busy-day reactions
-- Repeat-visitor reactions
-- Seasonal comments
-- Expanded Library Emergency dialogue
-- More exact-title remarks for popular searches
+## Synchronization repair
+The live repository was mixing an older `index.html` with newer 7.1 JavaScript and data files.
 
-## Hybrid search change
-The interlibrary fallback uses title, author, subjects, publication year, and related catalog metadata only to create Penelope's silly material.
+Upload and replace every file and folder in this package so the page, scripts, data, styles, and artwork all match.
 
-It does **not** display a real synopsis or work description.
+## Double honk
+Every fifth click on Penelope or the honk button now produces:
 
-Visitors see:
-`📚 Borrowed through Interlibrary Loan`
+`Double honk! HONK HONK!`
 
-They do not see Open Library source language in the explanation.
+The audio function plays two separate honks for this response.
 
-## Popular-book expansion
-Added 59 popular handcrafted book records to the smallest shelves:
-- Literary Classics
-- Mystery & Horror
-- Children's Books
-- Romance
-- Christian Books
+## Build label
+The visible build/version label has been removed from the page.
 
-Total handcrafted records: 307
-
-{
-  "Book": 142,
-  "Character": 88,
-  "Book Series": 9,
-  "Author": 45,
-  "Graphic Novel": 3,
-  "Manga Series": 9,
-  "Comic Series": 5,
-  "Creator": 5,
-  "Graphic Novel Series": 1
-}
-
-## Tournament
-Tournament sizes now support 8, 16, 32, or 64 entries when the selected shelf contains enough records.
-
-## Upload
-Replace every file and folder from this ZIP.
+An invisible metadata tag remains for technical troubleshooting:
+`<meta name="penelope-build" content="7.1.1">`

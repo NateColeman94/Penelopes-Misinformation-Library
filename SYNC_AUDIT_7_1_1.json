@@ -1,0 +1,8 @@
+{
+  "version": "7.1.1",
+  "visible_build_name_removed": true,
+  "internal_meta_version": "7.1.1",
+  "double_honk_behavior": "Every fifth Penelope click",
+  "double_honk_audio_trigger": "text.includes(\"Double\")",
+  "full_project_synchronized": true
+}
