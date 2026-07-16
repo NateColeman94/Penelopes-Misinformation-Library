@@ -16,6 +16,8 @@
   function updateThemeButton(){const dark=document.body.classList.contains("dark");$("themeBtn").textContent=dark?"☀️ Light shelves":"🌙 Dark shelves";$("themeBtn").setAttribute("aria-pressed",String(dark))}
   function toggleTheme(){document.body.classList.toggle("dark");window.PenelopeStorage.set("penelopeTheme",document.body.classList.contains("dark")?"dark":"light");updateThemeButton()}
   function counters(){$("searchCount").textContent=searchCount;$("honkCount").textContent=honkCount}
+  counters();
+  setTimeout(counters,0);
   function bubble(text){$("penelopeBubble").innerHTML="<strong>Penelope says:</strong><br>“"+text+"”"}
   function footprints(){const rect=$("penelopeBtn").getBoundingClientRect();for(let i=0;i<4;i++){const foot=document.createElement("span");foot.className="footprint";foot.textContent=i%2?"•":"𓅰";foot.style.left=rect.left+rect.width*.2+i*18+"px";foot.style.top=rect.bottom-8+i*4+"px";document.body.appendChild(foot);setTimeout(()=>foot.remove(),1600)}}
   function honk(){honkCount++;window.PenelopeStorage.set("penelopeHonkCount",honkCount);counters();window.dispatchEvent(new CustomEvent("penelope:activity-changed",{detail:{type:"honk"}}));footprints();const text=window.PenelopePersonality.clickLine(honkCount,searchCount,visitCount);bubble(text);const button=$("penelopeBtn");button.classList.remove("honking");void button.offsetWidth;button.classList.add("honking");window.PenelopePersonality.sound(text.includes("Double"))}
@@ -133,7 +135,7 @@
     entries.forEach(entry=>{if(Object.prototype.hasOwnProperty.call(counts,entry.type))counts[entry.type]++});
     const wrap=$("libraryHoldings");
     if(wrap)wrap.innerHTML=`<p>Books <strong>${counts.Book}</strong></p><p>Series <strong>${counts["Book Series"]}</strong></p><p>Authors <strong>${counts.Author}</strong></p><p>Characters <strong>${counts.Character}</strong></p><p>Wonderful Misunderstandings <strong>${entries.length}</strong></p>`;
-    const arrival=$("fantasyArrivalCount");if(arrival)arrival.textContent="62";
+    const arrival=$("disneyArrivalCount");if(arrival)arrival.textContent="43";
   }
 
   function collectionsForKey(key){
@@ -157,8 +159,13 @@
       const detail=document.createElement("small");
       detail.textContent=achievement.detail;
       const state=document.createElement("em");
-      state.textContent=achievement.earned?"STAMPED":"Not yet stamped";
-      card.append(icon,title,detail,state);
+      state.textContent=achievement.earned?"STAMPED":`${Math.min(achievement.current||0,achievement.target||0)} / ${achievement.target||1}`;
+      const track=document.createElement("div");
+      track.className="passport-progress";
+      const fill=document.createElement("span");
+      fill.style.width=((achievement.progress||0)*100)+"%";
+      track.appendChild(fill);
+      card.append(icon,title,detail,track,state);
       grid.appendChild(card);
     });
   }
@@ -335,8 +342,12 @@
   };
 
   initializeFoundationModules();
+  searchCount=Number(window.PenelopeStorage.get("penelopeSearchCount",searchCount)||searchCount);
+  honkCount=Number(window.PenelopeStorage.get("penelopeHonkCount",honkCount)||honkCount);
   updateThemeButton();
   counters();
+  requestAnimationFrame(counters);
+  setTimeout(()=>{counters();renderPassport()},120);
   renderSaved();
   renderPassport();
   const visitDays=window.PenelopeMemory?.recordVisit()||1;
