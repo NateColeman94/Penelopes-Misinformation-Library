@@ -126,3 +126,463 @@ body.dark .tournament-status{background:#423a25}.tournament-match{display:grid;g
 
 .clear-collection{background:var(--pink)}
 .clear-collection:hover{filter:brightness(1.03)}
+
+
+/* ================================================================
+   VERSION 7.0 — STORYBOOK VISUAL REMASTER
+   All original feature IDs and JavaScript behavior are preserved.
+   ================================================================ */
+
+:root{
+  --ink:#49372d;
+  --ink-soft:#6d594b;
+  --paper:#fff9ec;
+  --paper-deep:#f4e6cf;
+  --gold:#c99a55;
+  --lav:#e9dfd8;
+  --mint:#dce5ce;
+  --pink:#e8b6ad;
+  --blue:#cfdce0;
+  --cream:#f5ead7;
+  --wood:#8f6543;
+  --sage:#7d8f69;
+  --rose:#c97872;
+  --shadow:0 14px 35px rgba(73,55,45,.16);
+  --line:rgba(73,55,45,.36);
+}
+
+html{background:#eadbc3}
+
+body{
+  color:var(--ink);
+  background:
+    linear-gradient(rgba(255,249,236,.88),rgba(255,249,236,.88)),
+    url("../assets/storybook-paper.jpg") center/700px auto repeat;
+  font-family:Georgia,"Times New Roman",serif;
+}
+
+body::before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+    radial-gradient(circle at 12% 12%,rgba(231,179,151,.22),transparent 28%),
+    radial-gradient(circle at 85% 18%,rgba(159,180,139,.18),transparent 27%),
+    radial-gradient(circle at 52% 88%,rgba(203,160,103,.15),transparent 30%);
+}
+
+button,input,select{
+  font-family:Georgia,"Times New Roman",serif;
+}
+
+button{
+  color:var(--ink);
+  border:1.7px solid var(--ink);
+  border-radius:9px;
+  box-shadow:2px 3px 0 rgba(73,55,45,.82);
+  background:linear-gradient(#e9c79d,#d9ab73);
+}
+
+button:hover{
+  transform:translate(-1px,-1px) rotate(-.25deg);
+  box-shadow:4px 5px 0 rgba(73,55,45,.78);
+}
+
+input,select{
+  color:var(--ink);
+  border:1.6px solid var(--line);
+  border-radius:9px;
+  background:rgba(255,253,246,.92);
+  box-shadow:inset 0 1px 3px rgba(73,55,45,.08);
+}
+
+.background span{opacity:.055;filter:sepia(.7)}
+
+.page{max-width:1220px;padding-top:12px}
+
+.storybook-masthead{
+  margin:0 auto 12px;
+  max-width:940px;
+  color:var(--ink-soft);
+  text-align:center;
+}
+.masthead-books{
+  font-size:2rem;
+  letter-spacing:.08em;
+  padding:7px 20px 5px;
+  border-bottom:7px solid var(--wood);
+  filter:sepia(.2);
+}
+.masthead-line{
+  display:flex;justify-content:space-between;gap:16px;
+  margin-top:5px;padding:0 15px;
+  font-size:.72rem;font-style:italic;
+}
+
+.card{
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(255,249,236,.955),rgba(255,249,236,.955)),
+    url("../assets/storybook-paper.jpg") center/600px repeat;
+  border:1.8px solid var(--line);
+  border-radius:14px;
+  box-shadow:var(--shadow);
+}
+.card::after{
+  content:"";
+  position:absolute;inset:7px;
+  border:1px solid rgba(73,55,45,.08);
+  border-radius:9px;
+  pointer-events:none;
+}
+
+.hero{
+  grid-template-columns:minmax(0,1fr) 340px;
+  padding:30px;
+  gap:28px;
+  border-top:8px solid var(--wood);
+}
+
+.eyebrow{
+  color:var(--rose);
+  letter-spacing:.16em;
+  font-size:.72rem;
+}
+
+h1{
+  color:#5c392b;
+  font-size:clamp(2.65rem,5.6vw,4.85rem);
+  line-height:.91;
+  text-shadow:0 2px rgba(255,255,255,.6);
+}
+h1::first-line{color:#bd6f68}
+
+.tagline{
+  display:inline-block;
+  color:#6f4b38;
+  font-size:1.24rem;
+  font-style:italic;
+  margin:.15rem 0 .8rem;
+  padding:7px 15px;
+  border-bottom:2px solid rgba(201,154,85,.45);
+}
+
+.search-types{
+  background:rgba(244,230,207,.76);
+  border:1px solid rgba(73,55,45,.22);
+  border-left:5px solid var(--rose);
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.48;
+}
+
+.catalog-stamp{
+  display:inline-block;
+  margin:3px 0 9px;
+  padding:5px 8px;
+  color:#8f6554;
+  border:2px double #b98c72;
+  border-radius:4px;
+  font-family:"Courier New",monospace;
+  font-size:.67rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  transform:rotate(-.45deg);
+}
+
+.search-panel{
+  padding:12px;
+  background:rgba(255,255,255,.36);
+  border:1px dashed rgba(73,55,45,.3);
+  border-radius:11px;
+}
+
+.example-row .example{
+  background:#ebe1ce;
+  color:#574237;
+  font-style:italic;
+}
+
+.collection-browser{
+  background:rgba(227,218,197,.55);
+  border:1px dashed rgba(73,55,45,.42);
+  border-radius:10px;
+}
+.collection-panel{
+  background:#fbf2e0;
+  border:1.8px solid rgba(73,55,45,.4);
+  border-radius:10px;
+}
+.collection-card{
+  background:linear-gradient(145deg,#e5ddd0,#d7dfcf);
+  min-height:150px;
+  box-shadow:2px 3px 0 rgba(73,55,45,.55);
+}
+.collection-card:nth-child(2n){background:linear-gradient(145deg,#f1d7cf,#e7c0b5)}
+.collection-card:nth-child(3n){background:linear-gradient(145deg,#e6dec2,#d5c898)}
+
+.penelope-panel{
+  background:
+    linear-gradient(rgba(244,230,207,.68),rgba(244,230,207,.72)),
+    url("../assets/storybook-paper.jpg") center/500px repeat;
+  border:1.8px solid rgba(73,55,45,.38);
+  border-radius:12px;
+  padding:13px;
+  box-shadow:inset 0 0 25px rgba(143,101,67,.08);
+}
+.penelope-badge{
+  margin:0 auto 8px;
+  width:max-content;
+  max-width:100%;
+  padding:5px 8px;
+  border:1px solid #9c7659;
+  background:#e1c297;
+  border-radius:3px;
+  color:#624633;
+  font-family:"Courier New",monospace;
+  font-size:.65rem;
+  letter-spacing:.04em;
+  transform:rotate(.4deg);
+}
+.mascot-button img{
+  border:1.8px solid rgba(73,55,45,.42);
+  border-radius:9px;
+  object-fit:cover;
+  object-position:center;
+  aspect-ratio:1/1;
+  box-shadow:0 7px 17px rgba(73,55,45,.18);
+}
+.mascot-button:hover img{filter:saturate(1.03) brightness(1.015)}
+.counters{
+  color:var(--ink-soft);
+  font-size:.77rem;
+}
+.bubble{
+  position:relative;
+  color:#4d3a31;
+  background:#fffaf0;
+  border:1px solid rgba(73,55,45,.36);
+  border-radius:9px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;
+  line-height:1.43;
+  box-shadow:3px 4px 0 rgba(73,55,45,.11);
+}
+.bubble::before{
+  content:"“";
+  position:absolute;left:7px;top:-14px;
+  color:rgba(201,154,85,.45);
+  font-size:3rem;
+}
+
+.notice,.result,.tournament,.identity-strip{margin-top:20px}
+
+.result{
+  border-top:7px solid #a27150;
+}
+.result-header h2{
+  color:#5c392b;
+  letter-spacing:-.02em;
+}
+.pill,.award,.source-badge{
+  border:1px solid rgba(73,55,45,.38);
+  box-shadow:none;
+  font-size:.71rem;
+  letter-spacing:.025em;
+}
+.pill{background:#dbe2d2}
+.award{background:#efd1c8}
+.source-badge{background:#e0e6d6}
+
+.penelope-line{
+  color:#5a4134;
+  background:#f2e4ca;
+  border-left:5px solid #b7756d;
+  font-style:italic;
+  box-shadow:inset 0 0 14px rgba(143,101,67,.05);
+}
+
+.source-preview{
+  background:#e4ead9;
+  border:1px solid rgba(73,55,45,.28);
+  font-style:normal;
+}
+
+.synopsis{
+  position:relative;
+  background:#fffdf7;
+  border:1px solid rgba(73,55,45,.33);
+  border-left:7px solid #c79567;
+  border-radius:5px;
+  box-shadow:3px 4px 0 rgba(73,55,45,.08);
+  font-size:1.23rem;
+}
+.synopsis::after{
+  content:"PENELOPE'S CATALOG COPY";
+  position:absolute;right:10px;bottom:7px;
+  color:rgba(122,83,58,.32);
+  font-family:"Courier New",monospace;
+  font-size:.55rem;
+  letter-spacing:.08em;
+}
+
+.checkout-rule{
+  display:flex;justify-content:space-between;gap:12px;
+  margin-top:14px;padding:5px 8px;
+  color:#745b4a;
+  border-top:1px solid rgba(73,55,45,.24);
+  border-bottom:1px solid rgba(73,55,45,.24);
+  font-family:"Courier New",monospace;
+  font-size:.65rem;
+}
+
+.rating-strip{
+  color:#614638;
+  background:#e9dfd4;
+  border:1px solid rgba(73,55,45,.27);
+  border-radius:6px;
+}
+
+.result-grid section,.subcard{
+  background:
+    linear-gradient(rgba(255,253,247,.92),rgba(255,253,247,.92)),
+    repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(93,117,133,.09) 28px);
+  border:1px solid rgba(73,55,45,.28);
+  border-radius:7px;
+  box-shadow:2px 3px 0 rgba(73,55,45,.07);
+}
+.result-grid h3,.subcard h3{
+  color:#715044;
+  font-size:1.04rem;
+}
+.chips span{
+  background:#dfe6d3;
+  border:1px solid rgba(73,55,45,.3);
+  border-radius:5px;
+  font-size:.78rem;
+}
+
+.save-actions button:nth-child(1){background:#d8e2cd}
+.save-actions button:nth-child(2){background:#d4e0e1}
+.save-actions button:nth-child(3){background:#edc8c0}
+.saved-shelf{
+  background:#fbf4e5;
+  border:1px dashed rgba(73,55,45,.4);
+}
+
+.identity-strip{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:0;
+  padding:0;
+}
+.identity-strip div{
+  padding:19px;
+  text-align:center;
+  border-right:1px dashed rgba(73,55,45,.28);
+}
+.identity-strip div:last-child{border-right:0}
+.identity-strip strong{
+  display:block;
+  color:#98675c;
+  font-size:1.12rem;
+}
+.identity-strip span{
+  display:block;
+  margin-top:4px;
+  color:#6f5a4d;
+  font-size:.8rem;
+  font-style:italic;
+}
+
+.tournament{
+  border-top:7px solid #c99067;
+}
+.tournament-status{
+  color:#5f483a;
+  background:#eee0c6;
+  border-left-color:#b66f68;
+}
+.tournament-choice{
+  color:#4c3b32;
+  background:linear-gradient(145deg,#dfd8ca,#d9e1d2);
+  min-height:205px;
+}
+.tournament-choice:nth-child(2){background:linear-gradient(145deg,#edcfc7,#e5d8c6)}
+.champion-card{background:#ead0c3}
+
+.library-stamp{
+  position:relative;
+  color:#694a39;
+  background:
+    linear-gradient(rgba(252,243,226,.9),rgba(252,243,226,.9)),
+    url("../assets/storybook-paper.jpg") center/500px repeat;
+  border:4px double #946b4e;
+  border-radius:4px;
+  transform:rotate(-.15deg);
+}
+.library-stamp strong{
+  letter-spacing:.15em;
+  font-family:"Courier New",monospace;
+}
+.library-stamp::after{
+  content:"RETURN TO THE MISINFORMATION DESK";
+  display:block;
+  margin-top:11px;
+  color:rgba(132,73,61,.55);
+  font-family:"Courier New",monospace;
+  font-size:.62rem;
+  letter-spacing:.09em;
+}
+
+body.dark{
+  --ink:#eee2cf;--ink-soft:#d6c4af;--paper:#27251f;--paper-deep:#322d25;
+  --gold:#b99763;--lav:#34302b;--mint:#344238;--pink:#543a38;--blue:#35434a;
+  --cream:#302b24;--wood:#a47b57;--sage:#93a27c;--rose:#d28e85;
+  background:
+    linear-gradient(rgba(36,32,27,.91),rgba(36,32,27,.91)),
+    url("../assets/storybook-paper.jpg") center/700px repeat;
+}
+body.dark .card,
+body.dark .library-stamp,
+body.dark .collection-panel,
+body.dark .penelope-panel{
+  background:rgba(43,39,33,.96);
+}
+body.dark .result-grid section,
+body.dark .subcard,
+body.dark .bubble,
+body.dark .synopsis,
+body.dark .suggestions,
+body.dark input,
+body.dark select{
+  color:#f0e3d3;
+  background:#322e28;
+}
+body.dark .search-types,
+body.dark .penelope-line,
+body.dark .tournament-status{
+  color:#efe1ce;
+  background:#46392c;
+}
+body.dark .mascot-button img{filter:brightness(.76) sepia(.12)}
+body.dark .collection-card,
+body.dark .tournament-choice{color:#3f312a}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .penelope-panel{max-width:520px;margin:auto;order:-1}
+  .mascot-button img{aspect-ratio:5/4}
+}
+@media(max-width:720px){
+  .masthead-line{display:none}
+  .identity-strip{grid-template-columns:1fr}
+  .identity-strip div{border-right:0;border-bottom:1px dashed rgba(73,55,45,.28)}
+  .identity-strip div:last-child{border-bottom:0}
+}
+@media(max-width:520px){
+  h1{font-size:2.65rem}
+  .hero{padding:17px}
+  .tagline{font-size:1rem}
+  .catalog-stamp{font-size:.56rem}
+  .checkout-rule{font-size:.56rem}
+}

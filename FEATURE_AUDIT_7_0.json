@@ -1,0 +1,27 @@
+{
+  "version": "7.0",
+  "visual_remaster": true,
+  "features_preserved": {
+    "handcrafted_collection": true,
+    "smart_search": true,
+    "open_library_hybrid_search": true,
+    "open_library_plain_synopsis": true,
+    "collections": true,
+    "clear_collection_shelf": true,
+    "library_card_shelves": true,
+    "misunderstanding_tournament": true,
+    "persistent_honks": true,
+    "persistent_searches": true,
+    "library_emergency": true,
+    "occasional_honks": true,
+    "light_dark_reading_rooms": true
+  },
+  "identity_language_preserved": [
+    "A very unreliable literary institution",
+    "Where every book is wonderfully misunderstood.",
+    "No books were responsibly summarized in the making of this application.",
+    "Accurate Answers have been permanently checked out."
+  ],
+  "javascript_syntax": "PASS",
+  "required_controls": "PASS"
+}

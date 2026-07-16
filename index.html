@@ -12,13 +12,23 @@
   </div>
 
   <main class="page">
-    <section class="bookshelf-banner" aria-hidden="true"><span>📕</span><span>📗</span><span>📘</span><span>📙</span><span>📚</span><span>🪿</span><span>📖</span><span>📓</span></section>
+    <header class="storybook-masthead">
+      <div class="masthead-books" aria-hidden="true">📕 📗 📘 📙 📚 📖 📓</div>
+      <div class="masthead-line">
+        <span>Curated with questionable confidence</span>
+        <span>Established whenever Penelope says so</span>
+      </div>
+    </header>
 <section class="hero card">
       <div class="hero-copy">
-        <div class="top-tools"><p class="eyebrow">A very unreliable literary institution</p><button id="themeBtn" class="theme-button" aria-label="Switch appearance">🌙 Dark shelves</button></div>
+        <div class="top-tools">
+          <p class="eyebrow">A very unreliable literary institution</p>
+          <button id="themeBtn" class="theme-button" aria-label="Switch appearance">🌙 Evening reading room</button>
+        </div>
         <h1>Penelope's<br>Misinformation Library</h1>
         <p class="tagline">Where every book is wonderfully misunderstood.</p>
-        <p class="search-types">Search for a <strong>book</strong>, <strong>book series</strong>, <strong>author</strong>, or <strong>character</strong>.</p>
+        <p class="search-types">Search for a <strong>book</strong>, <strong>book series</strong>, <strong>author</strong>, or <strong>character</strong> and receive an explanation no responsible librarian would approve.</p>
+        <div class="catalog-stamp">HANDCRAFTED NONSENSE · PUBLIC-SHELF BACKUP · GOOSE SUPERVISED</div>
 
         <div class="search-panel">
           <div class="search-row">
@@ -62,10 +72,11 @@
       </div>
 
       <aside class="penelope-panel">
+        <div class="penelope-badge">PENELOPE · HEAD OF MISINFORMATION</div>
         <button id="penelopeBtn" class="mascot-button" aria-label="Click Penelope">
-          <img src="assets/penelope-librarian.png" alt="Penelope the goose librarian wearing glasses and holding a blue book">
+          <img src="assets/penelope-storybook.png" alt="Hand-drawn Penelope the goose librarian wearing oversized glasses, a knitted brown vest, bow tie, and librarian name tag">
         </button>
-        <button id="honkBtn" class="secondary">🔊 Make Penelope Honk</button>
+        <button id="honkBtn" class="secondary">🪿 Request a Librarian Honk</button>
         <div class="counters">
           <span>Honks: <strong id="honkCount">0</strong></span>
           <span>Searches: <strong id="searchCount">0</strong></span>
@@ -98,6 +109,7 @@
       <div id="sourcePreview" class="source-preview hidden"></div>
       <p id="synopsis" class="synopsis"></p>
 
+      <div class="checkout-rule"><span>CHECKOUT CARD</span><span>Wonderfully misunderstood</span></div>
       <div class="rating-strip">
         <span>★★★★★</span>
         <strong id="rating"></strong>
@@ -142,6 +154,12 @@
 
 
 
+    <section class="identity-strip card">
+      <div><strong>Stay curious.</strong><span>Even when Penelope is confidently wrong.</span></div>
+      <div><strong>Think critically.</strong><span>Especially when the goose has a stamp.</span></div>
+      <div><strong>Read widely.</strong><span>Then misfile everything responsibly.</span></div>
+    </section>
+
     <section id="tournament" class="card tournament">
       <div class="tournament-heading">
         <div>
@@ -173,7 +191,7 @@
       <strong>📚 LIBRARY NOTICE</strong>
       <p>No books were responsibly summarized in the making of this application.</p>
       <p>✓ Accurate Answers have been permanently checked out.</p>
-      <small>Build 6.5 — New Shelves, Clear Shelf & Clean Synopses</small>
+      <small>Build 7.0 — Storybook Visual Remaster</small>
     </footer>
   </main>
 
