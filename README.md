@@ -1,26 +1,10 @@
-# Silly Answers Only v2.0
+# Silly Answers Only v2.2
 
-A single-file GitHub Pages application built for the theme **Constraint as Craft**.
+## Updates
+- Context-aware genres, quotes, reviews, morals, trailers, alternate endings, and discussion questions
+- Multiple tailored synopsis options per supported item and silliness level
+- Fixed Make It Worse so it cycles to the next explanation
+- Repeated searches, including Gandalf, rotate through different explanations
+- Preserved local voting, related recommendations, books, and silly geese background
 
-## Core constraint
-The app may recognize a book, series, author, or character, but it may never explain it accurately. Every output must remain recognizably related while being intentionally wrong.
-
-## Version 2 features
-- Individual books, series, authors, and characters
-- Three silliness levels
-- Fake book-discovery page with:
-  - confused-reader rating
-  - incorrect genres
-  - invented quote
-  - fake reader review
-  - moral of the story
-  - honest movie trailer
-  - alternate ending
-  - book-club question
-- Clickable related books
-- Local interactive voting with saved browser votes
-- Confetti feedback
-- No API key or backend required
-
-## GitHub Pages
-Upload `index.html` to the repository root, then enable GitHub Pages from the main branch/root folder.
+Upload `index.html` to the root of the GitHub repository.
