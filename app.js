@@ -55,7 +55,7 @@
       clear.addEventListener("click",()=>{
         window.PenelopeCard.clearShelf(shelf);
         renderSaved();
-  renderLibraryHoldings();
+  
       });
       heading.append(h4,clear);
       section.appendChild(heading);
@@ -114,28 +114,42 @@
     $("audience").textContent="Based on "+(1250+((entry.name.length*643+cycle*977)%8750)).toLocaleString()+" "+pick(p.audiences,cycle+1);
     const genres=$("genres");genres.innerHTML="";[0,1,2,3].map(i=>pick(p.genres,cycle+i)).filter((value,index,array)=>array.indexOf(value)===index).forEach(value=>{const chip=document.createElement("span");chip.textContent=value;genres.appendChild(chip)});
     $("quote").textContent="“"+pick(p.quotes,cycle+1)+"”";$("review").textContent=pick(p.reviews,cycle+2);$("trailer").textContent=pick(p.trailers,cycle+3);$("moral").textContent=pick(p.morals,cycle+4);$("ending").textContent=pick(p.endings,cycle+5);$("question").textContent=pick(p.questions,cycle+6);
-    const related=$("related");related.innerHTML="";(entry.related||[]).forEach(value=>{const button=document.createElement("button");button.textContent=value;button.addEventListener("click",()=>runSearch(value));related.appendChild(button)});
+    const related=$("related");
+    const relatedHeading=$("relatedHeading");
+    const entityLabel=String(entry.type||"Book").toLowerCase();
+    const headingLabels={author:"Author",creator:"Creator",character:"Character",series:"Series","book series":"Series","manga series":"Series","comic series":"Series","graphic novel series":"Series"};
+    relatedHeading.textContent="📚 Readers Also Misunderstood This "+(headingLabels[entityLabel]||"Book");
+    related.innerHTML="";
+    const explicitRelated=Array.isArray(entry.related)?entry.related.filter(Boolean):[];
+    const fallbackKeys=[];
+    if(!explicitRelated.length){
+      const sameCollections=collectionsForKey(key);
+      sameCollections.forEach(collectionKey=>{
+        const collection=(window.PENELOPE_COLLECTIONS||{})[collectionKey];
+        (collection&&Array.isArray(collection.keys)?collection.keys:[]).forEach(candidateKey=>{
+          if(candidateKey!==key&&!fallbackKeys.includes(candidateKey)&&library[candidateKey])fallbackKeys.push(candidateKey);
+        });
+      });
+      Object.entries(library).forEach(([candidateKey,candidate])=>{
+        if(candidateKey!==key&&candidate&&entry.key&&candidate.key===entry.key&&!fallbackKeys.includes(candidateKey))fallbackKeys.push(candidateKey);
+      });
+    }
+    const relatedValues=explicitRelated.length?explicitRelated:fallbackKeys.slice(0,4).map(candidateKey=>library[candidateKey].name);
+    relatedValues.slice(0,4).forEach(value=>{const button=document.createElement("button");button.textContent=value;button.addEventListener("click",()=>runSearch(value));related.appendChild(button)});
+    if(!relatedValues.length){
+      const note=document.createElement("span");note.className="related-empty";note.textContent="Penelope is still shelving nearby misunderstandings.";related.appendChild(note);
+    }
     $("saveStatus").textContent="";renderSaved();$("result").scrollIntoView({behavior:"smooth",block:"start"});
   }
   function showNotFound(value,apiFailed=false){
     $("apiLoading").classList.add("hidden");$("result").classList.add("hidden");$("notFound").classList.remove("hidden");
-    $("notFound").querySelector("p").textContent=apiFailed?"Penelope could not reach the public shelves. This book may be checked out, or Open Library may be temporarily unavailable.":"Penelope checked every shelf. This title may be checked out or it has not entered the misinformation system yet.";
-    const target=$("notFoundSuggestions");target.innerHTML="";window.PenelopeSearch.suggestions(value,4).forEach(({entry})=>{const button=document.createElement("button");button.textContent=entry.name+" · "+entry.type;button.addEventListener("click",()=>runSearch(entry.name));target.appendChild(button)});bubble("I checked every shelf. This title may already be checked out.")
+    $("notFound").querySelector("p").textContent=apiFailed?"Penelope could not reach the public shelves. This book may be checked out, or Open Library may be temporarily unavailable.":"Penelope checked every shelf, including the public catalog. This title may be checked out, listed under another name, or not yet available for responsible misunderstanding.";
+    const target=$("notFoundSuggestions");target.innerHTML="";window.PenelopeSearch.suggestions(value,4).forEach(({entry})=>{const button=document.createElement("button");button.textContent=entry.name+" · "+entry.type;button.addEventListener("click",()=>runSearch(entry.name));target.appendChild(button)});bubble("I checked every shelf, including interlibrary loan. This title may be checked out or cataloged under another name.")
   }
   async function searchOpenLibrary(value){
     const requestId=++apiSequence;$("result").classList.add("hidden");$("notFound").classList.add("hidden");$("apiLoading").classList.remove("hidden");bubble("The handcrafted catalog missed. I am consulting the public shelves.");
     try{const results=await window.PenelopeOpenLibrary.search(value);if(requestId!==apiSequence)return;if(!results.length){showNotFound(value,false);return}renderEntry(results[0].entry,"api:"+window.PenelopeSearch.normalize(results[0].entry.name),false)}
     catch(error){console.error("Open Library search failed:",error);if(requestId===apiSequence)showNotFound(value,true)}
-  }
-
-
-  function renderLibraryHoldings(){
-    const entries=Object.values(window.PENELOPE_LIBRARY||{});
-    const counts={Book:0,"Book Series":0,Author:0,Character:0};
-    entries.forEach(entry=>{if(Object.prototype.hasOwnProperty.call(counts,entry.type))counts[entry.type]++});
-    const wrap=$("libraryHoldings");
-    if(wrap)wrap.innerHTML=`<p>Books <strong>${counts.Book}</strong></p><p>Series <strong>${counts["Book Series"]}</strong></p><p>Authors <strong>${counts.Author}</strong></p><p>Characters <strong>${counts.Character}</strong></p><p>Wonderful Misunderstandings <strong>${entries.length}</strong></p>`;
-    const arrival=$("finalArrivalCount");if(arrival)arrival.textContent="24";
   }
 
   function collectionsForKey(key){
