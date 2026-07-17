@@ -130,12 +130,62 @@
 
 
   function renderLibraryHoldings(){
-    const entries=Object.values(window.PENELOPE_LIBRARY||{});
-    const counts={Book:0,"Book Series":0,Author:0,Character:0};
-    entries.forEach(entry=>{if(Object.prototype.hasOwnProperty.call(counts,entry.type))counts[entry.type]++});
     const wrap=$("libraryHoldings");
-    if(wrap)wrap.innerHTML=`<p>Books <strong>${counts.Book}</strong></p><p>Series <strong>${counts["Book Series"]}</strong></p><p>Authors <strong>${counts.Author}</strong></p><p>Characters <strong>${counts.Character}</strong></p><p>Wonderful Misunderstandings <strong>${entries.length}</strong></p>`;
-    const arrival=$("finalArrivalCount");if(arrival)arrival.textContent="24";
+    if(!wrap)return;
+
+    const entries=Object.values(window.PENELOPE_LIBRARY||{});
+    const counts={
+      books:0,
+      series:0,
+      creators:0,
+      characters:0
+    };
+
+    entries.forEach(entry=>{
+      const type=String(entry.type||"").toLowerCase();
+      if(type.includes("character")){
+        counts.characters++;
+      }else if(type.includes("author")||type.includes("creator")){
+        counts.creators++;
+      }else if(type.includes("series")){
+        counts.series++;
+      }else{
+        counts.books++;
+      }
+    });
+
+    wrap.innerHTML="";
+
+    [
+      ["Books",counts.books],
+      ["Series",counts.series],
+      ["Authors & Creators",counts.creators],
+      ["Characters",counts.characters]
+    ].forEach(([label,value])=>{
+      const row=document.createElement("div");
+      row.className="holding-row";
+
+      const name=document.createElement("span");
+      name.textContent=label;
+
+      const total=document.createElement("strong");
+      total.textContent=String(value);
+
+      row.append(name,total);
+      wrap.appendChild(row);
+    });
+
+    const totalRow=document.createElement("div");
+    totalRow.className="holding-row holding-total";
+
+    const totalLabel=document.createElement("span");
+    totalLabel.textContent="Wonderful Misunderstandings";
+
+    const totalValue=document.createElement("strong");
+    totalValue.textContent=String(entries.length);
+
+    totalRow.append(totalLabel,totalValue);
+    wrap.appendChild(totalRow);
   }
 
   function collectionsForKey(key){
