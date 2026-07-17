@@ -808,61 +808,21 @@ body.dark .recommendation-lock-icon{background:#3c352d}
 @media(max-width:720px){.hall-exhibit{grid-template-columns:1fr}.hall-frame{max-width:360px;margin-inline:auto}.hall-heading{display:block}.hall-tracks{display:block;margin-top:.5rem}.hall-controls button{flex:1 1 150px}}
 
 
-/* 8.2 Gold Edition — Hall, Recommendation, and Growing Desk polish */
-#libraryHoldings,.holdings-card,.passport-section,.passport-grid{display:none!important}
-
-.hall-of-fame-card{
-  margin-top:26px;
-  padding:clamp(22px,3vw,34px);
-  overflow:visible;
-  border-top:7px solid #8a6a4c;
-  background:linear-gradient(135deg,rgba(255,252,243,.96),rgba(245,231,207,.88));
-}
-.hall-heading{align-items:center;margin-bottom:4px}
-.hall-heading h2{font-size:clamp(1.55rem,3vw,2.15rem)}
-.hall-display-label{margin:1.15rem 0 1.35rem;color:#704f3c}
-.hall-exhibit{grid-template-columns:minmax(280px,42%) minmax(0,1fr);gap:clamp(24px,4vw,52px);align-items:stretch}
-.hall-frame{display:flex;align-items:center;min-height:310px;padding:12px;background:#7d5d3e;box-shadow:inset 0 0 0 4px #d7b875,inset 0 0 0 8px #6c4c31,0 12px 26px rgba(51,35,58,.18)}
-.hall-frame img{aspect-ratio:4/3;object-fit:cover;background:#f4ead7}
-.hall-copy{display:flex;min-width:0;flex-direction:column;justify-content:center;padding:10px 0}
-.hall-copy h3{font-size:clamp(1.45rem,2.4vw,2rem)}
-.hall-copy blockquote{font-size:clamp(1.05rem,1.7vw,1.22rem);line-height:1.65}
-.hall-curator{margin-top:8px;padding:1rem 1.15rem;background:rgba(255,250,240,.82)}
-.hall-controls{gap:12px;margin-top:1.5rem}
-.hall-controls button{min-width:175px}
-
-.personal-recommendation-panel{padding:20px;background:linear-gradient(145deg,rgba(255,249,236,.94),rgba(241,223,195,.7));box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)}
-.recommendation-lock{align-items:flex-start}
-.recommendation-lock strong{display:block;color:#6a4434;font-family:Georgia,serif;font-size:1.15rem}
-.recommendation-lock p{font-size:.93rem;line-height:1.55}
-.recommendation-letter{width:100%}
-.recommendation-letter-opening{margin:.4rem 0 1rem;font-family:Georgia,serif;font-style:italic;line-height:1.55}
-.recommendation-picks{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr);gap:14px}
-.recommendation-pick{padding:16px;border:1px solid rgba(73,55,45,.25);border-radius:10px;background:rgba(255,253,247,.78)}
-.recommendation-pick>span{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8c5a48}
-.recommendation-pick h3{margin:.35rem 0;color:#6a4434;font-family:Georgia,serif}
-.recommendation-pick blockquote{margin:.55rem 0 1rem;padding-left:11px;border-left:3px solid var(--rose);font-style:italic;line-height:1.5}
-.wild-card-pick{background:rgba(238,229,207,.78)}
-.recommendation-signature{text-align:right;font-family:Georgia,serif;font-style:italic}
-.recommend-again-btn{display:block;margin:10px 0 0 auto}
-
-.living-desk-wrap{padding:18px;background:linear-gradient(145deg,rgba(92,64,47,.92),rgba(123,85,59,.88));border:1px solid rgba(68,45,34,.5);border-radius:12px;box-shadow:inset 0 1px rgba(255,255,255,.14),0 8px 18px rgba(56,38,31,.12)}
-.living-desk-heading{color:#fff5e6;text-shadow:0 1px 1px rgba(0,0,0,.25)}
-.living-desk-heading small{font-size:.85rem;font-weight:600;opacity:1}
-.desk-object-tray{align-items:stretch;gap:10px}
-.desk-object{min-width:94px;min-height:92px;justify-content:center;border-color:rgba(73,55,45,.36);box-shadow:0 5px 10px rgba(36,25,20,.15)}
-.desk-object.locked{position:relative;opacity:.86;background:rgba(232,217,190,.92);border-style:dashed}
-.desk-object.locked span{display:grid;width:34px;height:34px;place-items:center;margin:auto;border-radius:50%;background:rgba(92,64,47,.14);font-family:Georgia,serif;font-weight:700}
-.desk-object.locked em{display:none;position:absolute;z-index:5;bottom:calc(100% + 8px);left:50%;width:190px;padding:9px;transform:translateX(-50%);border-radius:8px;background:#fff8e9;color:#4b382d;box-shadow:0 7px 18px rgba(0,0,0,.2);font-size:.72rem;font-style:normal;line-height:1.35}
-.desk-object.locked:hover em,.desk-object.locked:focus-within em{display:block}
-
-@media(max-width:840px){
-  .hall-exhibit{grid-template-columns:1fr}
-  .hall-frame{min-height:0;max-width:560px;margin-inline:auto}
-  .recommendation-picks{grid-template-columns:1fr}
-}
-@media(max-width:560px){
-  .hall-controls{display:grid;grid-template-columns:1fr}
-  .hall-controls button{width:100%;min-width:0}
-  .desk-object{min-width:80px}
-}
+/* 8.3 Final Library Polish */
+.new-arrivals-card{grid-template-columns:minmax(0,1.45fr) minmax(230px,.72fr) minmax(230px,.72fr);align-items:stretch}
+.library-whimsy-card{display:flex;flex-direction:column;gap:12px;padding:16px;border:1px solid rgba(73,55,45,.28);border-radius:8px;background:rgba(255,253,247,.78)}
+.whimsy-item p{margin:.25rem 0;line-height:1.42}.whimsy-divider{border-top:1px dashed rgba(73,55,45,.32)}.whimsy-refresh{align-self:flex-start;margin-top:auto;padding:7px 10px;font-size:.78rem}
+.desk-lower-row{grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);align-items:start}
+.living-desk-wrap{background:linear-gradient(145deg,#c98587,#b66f73);border-color:#8f565a;box-shadow:inset 0 2px rgba(255,255,255,.22),0 5px 0 rgba(111,65,67,.18)}
+.living-desk-heading{color:#fff9ef;text-shadow:0 1px rgba(91,48,50,.35)}
+.desk-object-tray{border-top-color:rgba(255,255,255,.34)}
+.desk-object{background:#fff8e9;border-color:rgba(96,55,57,.42);box-shadow:2px 3px 0 rgba(91,48,50,.2)}
+.desk-object.locked{background:rgba(255,239,230,.94);color:#5a3638;border-style:dashed;opacity:1}
+.desk-object.locked small{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.15;max-width:112px}
+.compact-recommendation-card{margin-top:0;min-height:0;padding:16px;background:linear-gradient(160deg,#fffaf0,#f4e2d8);border:1px solid rgba(150,85,88,.48);border-top:5px solid var(--rose);box-shadow:0 5px 14px rgba(73,55,45,.09)}
+.compact-recommendation-card .recommendation-unlocked{display:block;padding:0}.compact-recommendation-card .recommendation-letter{margin:.4rem 0;font-size:.84rem;font-style:italic}.compact-recommendation-card h3{margin:.35rem 0;font-size:1.22rem}.compact-recommendation-card blockquote{margin:.42rem 0;padding-left:10px;font-size:.9rem;line-height:1.35}.compact-recommendation-card .recommendation-reason{margin:.35rem 0;font-size:.76rem}.wild-card-mini{margin:.65rem 0;padding:9px 10px;background:rgba(255,255,255,.5);border:1px dashed rgba(73,55,45,.28);border-radius:7px}.wild-card-mini span{display:block;font-size:.67rem;font-weight:700;letter-spacing:.04em;color:#8a5c4e}.wild-card-mini strong{display:block;margin-top:2px;font-family:Georgia,serif}.wild-card-mini p{margin:.2rem 0 0;font-size:.76rem;font-style:italic}.recommendation-signature{margin:.45rem 0;text-align:right;font-size:.74rem;font-style:italic}.compact-recommendation-card .recommendation-actions{display:grid;grid-template-columns:1fr 1fr;min-width:0;gap:7px}.compact-recommendation-card .recommendation-actions button{padding:7px 8px;font-size:.74rem}.compact-recommendation-card #refreshPersonalRecommendationBtn{grid-column:1/-1}
+.desk-mail-slot{grid-column:1/-1}
+body.dark .living-desk-wrap{background:linear-gradient(145deg,#8f5559,#704044);border-color:#d49a9d}body.dark .compact-recommendation-card{background:rgba(72,53,50,.9)}
+@media(max-width:980px){.new-arrivals-card{grid-template-columns:1fr 1fr}.arrival-letter{grid-column:1/-1}}
+@media(max-width:800px){.new-arrivals-card,.desk-lower-row{grid-template-columns:1fr}.arrival-letter{grid-column:auto}.desk-mail-slot{grid-column:auto}}
+@media(max-width:480px){.compact-recommendation-card .recommendation-actions{grid-template-columns:1fr}.compact-recommendation-card #refreshPersonalRecommendationBtn{grid-column:auto}}
