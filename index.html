@@ -202,14 +202,13 @@
         <p>Several classics arrived with opinions, the mysteries refused to identify themselves, the romances requested better lighting, and the science-fiction books asked whether these shelves technically exist in this timeline. Everything has been cataloged somewhere.</p>
         <p class="arrival-signature">— Penelope 🪿</p>
       </div>
-      <div class="holdings-card"><h3>📖 Library Holdings</h3><div id="libraryHoldings"></div></div>
       <div class="recently-shelved">
         <h3>📦 Recently Shelved</h3>
         <p><strong>Across the Stacks</strong><br><span id="finalArrivalCount">24</span> new handcrafted misunderstandings</p>
         <p><small>Fantasy, Disney, Manga, and Comics Wings were expanded previously.</small></p>
       </div>
     </section>
-    <section id="penelopeDeskSection" class="card penelope-desk-section">
+<section id="penelopeDeskSection" class="card penelope-desk-section">
       <div class="desk-header-row">
         <div>
           <p class="eyebrow">Notes, books, and questionable correspondence</p>
@@ -256,23 +255,23 @@
         </div>
         <section id="personalRecommendationPanel" class="personal-recommendation-panel">
           <div class="recommendation-lock" id="recommendationLock">
-            <span class="recommendation-lock-icon">🔒</span>
+            <span class="recommendation-lock-icon">🪶</span>
             <div>
-              <strong>Penelope's Personal Recommendation</strong>
+              <strong>🪶 A Recommendation from Penelope</strong>
               <p id="recommendationProgress">Penelope is still getting to know your reading habits.</p>
             </div>
           </div>
 
           <div id="recommendationUnlocked" class="recommendation-unlocked hidden">
             <div class="recommendation-copy">
-              <p class="desk-card-label">🪿 Penelope recommends this personally to you</p>
+              <p class="desk-card-label">🪶 A Recommendation from Penelope</p><p class="recommendation-letter" id="personalRecommendationLetter"></p>
               <h3 id="personalRecommendationTitle">A suspiciously appropriate book</h3>
               <blockquote id="personalRecommendationNote"></blockquote>
-              <p id="personalRecommendationReason" class="recommendation-reason"></p>
+              <p id="personalRecommendationReason" class="recommendation-reason"></p><div class="wild-card-recommendation"><span class="desk-card-label">🎲 Penelope's Wild Card</span><h4 id="wildCardTitle"></h4><p id="wildCardNote"></p><button id="openWildCardBtn" class="secondary">Open Wild Card</button></div><p id="personalRecommendationSignature" class="recommendation-signature"></p>
             </div>
             <div class="recommendation-actions">
               <button id="openPersonalRecommendationBtn">Open Recommendation</button>
-              <button id="refreshPersonalRecommendationBtn" class="secondary">Choose Another</button>
+              <button id="refreshPersonalRecommendationBtn" class="secondary">Recommend Again</button>
             </div>
           </div>
         </section>
@@ -293,6 +292,20 @@
         <p id="deskMailSignature" class="desk-mail-signature"></p>
       </div>
     </section>
+
+    <section id="hallOfFame" class="card hall-of-fame-card">
+      <div class="hall-heading">
+        <div><p class="eyebrow">🏛️ A carefully curated collection of confident errors</p><h2>Penelope's Hall of Famous Misunderstandings</h2></div>
+        <span class="hall-tracks" aria-hidden="true">𓅿 · 𓅿 · 𓅿</span>
+      </div>
+      <div class="hall-display-label">CURRENTLY ON DISPLAY</div>
+      <div class="hall-exhibit">
+        <figure class="hall-frame"><img id="hallImage" alt="Featured museum exhibit"></figure>
+        <div class="hall-copy"><h3 id="hallTitle"></h3><blockquote id="hallMisunderstanding"></blockquote><div class="hall-curator"><strong>⭐ Curator's Note</strong><p id="hallCuratorNote"></p><small>— Penelope 🪿</small></div></div>
+      </div>
+      <div class="hall-controls"><button id="hallPrevBtn" class="secondary">🪶 Previous Exhibit</button><button id="hallAnotherBtn">Show Me Another</button><button id="hallNextBtn" class="secondary">Next Exhibit 🪶</button></div>
+    </section>
+    
 
     <section id="tournament" class="card tournament">
       <div class="tournament-heading">
@@ -353,6 +366,8 @@
   <script src="js/memory.js"></script>
   <script src="js/seasonal.js"></script>
   <script src="js/desk.js"></script>
+  <script src="data/hall-data.js"></script>
+  <script src="js/hall.js"></script>
   <script src="js/tournament.js"></script>
   <script src="js/app.js"></script>
 </body>
