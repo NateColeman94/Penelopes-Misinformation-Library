@@ -84,16 +84,45 @@
     };
   }
 
+  const normalizeTitle=value=>clean(value)
+    .toLowerCase()
+    .replace(/[’']/g,"")
+    .replace(/[^a-z0-9]+/g," ")
+    .trim();
+
+  function titleScore(doc,query){
+    const wanted=normalizeTitle(query);
+    const title=normalizeTitle(doc&&doc.title);
+    if(!wanted||!title)return -1000;
+    if(title===wanted)return 1000;
+    if(title.startsWith(wanted)||wanted.startsWith(title))return 700-Math.abs(title.length-wanted.length);
+    if(title.includes(wanted)||wanted.includes(title))return 500-Math.abs(title.length-wanted.length);
+
+    const wantedWords=wanted.split(" ").filter(word=>word.length>1);
+    const titleWords=new Set(title.split(" "));
+    const overlap=wantedWords.filter(word=>titleWords.has(word)).length;
+    if(!overlap)return -1000;
+    return Math.round((overlap/wantedWords.length)*300)-Math.abs(title.length-wanted.length);
+  }
+
   async function search(query){
+    const cleaned=clean(query);
     const params=new URLSearchParams({
-      q:clean(query),
-      limit:"5",
+      title:cleaned,
+      limit:"20",
       fields:"key,title,author_name,first_publish_year,subject,cover_i,edition_count"
     });
     const response=await fetch(`${SEARCH_URL}?${params}`,{headers:{Accept:"application/json"}});
     if(!response.ok)throw new Error(`Interlibrary catalog returned ${response.status}`);
     const payload=await response.json();
-    return (Array.isArray(payload.docs)?payload.docs:[]).map(doc=>({doc,entry:entryFrom(doc,query)}));
+    const docs=Array.isArray(payload.docs)?payload.docs:[];
+
+    return docs
+      .map(doc=>({doc,score:titleScore(doc,cleaned)}))
+      .filter(result=>result.score>=200)
+      .sort((a,b)=>b.score-a.score||Number(b.doc.edition_count||0)-Number(a.doc.edition_count||0))
+      .slice(0,5)
+      .map(({doc})=>({doc,entry:entryFrom(doc,cleaned)}));
   }
 
   window.PenelopeOpenLibrary={search};

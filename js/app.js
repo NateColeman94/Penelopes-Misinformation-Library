@@ -143,8 +143,8 @@
   }
   function showNotFound(value,apiFailed=false){
     $("apiLoading").classList.add("hidden");$("result").classList.add("hidden");$("notFound").classList.remove("hidden");
-    $("notFound").querySelector("p").textContent=apiFailed?"Penelope could not reach the public shelves. This book may be checked out, or Open Library may be temporarily unavailable.":"Penelope checked every shelf. This title may be checked out or it has not entered the misinformation system yet.";
-    const target=$("notFoundSuggestions");target.innerHTML="";window.PenelopeSearch.suggestions(value,4).forEach(({entry})=>{const button=document.createElement("button");button.textContent=entry.name+" · "+entry.type;button.addEventListener("click",()=>runSearch(entry.name));target.appendChild(button)});bubble("I checked every shelf. This title may already be checked out.")
+    $("notFound").querySelector("p").textContent=apiFailed?"Penelope could not reach the public shelves. This book may be checked out, or Open Library may be temporarily unavailable.":"Penelope checked every shelf, including the public catalog. This title may be checked out, listed under another name, or not yet available for responsible misunderstanding.";
+    const target=$("notFoundSuggestions");target.innerHTML="";window.PenelopeSearch.suggestions(value,4).forEach(({entry})=>{const button=document.createElement("button");button.textContent=entry.name+" · "+entry.type;button.addEventListener("click",()=>runSearch(entry.name));target.appendChild(button)});bubble("I checked every shelf, including interlibrary loan. This title may be checked out or cataloged under another name.")
   }
   async function searchOpenLibrary(value){
     const requestId=++apiSequence;$("result").classList.add("hidden");$("notFound").classList.add("hidden");$("apiLoading").classList.remove("hidden");bubble("The handcrafted catalog missed. I am consulting the public shelves.");
