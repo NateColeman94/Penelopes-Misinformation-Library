@@ -28123,5 +28123,1097 @@ window.PENELOPE_LIBRARY = {
   "questions": [
     "What has Penelope misunderstood about Love Comes Softly?"
   ]
+},
+"colleen coble": {
+  "name": "Colleen Coble",
+  "type": "Author",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A coastal cartographer who maps suspicious lighthouses and accidentally solves mysteries before breakfast."
+  ],
+  "silly": [
+    "A coastal cartographer who maps suspicious lighthouses and accidentally solves mysteries before breakfast.",
+    "A coastal cartographer who maps suspicious lighthouses and accidentally solves mysteries before breakfast. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A coastal cartographer who maps suspicious lighthouses and accidentally solves mysteries before breakfast. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Colleen Coble",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Colleen Coble?"
+  ]
+},
+"dani pettrey": {
+  "name": "Dani Pettrey",
+  "type": "Author",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "An adventure planner who insists every family reunion include a blizzard, a secret, and at least one rescue helicopter."
+  ],
+  "silly": [
+    "An adventure planner who insists every family reunion include a blizzard, a secret, and at least one rescue helicopter.",
+    "An adventure planner who insists every family reunion include a blizzard, a secret, and at least one rescue helicopter. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "An adventure planner who insists every family reunion include a blizzard, a secret, and at least one rescue helicopter. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Dani Pettrey",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Dani Pettrey?"
+  ]
+},
+"killing lincoln": {
+  "name": "Killing Lincoln",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A very intense guide to removing a president from an overly dramatic theater seating chart."
+  ],
+  "silly": [
+    "A very intense guide to removing a president from an overly dramatic theater seating chart.",
+    "A very intense guide to removing a president from an overly dramatic theater seating chart. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A very intense guide to removing a president from an overly dramatic theater seating chart. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Killing Lincoln",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Killing Lincoln?"
+  ]
+},
+"killing kennedy": {
+  "name": "Killing Kennedy",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A political travel diary in which everyone argues about motorcade directions."
+  ],
+  "silly": [
+    "A political travel diary in which everyone argues about motorcade directions.",
+    "A political travel diary in which everyone argues about motorcade directions. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A political travel diary in which everyone argues about motorcade directions. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Killing Kennedy",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Killing Kennedy?"
+  ]
+},
+"killing patton": {
+  "name": "Killing Patton",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A military etiquette manual about politely asking tanks to stop rearranging Europe."
+  ],
+  "silly": [
+    "A military etiquette manual about politely asking tanks to stop rearranging Europe.",
+    "A military etiquette manual about politely asking tanks to stop rearranging Europe. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A military etiquette manual about politely asking tanks to stop rearranging Europe. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Killing Patton",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Killing Patton?"
+  ]
+},
+"killing reagan": {
+  "name": "Killing Reagan",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A presidential weather report featuring unusually dramatic forecasts from the 1980s."
+  ],
+  "silly": [
+    "A presidential weather report featuring unusually dramatic forecasts from the 1980s.",
+    "A presidential weather report featuring unusually dramatic forecasts from the 1980s. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A presidential weather report featuring unusually dramatic forecasts from the 1980s. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Killing Reagan",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Killing Reagan?"
+  ]
+},
+"killing jesus": {
+  "name": "Killing Jesus",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A historical investigation into why ancient dinner invitations became unexpectedly consequential."
+  ],
+  "silly": [
+    "A historical investigation into why ancient dinner invitations became unexpectedly consequential.",
+    "A historical investigation into why ancient dinner invitations became unexpectedly consequential. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A historical investigation into why ancient dinner invitations became unexpectedly consequential. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Killing Jesus",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Killing Jesus?"
+  ]
+},
+"killing england": {
+  "name": "Killing England",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A colonial home-renovation show in which thirteen rooms decide they no longer need the landlord."
+  ],
+  "silly": [
+    "A colonial home-renovation show in which thirteen rooms decide they no longer need the landlord.",
+    "A colonial home-renovation show in which thirteen rooms decide they no longer need the landlord. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A colonial home-renovation show in which thirteen rooms decide they no longer need the landlord. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Killing England",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Killing England?"
+  ]
+},
+"killing the rising sun": {
+  "name": "Killing the Rising Sun",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "An extremely ambitious attempt to cancel sunrise using military paperwork."
+  ],
+  "silly": [
+    "An extremely ambitious attempt to cancel sunrise using military paperwork.",
+    "An extremely ambitious attempt to cancel sunrise using military paperwork. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "An extremely ambitious attempt to cancel sunrise using military paperwork. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Killing the Rising Sun",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Killing the Rising Sun?"
+  ]
+},
+"killing crazy horse": {
+  "name": "Killing Crazy Horse",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A frontier veterinary mystery about a horse accused of being far too imaginative."
+  ],
+  "silly": [
+    "A frontier veterinary mystery about a horse accused of being far too imaginative.",
+    "A frontier veterinary mystery about a horse accused of being far too imaginative. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A frontier veterinary mystery about a horse accused of being far too imaginative. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Killing Crazy Horse",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Killing Crazy Horse?"
+  ]
+},
+"the killing series": {
+  "name": "The Killing Series",
+  "type": "Book Series",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "Bill O'Reilly and Martin Dugard repeatedly investigate whether history can survive dramatic titles."
+  ],
+  "silly": [
+    "Bill O'Reilly and Martin Dugard repeatedly investigate whether history can survive dramatic titles.",
+    "Bill O'Reilly and Martin Dugard repeatedly investigate whether history can survive dramatic titles. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "Bill O'Reilly and Martin Dugard repeatedly investigate whether history can survive dramatic titles. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Killing Series",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Killing Series?"
+  ]
+},
+"all the light we cannot see": {
+  "name": "All the Light We Cannot See",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A wartime electrician searches Europe for a lamp everyone insists is definitely switched on."
+  ],
+  "silly": [
+    "A wartime electrician searches Europe for a lamp everyone insists is definitely switched on.",
+    "A wartime electrician searches Europe for a lamp everyone insists is definitely switched on. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A wartime electrician searches Europe for a lamp everyone insists is definitely switched on. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for All the Light We Cannot See",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about All the Light We Cannot See?"
+  ]
+},
+"the nightingale": {
+  "name": "The Nightingale",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "Two sisters operate an underground bird-rescue service during a very inconvenient war."
+  ],
+  "silly": [
+    "Two sisters operate an underground bird-rescue service during a very inconvenient war.",
+    "Two sisters operate an underground bird-rescue service during a very inconvenient war. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "Two sisters operate an underground bird-rescue service during a very inconvenient war. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Nightingale",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Nightingale?"
+  ]
+},
+"beneath a scarlet sky": {
+  "name": "Beneath a Scarlet Sky",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "An Italian meteorologist discovers the clouds are hiding a resistance movement."
+  ],
+  "silly": [
+    "An Italian meteorologist discovers the clouds are hiding a resistance movement.",
+    "An Italian meteorologist discovers the clouds are hiding a resistance movement. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "An Italian meteorologist discovers the clouds are hiding a resistance movement. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Beneath a Scarlet Sky",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Beneath a Scarlet Sky?"
+  ]
+},
+"the tattooist of auschwitz": {
+  "name": "The Tattooist of Auschwitz",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A forbidden workplace romance involving ink, courage, and the world's worst employee handbook."
+  ],
+  "silly": [
+    "A forbidden workplace romance involving ink, courage, and the world's worst employee handbook.",
+    "A forbidden workplace romance involving ink, courage, and the world's worst employee handbook. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A forbidden workplace romance involving ink, courage, and the world's worst employee handbook. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Tattooist of Auschwitz",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Tattooist of Auschwitz?"
+  ]
+},
+"the alice network": {
+  "name": "The Alice Network",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A secret communications system run entirely by women named Alice and one deeply confused telephone operator."
+  ],
+  "silly": [
+    "A secret communications system run entirely by women named Alice and one deeply confused telephone operator.",
+    "A secret communications system run entirely by women named Alice and one deeply confused telephone operator. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A secret communications system run entirely by women named Alice and one deeply confused telephone operator. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Alice Network",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Alice Network?"
+  ]
+},
+"the killer angels": {
+  "name": "The Killer Angels",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "Celestial beings hold a historically inaccurate battlefield strategy meeting above Pennsylvania."
+  ],
+  "silly": [
+    "Celestial beings hold a historically inaccurate battlefield strategy meeting above Pennsylvania.",
+    "Celestial beings hold a historically inaccurate battlefield strategy meeting above Pennsylvania. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "Celestial beings hold a historically inaccurate battlefield strategy meeting above Pennsylvania. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Killer Angels",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Killer Angels?"
+  ]
+},
+"the other boleyn girl": {
+  "name": "The Other Boleyn Girl",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A palace receptionist keeps asking which Boleyn sister has the appointment with the king."
+  ],
+  "silly": [
+    "A palace receptionist keeps asking which Boleyn sister has the appointment with the king.",
+    "A palace receptionist keeps asking which Boleyn sister has the appointment with the king. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A palace receptionist keeps asking which Boleyn sister has the appointment with the king. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Other Boleyn Girl",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Other Boleyn Girl?"
+  ]
+},
+"the pillars of the earth": {
+  "name": "The Pillars of the Earth",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "Medieval builders discover the planet is supported by several cathedral columns and a very stressed mason."
+  ],
+  "silly": [
+    "Medieval builders discover the planet is supported by several cathedral columns and a very stressed mason.",
+    "Medieval builders discover the planet is supported by several cathedral columns and a very stressed mason. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "Medieval builders discover the planet is supported by several cathedral columns and a very stressed mason. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Pillars of the Earth",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Pillars of the Earth?"
+  ]
+},
+"the call of the wild": {
+  "name": "The Call of the Wild",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A dog answers a suspicious phone call from the wilderness and immediately regrets roaming charges."
+  ],
+  "silly": [
+    "A dog answers a suspicious phone call from the wilderness and immediately regrets roaming charges.",
+    "A dog answers a suspicious phone call from the wilderness and immediately regrets roaming charges. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A dog answers a suspicious phone call from the wilderness and immediately regrets roaming charges. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Call of the Wild",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Call of the Wild?"
+  ]
+},
+"treasure island": {
+  "name": "Treasure Island",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A tropical banking seminar where pirates compare retirement plans and bury their receipts."
+  ],
+  "silly": [
+    "A tropical banking seminar where pirates compare retirement plans and bury their receipts.",
+    "A tropical banking seminar where pirates compare retirement plans and bury their receipts. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A tropical banking seminar where pirates compare retirement plans and bury their receipts. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Treasure Island",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Treasure Island?"
+  ]
+},
+"the invisible man": {
+  "name": "The Invisible Man",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A scientist perfects the art of avoiding meetings but forgets where he left his trousers."
+  ],
+  "silly": [
+    "A scientist perfects the art of avoiding meetings but forgets where he left his trousers.",
+    "A scientist perfects the art of avoiding meetings but forgets where he left his trousers. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A scientist perfects the art of avoiding meetings but forgets where he left his trousers. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Invisible Man",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Invisible Man?"
+  ]
+},
+"the strange case of dr jekyll and mr hyde": {
+  "name": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A physician creates the world's least reliable work-from-home schedule."
+  ],
+  "silly": [
+    "A physician creates the world's least reliable work-from-home schedule.",
+    "A physician creates the world's least reliable work-from-home schedule. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A physician creates the world's least reliable work-from-home schedule. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for The Strange Case of Dr. Jekyll and Mr. Hyde",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about The Strange Case of Dr. Jekyll and Mr. Hyde?"
+  ]
+},
+"dr jekyll and mr hyde": {
+  "name": "Dr. Jekyll and Mr. Hyde",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "Two men share one calendar and still manage to double-book every moral decision."
+  ],
+  "silly": [
+    "Two men share one calendar and still manage to double-book every moral decision.",
+    "Two men share one calendar and still manage to double-book every moral decision. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "Two men share one calendar and still manage to double-book every moral decision. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Dr. Jekyll and Mr. Hyde",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Dr. Jekyll and Mr. Hyde?"
+  ]
+},
+"frankenstein": {
+  "name": "Frankenstein",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A graduate student assembles a roommate from spare parts and immediately regrets skipping the background check."
+  ],
+  "silly": [
+    "A graduate student assembles a roommate from spare parts and immediately regrets skipping the background check.",
+    "A graduate student assembles a roommate from spare parts and immediately regrets skipping the background check. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A graduate student assembles a roommate from spare parts and immediately regrets skipping the background check. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Frankenstein",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Frankenstein?"
+  ]
+},
+"dracula": {
+  "name": "Dracula",
+  "type": "Book",
+  "key": "gold-expansion",
+  "related": [],
+  "mild": [
+    "A Transylvanian count opens an exclusive night clinic with an alarming loyalty program."
+  ],
+  "silly": [
+    "A Transylvanian count opens an exclusive night clinic with an alarming loyalty program.",
+    "A Transylvanian count opens an exclusive night clinic with an alarming loyalty program. Penelope has filed the matter under 'historically suspicious.'"
+  ],
+  "wild": [
+    "A Transylvanian count opens an exclusive night clinic with an alarming loyalty program. A goose is appointed official archivist."
+  ],
+  "audiences": [
+    "readers searching for Dracula",
+    "patrons who enjoy confident literary errors"
+  ],
+  "genres": [
+    "Wonderful Misunderstanding",
+    "Expanded Shelf"
+  ],
+  "quotes": [
+    "Penelope checked the historical record and improved it beyond recognition."
+  ],
+  "reviews": [
+    "Recognizable subject. Completely unreliable interpretation."
+  ],
+  "trailers": [
+    "History happened. Penelope explains why it probably did not."
+  ],
+  "morals": [
+    "Never let a goose organize the archives."
+  ],
+  "endings": [
+    "Penelope stamps the file and declares the matter beautifully misunderstood."
+  ],
+  "questions": [
+    "What has Penelope misunderstood about Dracula?"
+  ]
 }
 };

@@ -345,8 +345,9 @@ window.PENELOPE_COLLECTIONS = {
       "heaven",
       "love does",
       "the hiding place",
-      "gentle and lowly"
-    ]
+      "gentle and lowly",
+      "colleen coble",
+      "dani pettrey"]
   },
   "recently-shelved-fantasy": {
     "name": "Recently Shelved: Fantasy Wing",
@@ -757,5 +758,38 @@ window.PENELOPE_COLLECTIONS = {
       "foundation",
       "ready player one"
     ]
-  }
+  },
+"political-history": {
+  "name": "Political & History",
+  "description": "Presidents, wars, public affairs, and historical nonfiction confidently misfiled by Penelope.",
+  "keys": [
+    "the killing series",
+    "killing lincoln",
+    "killing kennedy",
+    "killing patton",
+    "killing reagan",
+    "killing jesus",
+    "killing england",
+    "killing the rising sun",
+    "killing crazy horse",
+    "1984",
+    "animal farm"
+  ]
+},
+"historical-fiction": {
+  "name": "Historical Fiction",
+  "description": "Past eras, sweeping dramas, and historically inspired stories with entirely unreliable catalog notes.",
+  "keys": [
+    "all the light we cannot see",
+    "the nightingale",
+    "beneath a scarlet sky",
+    "the tattooist of auschwitz",
+    "the alice network",
+    "the killer angels",
+    "the other boleyn girl",
+    "the pillars of the earth",
+    "the book thief",
+    "the count of monte cristo"
+  ]
+}
 };
