@@ -105,17 +105,16 @@
       source.textContent="";
       source.classList.add("hidden");
     }
-    if(entry.apiSource&&entry.apiMetadata){
-      const meta=entry.apiMetadata;
-      const author=(meta.authors&&meta.authors.length)?meta.authors.join(", "):"author unavailable";
-      const year=meta.firstPublishYear?` · first published ${meta.firstPublishYear}`:"";
-      preview.textContent=`Interlibrary catalog match: ${entry.name} by ${author}${year}. Penelope is using this record for context, but the synopsis remains intentionally inaccurate.`;
+    if(entry.apiSource){
+      const meta=entry.apiMetadata||{};
+      const author=Array.isArray(meta.authors)&&meta.authors.length?` by ${meta.authors.join(", ")}`:"";
+      const year=meta.firstPublishYear?` (${meta.firstPublishYear})`:"";
+      const clues=meta.contextLabel?` Context clues: ${meta.contextLabel}.`:"";
+      preview.textContent=`Interlibrary catalog match: ${entry.name}${author}${year}.${clues}`;
       preview.classList.remove("hidden");
-      preview.setAttribute("aria-hidden","false");
     }else{
       preview.textContent="";
       preview.classList.add("hidden");
-      preview.setAttribute("aria-hidden","true");
     }
     $("award").textContent=pick(["🏆 Certified Librarian Nightmare","🪿 Goose-Approved Misinformation","📚 Book Club Menace","🚨 English Teacher Alert"],cycle+2);
     const witty=entry.apiSource?"Good news! I found the book. Bad news! I misunderstood it.":window.PenelopePersonality.lineFor(entry,key,cycle,searchCount,repeated,level);
@@ -153,7 +152,9 @@
   }
   function showNotFound(value,apiFailed=false){
     $("apiLoading").classList.add("hidden");$("result").classList.add("hidden");$("notFound").classList.remove("hidden");
-    $("notFound").querySelector("p").textContent=apiFailed?"Penelope could not reach the Open Library interlibrary catalog. The public shelves may be temporarily unavailable.":`Penelope checked the handcrafted shelves and the Open Library interlibrary catalog, but could not verify a close enough title match for “${value}.” Try adding the author, such as “Title by Author,” or check the spelling.`;
+    $("notFound").querySelector("p").textContent=apiFailed
+      ?"Penelope could not reach the interlibrary catalog. The public shelves may be temporarily unavailable."
+      :"Penelope checked the handcrafted shelves and the interlibrary catalog, but could not find a reliable match with enough context to misunderstand responsibly. Try the exact title or search as ‘Title by Author.’";
     const target=$("notFoundSuggestions");target.innerHTML="";window.PenelopeSearch.suggestions(value,4).forEach(({entry})=>{const button=document.createElement("button");button.textContent=entry.name+" · "+entry.type;button.addEventListener("click",()=>runSearch(entry.name));target.appendChild(button)});bubble("I checked every shelf. This title may already be checked out.")
   }
   async function searchOpenLibrary(value){
