@@ -388,7 +388,7 @@ window.PENELOPE_COLLECTIONS = {
     ]
   },
   "disney-wing": {
-    "name": "Disney Shelf",
+    "name": "Disney",
     "description": "Princesses, villains, alternate tales, theme-park emergencies, and inherited family complications.",
     "keys": [
       "mulan",
