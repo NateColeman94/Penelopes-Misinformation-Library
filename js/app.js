@@ -5,7 +5,7 @@
   const easterEggs=window.PENELOPE_EASTER_EGGS||{};
   const $=id=>document.getElementById(id);
   const pick=(items,index)=>items&&items.length?items[((index%items.length)+items.length)%items.length]:"Penelope misplaced this section.";
-  let currentKey=null,currentEntry=null,cycle=0,apiSequence=0;
+  let currentKey=null,currentEntry=null,cycle=0,apiSequence=0,loadingTimer=null;
   let searchCount=Number(window.PenelopeStorage.get("penelopeSearchCount",0));
   let honkCount=Number(window.PenelopeStorage.get("penelopeHonkCount",0));
   const visitCount=Number(window.PenelopeStorage.get("penelopeVisitCount",0))+1;
@@ -22,7 +22,8 @@
   function footprints(){const rect=$("penelopeBtn").getBoundingClientRect();for(let i=0;i<4;i++){const foot=document.createElement("span");foot.className="footprint";foot.textContent=i%2?"•":"𓅰";foot.style.left=rect.left+rect.width*.2+i*18+"px";foot.style.top=rect.bottom-8+i*4+"px";document.body.appendChild(foot);setTimeout(()=>foot.remove(),1600)}}
   function honk(){honkCount++;window.PenelopeStorage.set("penelopeHonkCount",honkCount);counters();window.dispatchEvent(new CustomEvent("penelope:activity-changed",{detail:{type:"honk"}}));footprints();const text=window.PenelopePersonality.clickLine(honkCount,searchCount,visitCount);bubble(text);const button=$("penelopeBtn");button.classList.remove("honking");void button.offsetWidth;button.classList.add("honking");window.PenelopePersonality.sound(text.includes("Double"))}
   function profile(entry){const base=profiles[entry.key]||profiles.default||{},result={};["audiences","genres","quotes","reviews","trailers","morals","endings","questions"].forEach(field=>result[field]=entry[field]||base[field]||["Penelope has not cataloged this section yet."]);return result}
-  function hideStatus(){$("apiLoading").classList.add("hidden");$("notFound").classList.add("hidden")}
+  function stopLoadingMessages(){if(loadingTimer){clearInterval(loadingTimer);loadingTimer=null}}
+  function hideStatus(){stopLoadingMessages();$("apiLoading").classList.add("hidden");$("notFound").classList.add("hidden")}
   function showSuggestions(value,target=$("suggestions")){
     const matches=window.PenelopeSearch.suggestions(value,5);target.innerHTML="";
     if(!matches.length){target.classList.remove("show");return}
@@ -99,20 +100,13 @@
     $("result").classList.remove("hidden");$("entityType").textContent=entry.type;$("resultTitle").textContent=entry.name;
     const source=$("sourceBadge"),preview=$("sourcePreview");
     if(entry.apiSource){
-      source.textContent="📚 Borrowed through Interlibrary Loan";
+      source.textContent="📚 Interlibrary Loan";
       source.classList.remove("hidden");
+      preview.innerHTML="<strong>📚 Penelope found a traveling copy!</strong><br><span>This book wasn't on my shelves, but another library kindly lent me a copy. I read exactly three pages before confidently explaining it to everyone...</span>";
+      preview.classList.remove("hidden");
     }else{
       source.textContent="";
       source.classList.add("hidden");
-    }
-    if(entry.apiSource){
-      const meta=entry.apiMetadata||{};
-      const author=Array.isArray(meta.authors)&&meta.authors.length?` by ${meta.authors.join(", ")}`:"";
-      const year=meta.firstPublishYear?` (${meta.firstPublishYear})`:"";
-      const clues=meta.contextLabel?` Context clues: ${meta.contextLabel}.`:"";
-      preview.textContent=`Interlibrary catalog match: ${entry.name}${author}${year}.${clues}`;
-      preview.classList.remove("hidden");
-    }else{
       preview.textContent="";
       preview.classList.add("hidden");
     }
@@ -151,14 +145,33 @@
     $("saveStatus").textContent="";renderSaved();$("result").scrollIntoView({behavior:"smooth",block:"start"});
   }
   function showNotFound(value,apiFailed=false){
+    stopLoadingMessages();
     $("apiLoading").classList.add("hidden");$("result").classList.add("hidden");$("notFound").classList.remove("hidden");
-    $("notFound").querySelector("p").textContent=apiFailed
-      ?"Penelope could not reach the interlibrary catalog. The public shelves may be temporarily unavailable."
-      :"Penelope checked the handcrafted shelves and the interlibrary catalog, but could not find a reliable match with enough context to misunderstand responsibly. Try the exact title or search as ‘Title by Author.’";
-    const target=$("notFoundSuggestions");target.innerHTML="";window.PenelopeSearch.suggestions(value,4).forEach(({entry})=>{const button=document.createElement("button");button.textContent=entry.name+" · "+entry.type;button.addEventListener("click",()=>runSearch(entry.name));target.appendChild(button)});bubble("I checked every shelf. This title may already be checked out.")
+    const heading=$("notFoundHeading"),message=$("notFoundMessage"),tips=$("notFoundTips");
+    heading.textContent="📚 Penelope checked every shelf...";
+    message.textContent=apiFailed
+      ?"Oh dear... I searched every nook of my library, but I couldn't reach the neighboring librarians today. The interlibrary system may be temporarily unavailable, so please try again soon."
+      :"Oh dear... I searched every nook of my library and even asked the neighboring librarians if they had a traveling copy. We couldn't find this title anywhere, so I'm afraid I can't misunderstand it just yet.";
+    tips.innerHTML="<strong>Try:</strong><ul><li>Double-check the spelling.</li><li>Search by the author's name.</li><li>Or come back later—libraries are always receiving new deliveries!</li></ul>";
+    const target=$("notFoundSuggestions");target.innerHTML="";window.PenelopeSearch.suggestions(value,4).forEach(({entry})=>{const button=document.createElement("button");button.textContent=entry.name+" · "+entry.type;button.addEventListener("click",()=>runSearch(entry.name));target.appendChild(button)});bubble("I checked every shelf and even asked the neighboring librarians.")
+  }
+  function startLoadingMessages(){
+    stopLoadingMessages();
+    const messages=[
+      ["📚 Penelope is checking the shelves...","First stop: the handcrafted collection."],
+      ["🪿 Asking the neighboring librarians...","Penelope is sending an interlibrary loan request."],
+      ["📦 Waiting for the interlibrary loan cart...","A traveling copy may be on its way."],
+      ["☕ Penelope is reading exactly three pages...","This should be more than enough research."],
+      ["🤔 Confidently misunderstanding the book...","The explanation is becoming less accurate by the second."]
+    ];
+    let index=0;
+    const heading=$("apiLoadingHeading"),message=$("apiLoadingMessage");
+    const update=()=>{heading.textContent=messages[index][0];message.textContent=messages[index][1];index=(index+1)%messages.length};
+    update();
+    loadingTimer=setInterval(update,1100);
   }
   async function searchOpenLibrary(value){
-    const requestId=++apiSequence;$("result").classList.add("hidden");$("notFound").classList.add("hidden");$("apiLoading").classList.remove("hidden");bubble("The handcrafted catalog missed. I am consulting the public shelves.");
+    const requestId=++apiSequence;$("result").classList.add("hidden");$("notFound").classList.add("hidden");$("apiLoading").classList.remove("hidden");startLoadingMessages();bubble("I am checking my shelves and asking the neighboring librarians.");
     try{const results=await window.PenelopeOpenLibrary.search(value);if(requestId!==apiSequence)return;if(!results.length){showNotFound(value,false);return}renderEntry(results[0].entry,"api:"+window.PenelopeSearch.normalize(results[0].entry.name),false)}
     catch(error){console.error("Open Library search failed:",error);if(requestId===apiSequence)showNotFound(value,true)}
   }
