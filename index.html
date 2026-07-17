@@ -6,7 +6,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="8.3-final-polish" name="penelope-build"/>
 <title>Penelope's Misinformation Library</title>
-<link href="css/styles.css" rel="stylesheet"/>
+<link href="css/styles.css?v=8.3.1" rel="stylesheet"/>
 <style>
     .homepage-card-access{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
     .homepage-card-access span{font-size:.82rem;font-style:italic;opacity:.78}
@@ -198,7 +198,6 @@
 </div>
 <button class="secondary whimsy-refresh" id="refreshWhimsyBtn">Another fact &amp; rule</button>
 </div></section>
-
 <section class="card penelope-desk-section" id="penelopeDeskSection">
 <div class="desk-header-row">
 <div>
@@ -241,22 +240,7 @@
 </div>
 <div aria-live="polite" class="desk-object-tray" id="deskObjectTray"></div>
 </div>
-<section class="personal-recommendation-panel compact-recommendation-card" id="personalRecommendationPanel">
-<div class="recommendation-lock" id="recommendationLock">
-<span class="recommendation-lock-icon">🪶</span>
-<div><strong>A Recommendation from Penelope</strong><p id="recommendationProgress">Penelope is still getting to know your reading habits.</p></div>
-</div>
-<div class="recommendation-unlocked hidden" id="recommendationUnlocked">
-<p class="desk-card-label">🪶 A Recommendation from Penelope</p>
-<p class="recommendation-letter" id="personalRecommendationLetter"></p>
-<h3 id="personalRecommendationTitle">A suspiciously appropriate book</h3>
-<blockquote id="personalRecommendationNote"></blockquote>
-<p class="recommendation-reason" id="personalRecommendationReason"></p>
-<div class="wild-card-mini"><span>🎲 Wild Card</span><strong id="wildCardTitle"></strong><p id="wildCardNote"></p></div>
-<p class="recommendation-signature" id="personalRecommendationSignature"></p>
-<div class="recommendation-actions"><button id="openPersonalRecommendationBtn">Open Recommendation</button><button class="secondary" id="openWildCardBtn">Open Wild Card</button><button class="secondary" id="refreshPersonalRecommendationBtn">Recommend Again</button></div>
-</div>
-</section>
+
 <aside class="desk-mail-slot">
 <div>
 <span class="desk-card-label">📬 Today's Mail</span>
@@ -270,6 +254,44 @@
 <p class="desk-mail-salutation">Dear Penelope,</p>
 <p id="deskMailText"></p>
 <p class="desk-mail-signature" id="deskMailSignature"></p>
+</div>
+</section><section aria-labelledby="personalRecommendationHeading" class="card personal-recommendation-page" id="personalRecommendationPanel">
+<div class="recommendation-page-heading">
+<div>
+<p class="eyebrow">A note selected especially for this reader</p>
+<h2 id="personalRecommendationHeading">🪶 A Recommendation from Penelope</h2>
+</div>
+</div>
+<div class="recommendation-lock" id="recommendationLock">
+<span class="recommendation-lock-icon">🪶</span>
+<div>
+<strong>Getting to Know You</strong>
+<p id="recommendationProgress">I'm still learning which shelves you wander toward...</p>
+</div>
+</div>
+<div class="recommendation-unlocked hidden" id="recommendationUnlocked">
+<div class="recommendation-letter">
+<p class="recommendation-letter-opening" id="personalRecommendationLetter"></p>
+<div class="recommendation-picks">
+<article class="recommendation-pick primary-pick">
+<span>Saved especially for you</span>
+<h3 id="personalRecommendationTitle">A suspiciously appropriate book</h3>
+<blockquote id="personalRecommendationNote"></blockquote>
+<p class="recommendation-reason" id="personalRecommendationReason"></p>
+<button id="openPersonalRecommendationBtn">Open Recommendation</button>
+</article>
+<article class="recommendation-pick wild-card-pick">
+<span>Penelope's Wild Card</span>
+<h3 id="wildCardTitle">A completely reasonable surprise</h3>
+<blockquote id="wildCardNote"></blockquote>
+<button class="secondary" id="openWildCardBtn">Open Wild Card</button>
+</article>
+</div>
+<div class="recommendation-footer-row">
+<p class="recommendation-signature" id="personalRecommendationSignature"></p>
+<button class="secondary recommend-again-btn" id="refreshPersonalRecommendationBtn">Recommend Again</button>
+</div>
+</div>
 </div>
 </section>
 <section class="card tournament" id="tournament">
@@ -314,7 +336,7 @@
 <p>✓ Accurate Answers have been permanently checked out.</p>
 </footer>
 </main>
-<script src="data/library.js"></script>
+<script src="data/library.js?v=8.3.1"></script>
 <script src="data/profiles.js"></script>
 <script src="data/aliases.js"></script>
 <script src="data/collections.js"></script>
@@ -328,10 +350,8 @@
 <script src="data/desk-data.js"></script>
 <script src="js/memory.js"></script>
 <script src="js/seasonal.js"></script>
-<script src="js/desk.js"></script>
-
-
+<script src="js/desk.js?v=8.3.1"></script>
 <script src="js/tournament.js"></script>
-<script src="js/home-polish.js"></script><script src="js/app.js"></script>
+<script src="js/home-polish.js?v=8.3.1"></script><script src="js/app.js"></script>
 </body>
 </html>
