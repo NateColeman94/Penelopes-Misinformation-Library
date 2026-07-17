@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="penelope-build" content="7.1.1">
+  <title>Penelope's Misinformation Library</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .homepage-card-access{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .homepage-card-access span{font-size:.82rem;font-style:italic;opacity:.78}
+    .home-card-panel{margin-top:20px;padding:24px}
+    .home-card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+    .home-card-header h2{font-family:Georgia,serif;margin:.2rem 0}
+    .home-card-panel .saved-shelf{margin-top:14px}
+  </style>
+
+</head>
+<body>
+  <div id="seasonalLayer" class="seasonal-layer" aria-hidden="true"></div>
+  <div id="seasonalDeskItem" class="seasonal-desk-item" aria-hidden="true"></div>
+  <div class="background" aria-hidden="true">
+    <span>📚</span><span>🪿</span><span>📖</span><span>🪿</span><span>📕</span><span>📘</span>
+  </div>
+
+  <main class="page">
+    <header class="storybook-masthead">
+      <div class="masthead-books" aria-hidden="true">📕 📗 📘 📙 📚 📖 📓</div>
+      <div class="masthead-line">
+        <span>Curated with questionable confidence</span>
+        <span>Established whenever Penelope says so</span>
+      </div>
+    </header>
+<section class="hero card">
+      <div class="hero-copy">
+        <div class="top-tools">
+          <p class="eyebrow">A very unreliable literary institution</p>
+          <button id="themeBtn" class="theme-button" aria-label="Switch appearance">🌙 Evening reading room</button>
+        </div>
+        <h1>Penelope's<br>Misinformation Library</h1>
+        <p class="tagline">Where every book is wonderfully misunderstood.</p>
+        <p class="search-types">Search for a <strong>book</strong>, <strong>book series</strong>, <strong>author</strong>, or <strong>character</strong> and receive an explanation no responsible librarian would approve.</p>
+        <div class="catalog-stamp">HANDCRAFTED NONSENSE · PUBLIC-SHELF BACKUP · GOOSE SUPERVISED</div>
+
+        <div class="search-panel">
+          <div class="search-row">
+            <input id="query" autocomplete="off" placeholder="Try The Hobbit, Mulan, Gandalf, or Twisted Tales">
+            <select id="level" aria-label="Silliness level">
+              <option value="mild">Plausibly Wrong</option>
+              <option value="silly" selected>Very Silly</option>
+              <option value="wild">Library Emergency</option>
+            </select>
+            <button id="searchBtn">📖 Misunderstand It</button>
+          </div>
+          <div id="suggestions" class="suggestions" aria-live="polite"></div>
+        </div>
+
+        <div class="collection-browser">
+          <label for="collectionSelect">Browse a collection:</label>
+          <select id="collectionSelect">
+            <option value="">Choose a shelf…</option>
+            <option value="penelope-favorites">🪿 Penelope's Favorites</option>
+            <option value="fantasy">🐉 Fantasy</option>
+            <option value="disney-wing">👑 Disney Wing</option>
+            <option value="disney-villains">🪞 Disney Villains</option>
+            <option value="kingdom-keepers">🎢 Kingdom Keepers</option>
+            <option value="descendants">🏝️ Descendants</option>
+            <option value="ya-favorites">📚 Young Adult Favorites</option>
+            <option value="comics-graphic">💥 Comics & Graphic Novels</option>
+            <option value="manga">🎌 Manga</option>
+            <option value="literary-classics">📜 Literary Classics</option>
+            <option value="mystery-horror">🔎 Mystery & Horror</option>
+            <option value="childrens-books">🧸 Children's Books</option>
+            <option value="romance">💗 Romance</option>
+            <option value="christian-books">✝️ Christian Books</option>
+          </select>
+          <button id="browseCollectionBtn" class="secondary">Open Collection</button>
+          <button id="clearCollectionBtn" class="clear-collection">🧹 Clear Shelf</button>
+        </div>
+        <div id="collectionPanel" class="collection-panel hidden"></div>
+        <div class="homepage-card-access">
+          <button id="homeCardBtn" class="secondary">📇 Open My Library Card</button>
+          <span>View saved favorites without searching first.</span>
+        </div>
+
+        <div class="example-row" aria-label="Example searches">
+          <button class="example" data-query="Disney Twisted Tales">Book Series</button>
+          <button class="example" data-query="The Hobbit">Book</button>
+          <button class="example" data-query="J.R.R. Tolkien">Author</button>
+          <button class="example" data-query="Gandalf">Character</button>
+        </div>
+      </div>
+
+      <aside class="penelope-panel">
+        <div class="penelope-badge">PENELOPE · HEAD OF MISINFORMATION</div>
+        <button id="penelopeBtn" class="mascot-button" aria-label="Click Penelope">
+          <img src="assets/penelope-storybook.png" alt="Hand-drawn Penelope the goose librarian wearing oversized glasses, a knitted brown vest, bow tie, and librarian name tag">
+        </button>
+        <button id="honkBtn" class="secondary">🪿 Request a Librarian Honk</button>
+        <div class="counters">
+          <span>Honks: <strong id="honkCount">0</strong></span>
+          <span>Searches: <strong id="searchCount">0</strong></span>
+        </div>
+        <div id="penelopeBubble" class="bubble">
+          <strong>Penelope says:</strong><br>
+          “Honk! Accurate summaries are unavailable today.”
+        </div>
+      </aside>
+    </section>
+
+    
+    <section id="homeCardPanel" class="card home-card-panel hidden" aria-labelledby="homeCardTitle">
+      <div class="home-card-header">
+        <div>
+          <p class="eyebrow">Your personal circulation record</p>
+          <h2 id="homeCardTitle">📇 My Library Card</h2>
+          <p>Goose Approved, Favorites, and Hall of Shame are stored in this browser.</p>
+        </div>
+        <button id="closeHomeCardBtn" class="clear-collection">Close Card</button>
+      </div>
+      <div id="homeSavedItems" class="saved-items"></div>
+    </section>
+
+    <section id="apiLoading" class="card notice hidden"><h2>🪿 Penelope is checking the public shelves…</h2><p>Handcrafted catalog miss. Searching Open Library for a likely book match.</p></section>
+
+<section id="notFound" class="card notice hidden">
+      <h2>📚 Checked Out Notice</h2>
+      <p>Penelope checked every shelf. This title may be checked out or it has not entered the misinformation system yet.</p>
+      <div id="notFoundSuggestions" class="button-row"></div>
+    </section>
+
+    <article id="result" class="card result hidden">
+      <header class="result-header">
+        <div>
+          <span id="entityType" class="pill"></span> <span id="sourceBadge" class="source-badge hidden"></span>
+          <h2 id="resultTitle"></h2>
+        </div>
+        <span id="award" class="award"></span>
+      </header>
+
+      <div id="penelopeLine" class="penelope-line"></div>
+      <div id="sourcePreview" class="source-preview hidden" aria-hidden="true"></div>
+      <p id="synopsis" class="synopsis"></p>
+
+      <div class="checkout-rule"><span>CHECKOUT CARD</span><span>Wonderfully misunderstood</span></div>
+      <div class="rating-strip">
+        <span>★★★★★</span>
+        <strong id="rating"></strong>
+        <span id="audience"></span>
+        <small>• completely fictional</small>
+      </div>
+
+      <div class="result-grid">
+        <section><h3>🎭 Completely Silly Genres</h3><div id="genres" class="chips"></div></section>
+        <section><h3>💬 Famous Quote That Never Happened</h3><p id="quote"></p></section>
+        <section><h3>⭐ Reader Review</h3><p id="review"></p></section>
+        <section><h3>🎬 Honest Movie Trailer</h3><p id="trailer"></p></section>
+        <section><h3>🧠 Moral of the Story</h3><p id="moral"></p></section>
+        <section><h3>🔀 Alternate Ending</h3><p id="ending"></p></section>
+        <section class="wide"><h3>☕ Book Club Discussion Question</h3><p id="question"></p></section>
+      </div>
+
+      <section class="subcard">
+        <h3>📚 Readers Also Misunderstood</h3>
+        <div id="related" class="button-row"></div>
+      </section>
+
+      <section class="subcard library-card-panel">
+        <div class="library-card-heading">
+          <div><h3>📇 My Library Card</h3><p>Save exact explanations to personal shelves stored in this browser.</p></div>
+          <button id="openCardBtn" class="secondary">Open My Card</button>
+        </div>
+        <div class="save-actions">
+          <button class="save-shelf" data-shelf="approved">🪿 Goose Approved</button>
+          <button class="save-shelf" data-shelf="favorites">📚 Save to My Favorites</button>
+          <button class="save-shelf" data-shelf="shame">🏆 Add to My Hall of Shame</button>
+        </div>
+        <span id="saveStatus" class="save-status" aria-live="polite"></span>
+        <div id="savedItems" class="saved-items"></div>
+      </section>
+
+      <div class="button-row actions">
+        <button id="tryAgainBtn">📖 Think that's bad? Try another!</button>
+        <button id="worseBtn" class="danger">🎲 Make It Worse</button>
+      </div>
+    </article>
+
+
+
+    <section class="identity-strip card">
+      <div><strong>Stay curious.</strong><span>Even when Penelope is confidently wrong.</span></div>
+      <div><strong>Think critically.</strong><span>Especially when the goose has a stamp.</span></div>
+      <div><strong>Read widely.</strong><span>Then misfile everything responsibly.</span></div>
+    </section>
+    
+    <section class="card new-arrivals-card" id="finalNewArrivals">
+      <div class="arrival-letter">
+        <p class="eyebrow">📬 From the Circulation Desk</p>
+        <h2>New Arrivals — Across the Stacks</h2>
+        <p class="arrival-tagline"><em>A little something from every feathered corner of the library.</em></p>
+        <p>Several classics arrived with opinions, the mysteries refused to identify themselves, the romances requested better lighting, and the science-fiction books asked whether these shelves technically exist in this timeline. Everything has been cataloged somewhere.</p>
+        <p class="arrival-signature">— Penelope 🪿</p>
+      </div>
+      <div class="recently-shelved">
+        <h3>📦 Recently Shelved</h3>
+        <p><strong>Across the Stacks</strong><br><span id="finalArrivalCount">24</span> new handcrafted misunderstandings</p>
+        <p><small>Fantasy, Disney, Manga, and Comics Wings were expanded previously.</small></p>
+      </div>
+    </section>
+<section id="penelopeDeskSection" class="card penelope-desk-section">
+      <div class="desk-header-row">
+        <div>
+          <p class="eyebrow">Notes, books, and questionable correspondence</p>
+          <h2>🪿 From Penelope's Desk</h2>
+          <p>Three selections from today’s circulation desk, plus whatever the mail slot delivered.</p>
+        </div>
+        <button id="refreshDeskBtn" class="secondary">Shuffle the Desk</button>
+      </div>
+
+      <div class="desk-notice-board" aria-live="polite">
+        <span>📌 LIBRARY NOTICE</span>
+        <p id="deskNotice"></p>
+        <button id="newDeskNoticeBtn" class="desk-text-button">Another notice</button>
+      </div>
+
+      <div id="deskCards" class="desk-cards">
+        <article class="desk-card" data-desk-slot="reading">
+          <span class="desk-card-label">📖 Currently Reading</span>
+          <h3 id="deskReadingTitle"></h3>
+          <p id="deskReadingNote"></p>
+          <button id="deskReadingBtn">Open This Book</button>
+        </article>
+        <article class="desk-card featured" data-desk-slot="recommendation">
+          <span class="desk-card-label">⭐ Today's Recommendation</span>
+          <h3 id="deskRecommendationTitle"></h3>
+          <p id="deskRecommendationNote"></p>
+          <button id="deskRecommendationBtn">Penelope Recommends It</button>
+        </article>
+        <article class="desk-card" data-desk-slot="misunderstanding">
+          <span class="desk-card-label">🤦 Today's Wonderful Misunderstanding</span>
+          <h3 id="deskMisunderstandingTitle"></h3>
+          <p id="deskMisunderstandingNote"></p>
+          <button id="deskMisunderstandingBtn">See the Damage</button>
+        </article>
+      </div>
+
+      <div class="desk-lower-row">
+        <div class="living-desk-wrap">
+          <div class="living-desk-heading">
+            <span class="desk-card-label">🗝️ Penelope's Growing Desk</span>
+            <small id="deskProgressNote">The desk remembers your visits.</small>
+          </div>
+          <div id="deskObjectTray" class="desk-object-tray" aria-live="polite"></div>
+        </div>
+        <section id="personalRecommendationPanel" class="personal-recommendation-panel">
+          <div class="recommendation-lock" id="recommendationLock">
+            <span class="recommendation-lock-icon">🪶</span>
+            <div>
+              <strong>🪶 A Recommendation from Penelope</strong>
+              <p id="recommendationProgress">Penelope is still getting to know your reading habits.</p>
+            </div>
+          </div>
+
+          <div id="recommendationUnlocked" class="recommendation-unlocked hidden">
+            <div class="recommendation-copy">
+              <p class="desk-card-label">🪶 A Recommendation from Penelope</p><p class="recommendation-letter" id="personalRecommendationLetter"></p>
+              <h3 id="personalRecommendationTitle">A suspiciously appropriate book</h3>
+              <blockquote id="personalRecommendationNote"></blockquote>
+              <p id="personalRecommendationReason" class="recommendation-reason"></p><div class="wild-card-recommendation"><span class="desk-card-label">🎲 Penelope's Wild Card</span><h4 id="wildCardTitle"></h4><p id="wildCardNote"></p><button id="openWildCardBtn" class="secondary">Open Wild Card</button></div><p id="personalRecommendationSignature" class="recommendation-signature"></p>
+            </div>
+            <div class="recommendation-actions">
+              <button id="openPersonalRecommendationBtn">Open Recommendation</button>
+              <button id="refreshPersonalRecommendationBtn" class="secondary">Recommend Again</button>
+            </div>
+          </div>
+        </section>
+
+        <aside class="desk-mail-slot">
+          <div>
+            <span class="desk-card-label">📬 Today's Mail</span>
+            <strong id="deskMailFrom"></strong>
+          </div>
+          <button id="openDeskMailBtn" class="secondary">Read Letter</button>
+        </aside>
+      </div>
+
+      <div id="deskMailPanel" class="desk-mail-panel hidden" aria-live="polite">
+        <button id="closeDeskMailBtn" class="desk-mail-close" aria-label="Close letter">×</button>
+        <p class="desk-mail-salutation">Dear Penelope,</p>
+        <p id="deskMailText"></p>
+        <p id="deskMailSignature" class="desk-mail-signature"></p>
+      </div>
+    </section>
+
+    <section id="hallOfFame" class="card hall-of-fame-card">
+      <div class="hall-heading">
+        <div><p class="eyebrow">🏛️ A carefully curated collection of confident errors</p><h2>Penelope's Hall of Famous Misunderstandings</h2></div>
+        <span class="hall-tracks" aria-hidden="true">𓅿 · 𓅿 · 𓅿</span>
+      </div>
+      <div class="hall-display-label">CURRENTLY ON DISPLAY</div>
+      <div class="hall-exhibit">
+        <figure class="hall-frame"><img id="hallImage" alt="Featured museum exhibit"></figure>
+        <div class="hall-copy"><h3 id="hallTitle"></h3><blockquote id="hallMisunderstanding"></blockquote><div class="hall-curator"><strong>⭐ Curator's Note</strong><p id="hallCuratorNote"></p><small>— Penelope 🪿</small></div></div>
+      </div>
+      <div class="hall-controls"><button id="hallPrevBtn" class="secondary">🪶 Previous Exhibit</button><button id="hallAnotherBtn">Show Me Another</button><button id="hallNextBtn" class="secondary">Next Exhibit 🪶</button></div>
+    </section>
+    
+
+    <section id="tournament" class="card tournament">
+      <div class="tournament-heading">
+        <div>
+          <p class="eyebrow">Penelope's annual competitive cataloging program</p>
+          <h2>🏆 The Great Misunderstanding Tournament</h2>
+          <p>Choose the sillier explanation. Winners advance until Penelope crowns a champion.</p>
+        </div>
+        <div class="tournament-controls">
+          <select id="tournamentCollection">
+            <option value="penelope-favorites">Penelope's Favorites</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="disney-wing">Disney Wing</option>
+            <option value="disney-villains">Disney Villains</option>
+            <option value="kingdom-keepers">Kingdom Keepers</option>
+            <option value="descendants">Descendants</option>
+            <option value="ya-favorites">Young Adult Favorites</option>
+            <option value="comics-graphic">Comics & Graphic Novels</option>
+            <option value="manga">Manga</option>
+            <option value="literary-classics">Literary Classics</option>
+            <option value="mystery-horror">Mystery & Horror</option>
+            <option value="childrens-books">Children's Books</option>
+            <option value="romance">Romance</option>
+            <option value="christian-books">Christian Books</option>
+          </select>
+          <select id="tournamentSize" aria-label="Tournament size">
+            <option value="8">8 entries</option>
+            <option value="16" selected>16 entries</option>
+            <option value="32">32 entries</option>
+            <option value="64">64 entries</option>
+          </select>
+          <button id="startTournamentBtn">Start Tournament</button>
+        </div>
+      </div>
+      <div id="tournamentStatus" class="tournament-status">Select a shelf and start a tournament.</div>
+      <div id="tournamentMatch" class="tournament-match hidden"></div>
+    </section>
+
+    <footer class="library-stamp">
+      <strong>📚 LIBRARY NOTICE</strong>
+      <p>No books were responsibly summarized in the making of this application.</p>
+      <p>✓ Accurate Answers have been permanently checked out.</p>
+    </footer>
+  </main>
+
+  <script src="data/library.js"></script>
+  <script src="data/profiles.js"></script>
+  <script src="data/aliases.js"></script>
+  <script src="data/collections.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/penelope.js"></script>
+  <script src="js/library-card.js"></script>
+  <script src="js/open-library.js"></script>
+  <script src="data/easter-eggs.js"></script>
+  <script src="js/memory-seasonal.js"></script>
+  <script src="data/desk-data.js"></script>
+  <script src="js/memory.js"></script>
+  <script src="js/seasonal.js"></script>
+  <script src="js/desk.js"></script>
+  <script src="data/hall-data.js"></script>
+  <script src="js/hall.js"></script>
+  <script src="js/tournament.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
