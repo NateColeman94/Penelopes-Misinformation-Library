@@ -36,6 +36,7 @@
   ];
 
   const $=id=>document.getElementById(id);
+  const pick=(items,index=0)=>Array.isArray(items)&&items.length?items[Math.abs(index)%items.length]:"Penelope has misplaced this note.";
   function dailySeed(offset=0){
     const d=new Date();
     return Number(`${d.getFullYear()}${d.getMonth()+1}${d.getDate()}`)+offset;
@@ -77,29 +78,35 @@
   function renderObjects(){
     const tray=$("deskObjectTray");
     if(!tray)return;
-    const stats=window.PenelopeMemoryV2?.snapshot?.()||{
-      searches:0,honks:0,visits:0,saved:0,categories:{},easterEggs:0
-    };
+    const stats=window.PenelopeMemoryV2?.snapshot?.()||{searches:0,honks:0,visits:0,saved:0,categories:{},easterEggs:0};
     tray.innerHTML="";
     const unlocked=deskObjects.filter(object=>object.unlock(stats));
-    const seasonal=seasonObject();
-    [...unlocked,{id:"season",...seasonal,detail:"Changes with the season.",unlock:()=>true}].forEach(object=>{
+    const locked=deskObjects.filter(object=>!object.unlock(stats));
+    const seasonal={id:"season",...seasonObject(),detail:"Changes with the season.",unlock:()=>true};
+
+    [...unlocked,seasonal].forEach(object=>{
       const item=document.createElement("div");
-      item.className="desk-object";
+      item.className="desk-object unlocked";
       item.title=`${object.name}: ${object.detail}`;
-      const icon=document.createElement("span");
-      icon.textContent=object.icon;
-      const label=document.createElement("small");
-      label.textContent=object.name;
-      item.append(icon,label);
+      item.innerHTML=`<span>${object.icon}</span><small>${object.name}</small>`;
       tray.appendChild(item);
     });
-    const locked=deskObjects.length-unlocked.length;
+
+    locked.forEach((object,index)=>{
+      const item=document.createElement("div");
+      item.className="desk-object locked";
+      item.setAttribute("aria-label",`Locked keepsake hint: ${object.detail}`);
+      item.title=object.detail;
+      const hints=["Keep exploring the shelves.","Penelope left a clue under the dust.","Another visit may reveal this one.","Curiosity is the key to this drawer."];
+      item.innerHTML=`<span>?</span><small>Still Hidden</small><em>${object.detail||hints[index%hints.length]}</em>`;
+      tray.appendChild(item);
+    });
+
     const note=$("deskProgressNote");
     if(note){
-      if(locked===0)note.textContent="Penelope's desk is wonderfully crowded.";
-      else if(unlocked.length<=2)note.textContent="The desk will quietly fill as you explore.";
-      else note.textContent=`${unlocked.length} desk keepsakes collected · ${locked} still hidden`;
+      if(!locked.length) note.textContent="Penelope's desk is wonderfully crowded.";
+      else if(unlocked.length<=2) note.textContent="The desk will quietly fill as you explore. Hover over a hidden keepsake for a clue.";
+      else note.textContent=`${unlocked.length} desk keepsakes collected · ${locked.length} still hidden — each hidden card has a clue.`;
     }
   }
 
