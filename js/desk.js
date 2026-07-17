@@ -5,6 +5,7 @@
   let noticeOffset=0;
 
   let personalRecommendationKey=null;
+  let wildCardKey=null;
 
   const categoryFallbacks={
     fantasy:["the hobbit","six of crows","mistborn","the way of kings","howls moving castle"],
@@ -167,6 +168,30 @@
     return {key:personalRecommendationKey,entry,note,reason:recommendationReason(personalRecommendationKey)};
   }
 
+
+  function chooseWildCard(excludeKey){
+    const library=window.PENELOPE_LIBRARY||{};
+    const all=Object.keys(library).filter(k=>k!==excludeKey&&library[k]?.name);
+    if(!all.length)return null;
+    const pool=all.filter(k=>k!==wildCardKey);
+    wildCardKey=(pool.length?pool:all)[Math.floor(Math.random()*(pool.length||all.length))];
+    const entry=library[wildCardKey];
+    const note=pick(entry.silly||entry.wild||entry.mild,Math.floor(Math.random()*7));
+    return {key:wildCardKey,entry,note};
+  }
+
+  const personalLetters=[
+    "Dear reader, I've tucked these aside because I think they'll make you smile.",
+    "I noticed where you lingered in the stacks, so I saved these before anyone else could misfile them.",
+    "A librarian develops instincts. A goose develops stronger ones. These are for you."
+  ];
+  const personalSignatures=[
+    "A goose never forgets a good reader.",
+    "This book practically honked your name.",
+    "I've been saving this one for the right patron.",
+    "The mystery section insisted. I reluctantly agreed."
+  ];
+
   function renderPersonalRecommendation(forceNew=false){
     const readiness=window.PenelopeMemoryV2?.recommendationReadiness?.();
     const lock=$("recommendationLock");
@@ -176,13 +201,12 @@
     if(!readiness.unlocked){
       lock.classList.remove("hidden");
       unlocked.classList.add("hidden");
-      const req=readiness.requirements;
-      const remaining=Object.values(req)
-        .filter(item=>item.current<item.target)
-        .map(item=>`${Math.max(item.target-item.current,0)} more ${item.label}`);
-      $("recommendationProgress").textContent=remaining.length
-        ?`Penelope needs ${remaining.slice(0,2).join(" and ")} before opening the drawer.`
-        :"Penelope is almost ready.";
+      const stats=window.PenelopeMemoryV2?.snapshot?.()||{searches:0,visits:0,saved:0,categories:{}};
+      const variety=Object.keys(stats.categories||{}).filter(k=>(stats.categories[k]||0)>0).length;
+      let message="I'm still learning which shelves you wander toward...";
+      if(stats.searches>=5||stats.visits>=2)message="I've noticed your visits and I'm beginning to understand your shelves.";
+      if(stats.searches>=8||stats.saved>=2||variety>=2)message="A few more adventures and I'll have something tucked aside just for you.";
+      $("recommendationProgress").innerHTML=`<strong>Getting to Know You</strong><br>${message}`;
       return;
     }
 
@@ -193,7 +217,11 @@
     $("personalRecommendationTitle").textContent=recommendation.entry.name;
     $("personalRecommendationNote").textContent="“"+recommendation.note+"”";
     $("personalRecommendationReason").textContent=recommendation.reason;
+    $("personalRecommendationLetter").textContent=personalLetters[Math.floor(Math.random()*personalLetters.length)];
+    $("personalRecommendationSignature").textContent=personalSignatures[Math.floor(Math.random()*personalSignatures.length)]+" — Penelope 🪿";
     $("openPersonalRecommendationBtn").dataset.key=recommendation.key;
+    const wild=chooseWildCard(recommendation.key);
+    if(wild){$("wildCardTitle").textContent=wild.entry.name;$("wildCardNote").textContent=`“${wild.note}”`;$("openWildCardBtn").dataset.key=wild.key;}
   }
 
   function render(){
@@ -229,6 +257,9 @@
     $("openDeskMailBtn")?.addEventListener("click",openMail);
     $("closeDeskMailBtn")?.addEventListener("click",()=>$("deskMailPanel").classList.add("hidden"));
     $("refreshPersonalRecommendationBtn")?.addEventListener("click",()=>renderPersonalRecommendation(true));
+    $("openWildCardBtn")?.addEventListener("click",()=>{
+      const key=$("openWildCardBtn").dataset.key; const entry=(window.PENELOPE_LIBRARY||{})[key]; if(entry)context?.runSearch?.(entry.name);
+    });
     $("openPersonalRecommendationBtn")?.addEventListener("click",()=>{
       const key=$("openPersonalRecommendationBtn").dataset.key;
       const entry=(window.PENELOPE_LIBRARY||{})[key];
