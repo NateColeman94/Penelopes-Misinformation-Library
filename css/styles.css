@@ -789,3 +789,48 @@ body.dark .recommendation-lock-icon{background:#3c352d}
 #libraryHoldings{display:grid;gap:7px;margin-top:10px}
 .holding-row{display:flex;justify-content:space-between;gap:16px;padding-bottom:5px;border-bottom:1px dotted rgba(73,55,45,.28)}
 .holding-total{margin-top:3px;padding-top:6px;border-top:2px solid rgba(73,55,45,.3);border-bottom:0;font-family:Georgia,serif}
+
+
+/* 8.4.2a Cozy Night Library overrides */
+body.dark .card,
+body.dark .panel,
+body.dark .paper,
+body.dark .result-card,
+body.dark .feature-card,
+body.dark .library-card,
+body.dark .desk-card,
+body.dark .arrival-card,
+body.dark .recent-card{
+background:#5a4738!important;
+color:#f3eadc!important;
+border-color:#8c7057!important;
+}
+body.dark .genre-chip,
+body.dark .tag,
+body.dark .pill{
+background:#6b5644!important;
+color:#fff4e6!important;
+border:1px solid #b7926a!important;
+}
+body.dark .genre-chip:hover,
+body.dark .tag:hover,
+body.dark .pill:hover{
+background:#80634c!important;
+}
+body.dark .shelf,
+body.dark .favorites,
+body.dark .hall,
+body.dark .collection,
+body.dark .paper-panel{
+background:#564536!important;
+color:#f3eadc!important;
+}
+body.dark h1,body.dark h2,body.dark h3,body.dark h4{
+color:#f2d2a0!important;
+}
+body.dark p,
+body.dark li,
+body.dark small,
+body.dark .muted{
+color:#efe5d7!important;
+}
